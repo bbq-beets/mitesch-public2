@@ -18,8 +18,8 @@ jobs:
   example_matrix:
     strategy:
       matrix:
-        os: [ubuntu-22.04-arm]
-        second: [1, 2, 3, 4, 6, 7 ,8 ,9,10]
+        os: [ubuntu-22.04-arm, ubuntu-22.04, ubuntu-24.04]
+        second: [1, 2]
         third: [a,b,c]
     # The type of runner that the job will run on
     runs-on: ${{ matrix.os }}
