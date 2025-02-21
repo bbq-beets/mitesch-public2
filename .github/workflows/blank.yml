@@ -15,10 +15,6 @@ jobs:
     steps:
       - name: vm info
         run: curl -s -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/instance?api-version=2021-02-01" | jq      
-        
-      - name: where is npm
-        run: | 
-          whereis npm
 
       - name: evtstream
         run: |
@@ -27,7 +23,9 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run test script
         #run: valgrind --leak-check=full  npm --version
-        run: npm --version
+        run: | 
+          npm --version
+          rustc --version
 
       - name: chown
         if: failure()
