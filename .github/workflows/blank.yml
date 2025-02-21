@@ -19,6 +19,10 @@ jobs:
       - name: where is npm
         run: | 
           whereis npm
+
+      - name: evtstream
+        run: |
+          grep CONFIG_ARM_ARCH_TIMER_EVTSTREAM /boot/config-`uname -r`
           
       - uses: actions/checkout@v4
       - name: Run test script
