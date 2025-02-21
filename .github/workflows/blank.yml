@@ -26,11 +26,11 @@ jobs:
         run: npm --version
 
       - name: chown
-        if: always() #failure()
+        if: failure()
         run: sudo chown -R runner:runner /var/log* /var/lib/systemd
         
       - uses: actions/upload-artifact@v4
-        if: always() #failure()
+        if: failure()
         with:
           name: logs-${{ matrix.directory }}-${{ matrix.os }}
           path: |
