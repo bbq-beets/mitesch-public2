@@ -1,41 +1,38 @@
-# This is a basic workflow to help you get started with Actions
+name: npm seg fault
+# This workflow tests examples from the examples directory of this repo.
 
-name: CI
-
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  example_matrix:
+  example:
     strategy:
+      fail-fast: false
       matrix:
-        os: [ubuntu-22.04-arm, ubuntu-22.04, ubuntu-24.04]
-        second: [1, 2]
-        third: [a,b,c]
-    # The type of runner that the job will run on
+        directory: [1,2,3,4,5,6]
+        os: [ ubuntu-24.04-arm ]
     runs-on: ${{ matrix.os }}
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: vm info
+        run: curl -s -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/instance?api-version=2021-02-01" | jq      
+        
+      - name: where is npm
+        run: | 
+          whereis npm
+          
       - uses: actions/checkout@v4
+      - name: Run test script
+        #run: valgrind --leak-check=full  npm --version
+        run: npm --version
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: |
-          uname -m
-          arch
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          curl -s -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/instance?api-version=2021-02-01" | jq
+      - name: chown
+        if: always() #failure()
+        run: sudo chown -R runner:runner /var/log* /var/lib/systemd
+        
+      - uses: actions/upload-artifact@v4
+        if: always() #failure()
+        with:
+          name: logs-${{ matrix.directory }}-${{ matrix.os }}
+          path: |
+            /var/lib/systemd/coredump
+            /var/log*
