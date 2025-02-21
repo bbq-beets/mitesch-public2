@@ -26,6 +26,7 @@ jobs:
           rustc --version
 
       - name: evtstream
+        if: always()
         run: |
           grep CONFIG_ARM_ARCH_TIMER_EVTSTREAM /boot/config-`uname -r`
           
