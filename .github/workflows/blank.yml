@@ -14,12 +14,10 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - name: vm info
-        run: curl -s -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/instance?api-version=2021-02-01" | jq      
-
-      - name: evtstream
         run: |
-          grep CONFIG_ARM_ARCH_TIMER_EVTSTREAM /boot/config-`uname -r`
-          
+          curl -s -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/instance?api-version=2021-02-01" | jq      
+          echo '::warning:: ' $(curl -s -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/instance?api-version=2021-02-01" | jq | grep "vmSize")
+        
       - uses: actions/checkout@v4
       - name: Run test script
         #run: valgrind --leak-check=full  npm --version
@@ -27,6 +25,10 @@ jobs:
           npm --version
           rustc --version
 
+      - name: evtstream
+        run: |
+          grep CONFIG_ARM_ARCH_TIMER_EVTSTREAM /boot/config-`uname -r`
+          
       - name: chown
         if: failure()
         run: sudo chown -R runner:runner /var/log* /var/lib/systemd
