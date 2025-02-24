@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Get failed workflow runs and store them in a temporary JSON file
-gh run list --workflow "npm seg fault" --status failure --limit 50 --json databaseId > failed_runs.json
+gh run list --workflow "apt update" --status failure --limit 100 --json databaseId > failed_runs.json
 
 # Parse the JSON and process each databaseId
 jq -r '.[] | .databaseId' failed_runs.json | while read -r id; do
