@@ -3,7 +3,9 @@ name: apt update
 
 on:
   workflow_dispatch:
-
+  schedule:
+    - cron: "0-59/30 * * * *"   # <=== Change this value
+    
 jobs:
   example:
     strategy:
