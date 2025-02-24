@@ -17,6 +17,7 @@ jobs:
         run: |
           curl -s -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/instance?api-version=2021-02-01" | jq      
           echo '::warning:: ' $(curl -s -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/instance?api-version=2021-02-01" | jq | grep "vmSize")
+          sysctl -w kernel.print-fatal-signals=1
         
       - uses: actions/checkout@v4
       - name: Run test script
