@@ -1,0 +1,16 @@
+2025-01-20 21:02:32 startup packages remove
+2025-01-20 21:02:32 status installed needrestart:all 3.6-7ubuntu4.5
+2025-01-20 21:02:34 remove needrestart:all 3.6-7ubuntu4.5 <none>
+2025-01-20 21:02:34 status half-configured needrestart:all 3.6-7ubuntu4.5
+2025-01-20 21:02:34 status half-installed needrestart:all 3.6-7ubuntu4.5
+2025-01-20 21:02:34 status triggers-pending man-db:arm64 2.12.0-4build2
+2025-01-20 21:02:34 status config-files needrestart:all 3.6-7ubuntu4.5
+2025-01-20 21:02:34 startup packages configure
+2025-01-20 21:02:34 trigproc man-db:arm64 2.12.0-4build2 <none>
+2025-01-20 21:02:34 status half-configured man-db:arm64 2.12.0-4build2
+2025-01-20 21:02:36 status installed man-db:arm64 2.12.0-4build2
+2025-01-20 21:02:36 startup packages purge
+2025-01-20 21:02:36 purge needrestart:all 3.6-7ubuntu4.5 <none>
+2025-01-20 21:02:36 status config-files needrestart:all 3.6-7ubuntu4.5
+2025-01-20 21:02:36 status not-installed needrestart:all <none>
+2025-01-20 21:02:36 startup packages configure

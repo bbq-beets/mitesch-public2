@@ -1,0 +1,914 @@
+2025-01-20T21:02:26.806100+00:00 pkrvmdm07f8kizn kernel: hv_balloon: Max. dynamic memory size: 16384 MB
+2025-01-20T21:03:12.739540+00:00 pkrvmdm07f8kizn kernel: hv_utils: Shutdown request received - graceful shutdown initiated
+2025-02-21T18:43:52.294891+00:00 fv-az1236-360 kernel: Booting Linux on physical CPU 0x0000000000 [0x410fd490]
+2025-02-21T18:43:52.294925+00:00 fv-az1236-360 kernel: Linux version 6.8.0-1020-azure (buildd@bos03-arm64-066) (aarch64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #23-Ubuntu SMP Fri Dec  6 22:49:57 UTC 2024 (Ubuntu 6.8.0-1020.23-azure 6.8.12)
+2025-02-21T18:43:52.294926+00:00 fv-az1236-360 kernel: KASLR enabled
+2025-02-21T18:43:52.294927+00:00 fv-az1236-360 kernel: earlycon: pl11 at MMIO 0x00000000effec000 (options '')
+2025-02-21T18:43:52.294928+00:00 fv-az1236-360 kernel: printk: legacy bootconsole [pl11] enabled
+2025-02-21T18:43:52.294928+00:00 fv-az1236-360 kernel: efi: EFI v2.7 by EDK II
+2025-02-21T18:43:52.294928+00:00 fv-az1236-360 kernel: efi: ACPI 2.0=0x3fd5f018 SMBIOS=0x3e580000 SMBIOS 3.0=0x3e560000 MEMATTR=0x3f20d418 MOKvar=0x3e340000 RNG=0x3fd5f698 MEMRESERVE=0x3e476e18 
+2025-02-21T18:43:52.294930+00:00 fv-az1236-360 kernel: random: crng init done
+2025-02-21T18:43:52.294930+00:00 fv-az1236-360 kernel: secureboot: Secure boot disabled
+2025-02-21T18:43:52.294930+00:00 fv-az1236-360 kernel: ACPI: Early table checksum verification disabled
+2025-02-21T18:43:52.294931+00:00 fv-az1236-360 kernel: ACPI: RSDP 0x000000003FD5F018 000024 (v02 VRTUAL)
+2025-02-21T18:43:52.294931+00:00 fv-az1236-360 kernel: ACPI: XSDT 0x000000003FD5FF18 00006C (v01 VRTUAL MICROSFT 00000001 MSFT 00000001)
+2025-02-21T18:43:52.294933+00:00 fv-az1236-360 kernel: ACPI: FACP 0x000000003FD5FC18 000114 (v06 VRTUAL MICROSFT 00000001 MSFT 00000001)
+2025-02-21T18:43:52.294934+00:00 fv-az1236-360 kernel: ACPI: DSDT 0x000000003FD41018 01DFCD (v02 MSFTVM DSDT01   00000001 INTL 20230628)
+2025-02-21T18:43:52.294935+00:00 fv-az1236-360 kernel: ACPI: DBG2 0x000000003FD5FB18 000072 (v00 VRTUAL MICROSFT 00000001 MSFT 00000001)
+2025-02-21T18:43:52.294936+00:00 fv-az1236-360 kernel: ACPI: GTDT 0x000000003FD5FD98 000060 (v02 VRTUAL MICROSFT 00000001 MSFT 00000001)
+2025-02-21T18:43:52.294936+00:00 fv-az1236-360 kernel: ACPI: OEM0 0x000000003FD5F098 000064 (v01 VRTUAL MICROSFT 00000001 MSFT 00000001)
+2025-02-21T18:43:52.294936+00:00 fv-az1236-360 kernel: ACPI: SPCR 0x000000003FD5FA98 000050 (v02 VRTUAL MICROSFT 00000001 MSFT 00000001)
+2025-02-21T18:43:52.294939+00:00 fv-az1236-360 kernel: ACPI: APIC 0x000000003FD5F818 00019C (v04 VRTUAL MICROSFT 00000001 MSFT 00000001)
+2025-02-21T18:43:52.294939+00:00 fv-az1236-360 kernel: ACPI: SRAT 0x000000003FD5F198 000258 (v03 VRTUAL MICROSFT 00000001 MSFT 00000001)
+2025-02-21T18:43:52.294940+00:00 fv-az1236-360 kernel: ACPI: PPTT 0x000000003FD5F418 0001E8 (v01 VRTUAL MICROSFT 00000000 MSFT 00000000)
+2025-02-21T18:43:52.294941+00:00 fv-az1236-360 kernel: ACPI: BGRT 0x000000003FD5FE98 000038 (v01 VRTUAL MICROSFT 00000001 MSFT 00000001)
+2025-02-21T18:43:52.294941+00:00 fv-az1236-360 kernel: ACPI: SPCR: console: pl011,mmio32,0xeffec000,115200
+2025-02-21T18:43:52.294941+00:00 fv-az1236-360 kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x00000000-0x3fffffff] hotplug
+2025-02-21T18:43:52.294942+00:00 fv-az1236-360 kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x100000000-0x4bfffffff] hotplug
+2025-02-21T18:43:52.294943+00:00 fv-az1236-360 kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x4c0000000-0xfbfffffff] hotplug
+2025-02-21T18:43:52.294944+00:00 fv-az1236-360 kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x1000000000-0xffffffffff] hotplug
+2025-02-21T18:43:52.294944+00:00 fv-az1236-360 kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x10000000000-0x1ffffffffff] hotplug
+2025-02-21T18:43:52.294946+00:00 fv-az1236-360 kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x20000000000-0x3ffffffffff] hotplug
+2025-02-21T18:43:52.294946+00:00 fv-az1236-360 kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x40000000000-0x7ffffffffff] hotplug
+2025-02-21T18:43:52.294946+00:00 fv-az1236-360 kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x80000000000-0xfffffffffff] hotplug
+2025-02-21T18:43:52.294947+00:00 fv-az1236-360 kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x100000000000-0x1fffffffffff] hotplug
+2025-02-21T18:43:52.294947+00:00 fv-az1236-360 kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x200000000000-0x3fffffffffff] hotplug
+2025-02-21T18:43:52.294948+00:00 fv-az1236-360 kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x400000000000-0x7fffffffffff] hotplug
+2025-02-21T18:43:52.294950+00:00 fv-az1236-360 kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x800000000000-0xffffffffffff] hotplug
+2025-02-21T18:43:52.294950+00:00 fv-az1236-360 kernel: NUMA: NODE_DATA [mem 0x4bdfee5c0-0x4bdff3fff]
+2025-02-21T18:43:52.294950+00:00 fv-az1236-360 kernel: Zone ranges:
+2025-02-21T18:43:52.294951+00:00 fv-az1236-360 kernel:   DMA      [mem 0x0000000000000000-0x00000000ffffffff]
+2025-02-21T18:43:52.294951+00:00 fv-az1236-360 kernel:   DMA32    empty
+2025-02-21T18:43:52.294952+00:00 fv-az1236-360 kernel:   Normal   [mem 0x0000000100000000-0x00000004bfffffff]
+2025-02-21T18:43:52.294953+00:00 fv-az1236-360 kernel:   Device   empty
+2025-02-21T18:43:52.294953+00:00 fv-az1236-360 kernel: Movable zone start for each node
+2025-02-21T18:43:52.294953+00:00 fv-az1236-360 kernel: Early memory node ranges
+2025-02-21T18:43:52.294954+00:00 fv-az1236-360 kernel:   node   0: [mem 0x0000000000000000-0x00000000007fffff]
+2025-02-21T18:43:52.294955+00:00 fv-az1236-360 kernel:   node   0: [mem 0x0000000000824000-0x000000003e33ffff]
+2025-02-21T18:43:52.294958+00:00 fv-az1236-360 kernel:   node   0: [mem 0x000000003e340000-0x000000003e34ffff]
+2025-02-21T18:43:52.294959+00:00 fv-az1236-360 kernel:   node   0: [mem 0x000000003e350000-0x000000003e45ffff]
+2025-02-21T18:43:52.294959+00:00 fv-az1236-360 kernel:   node   0: [mem 0x000000003e460000-0x000000003e46ffff]
+2025-02-21T18:43:52.294959+00:00 fv-az1236-360 kernel:   node   0: [mem 0x000000003e470000-0x000000003e54ffff]
+2025-02-21T18:43:52.294960+00:00 fv-az1236-360 kernel:   node   0: [mem 0x000000003e550000-0x000000003e87ffff]
+2025-02-21T18:43:52.294960+00:00 fv-az1236-360 kernel:   node   0: [mem 0x000000003e880000-0x000000003fc7ffff]
+2025-02-21T18:43:52.294961+00:00 fv-az1236-360 kernel:   node   0: [mem 0x000000003fc80000-0x000000003fcfffff]
+2025-02-21T18:43:52.294962+00:00 fv-az1236-360 kernel:   node   0: [mem 0x000000003fd00000-0x000000003fffffff]
+2025-02-21T18:43:52.294963+00:00 fv-az1236-360 kernel:   node   0: [mem 0x0000000100000000-0x00000004bfffffff]
+2025-02-21T18:43:52.294963+00:00 fv-az1236-360 kernel: Initmem setup node 0 [mem 0x0000000000000000-0x00000004bfffffff]
+2025-02-21T18:43:52.294964+00:00 fv-az1236-360 kernel: On node 0, zone DMA: 36 pages in unavailable ranges
+2025-02-21T18:43:52.294966+00:00 fv-az1236-360 kernel: cma: Reserved 32 MiB at 0x000000003c200000 on node -1
+2025-02-21T18:43:52.294966+00:00 fv-az1236-360 kernel: psci: probing for conduit method from ACPI.
+2025-02-21T18:43:52.294968+00:00 fv-az1236-360 kernel: psci: PSCIv1.1 detected in firmware.
+2025-02-21T18:43:52.294969+00:00 fv-az1236-360 kernel: psci: Using standard PSCI v0.2 function IDs
+2025-02-21T18:43:52.294969+00:00 fv-az1236-360 kernel: psci: MIGRATE_INFO_TYPE not supported.
+2025-02-21T18:43:52.294970+00:00 fv-az1236-360 kernel: psci: SMC Calling Convention v1.4
+2025-02-21T18:43:52.294970+00:00 fv-az1236-360 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x0 -> Node 0
+2025-02-21T18:43:52.294971+00:00 fv-az1236-360 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x1 -> Node 0
+2025-02-21T18:43:52.294971+00:00 fv-az1236-360 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x2 -> Node 0
+2025-02-21T18:43:52.294972+00:00 fv-az1236-360 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x3 -> Node 0
+2025-02-21T18:43:52.294973+00:00 fv-az1236-360 kernel: percpu: Embedded 54 pages/cpu s94952 r8192 d118040 u221184
+2025-02-21T18:43:52.294973+00:00 fv-az1236-360 kernel: pcpu-alloc: s94952 r8192 d118040 u221184 alloc=54*4096
+2025-02-21T18:43:52.294975+00:00 fv-az1236-360 kernel: pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+2025-02-21T18:43:52.294975+00:00 fv-az1236-360 kernel: Detected PIPT I-cache on CPU0
+2025-02-21T18:43:52.294976+00:00 fv-az1236-360 kernel: CPU features: detected: Address authentication (architected QARMA5 algorithm)
+2025-02-21T18:43:52.294977+00:00 fv-az1236-360 kernel: CPU features: detected: GIC system register CPU interface
+2025-02-21T18:43:52.294977+00:00 fv-az1236-360 kernel: CPU features: detected: Spectre-v4
+2025-02-21T18:43:52.294978+00:00 fv-az1236-360 kernel: CPU features: detected: Spectre-BHB
+2025-02-21T18:43:52.294979+00:00 fv-az1236-360 kernel: CPU features: kernel page table isolation forced ON by KASLR
+2025-02-21T18:43:52.294979+00:00 fv-az1236-360 kernel: CPU features: detected: Kernel page table isolation (KPTI)
+2025-02-21T18:43:52.294980+00:00 fv-az1236-360 kernel: CPU features: detected: ARM erratum 2067961 or 2054223
+2025-02-21T18:43:52.294981+00:00 fv-az1236-360 kernel: CPU features: detected: SSBS not fully self-synchronizing
+2025-02-21T18:43:52.294982+00:00 fv-az1236-360 kernel: alternatives: applying boot alternatives
+2025-02-21T18:43:52.294982+00:00 fv-az1236-360 kernel: Kernel command line: BOOT_IMAGE=/vmlinuz-6.8.0-1020-azure root=PARTUUID=4f272e3f-0227-4db4-9524-8a66ff2d1348 ro console=tty1 console=ttyAMA0 earlycon=pl011,0xeffec000 initcall_blacklist=arm_pmu_acpi_init nvme_core.io_timeout=240 panic=-1
+2025-02-21T18:43:52.294982+00:00 fv-az1236-360 kernel: blacklisting initcall arm_pmu_acpi_init
+2025-02-21T18:43:52.294983+00:00 fv-az1236-360 kernel: Unknown kernel command line parameters "BOOT_IMAGE=/vmlinuz-6.8.0-1020-azure", will be passed to user space.
+2025-02-21T18:43:52.294984+00:00 fv-az1236-360 kernel: Dentry cache hash table entries: 2097152 (order: 12, 16777216 bytes, linear)
+2025-02-21T18:43:52.294985+00:00 fv-az1236-360 kernel: Inode-cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+2025-02-21T18:43:52.294987+00:00 fv-az1236-360 kernel: Fallback order for Node 0: 0 
+2025-02-21T18:43:52.294987+00:00 fv-az1236-360 kernel: Built 1 zonelists, mobility grouping on.  Total pages: 4128732
+2025-02-21T18:43:52.294988+00:00 fv-az1236-360 kernel: Policy zone: Normal
+2025-02-21T18:43:52.294988+00:00 fv-az1236-360 kernel: mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+2025-02-21T18:43:52.294989+00:00 fv-az1236-360 kernel: software IO TLB: area num 4.
+2025-02-21T18:43:52.294990+00:00 fv-az1236-360 kernel: software IO TLB: mapped [mem 0x0000000038200000-0x000000003c200000] (64MB)
+2025-02-21T18:43:52.294991+00:00 fv-az1236-360 kernel: Memory: 16296528K/16777072K available (21248K kernel code, 5256K rwdata, 16448K rodata, 12544K init, 1249K bss, 447776K reserved, 32768K cma-reserved)
+2025-02-21T18:43:52.294992+00:00 fv-az1236-360 kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+2025-02-21T18:43:52.294993+00:00 fv-az1236-360 kernel: ftrace: allocating 64138 entries in 251 pages
+2025-02-21T18:43:52.294993+00:00 fv-az1236-360 kernel: ftrace: allocated 251 pages with 7 groups
+2025-02-21T18:43:52.294993+00:00 fv-az1236-360 kernel: trace event string verifier disabled
+2025-02-21T18:43:52.294994+00:00 fv-az1236-360 kernel: rcu: Hierarchical RCU implementation.
+2025-02-21T18:43:52.294995+00:00 fv-az1236-360 kernel: rcu: 	RCU restricting CPUs from NR_CPUS=512 to nr_cpu_ids=4.
+2025-02-21T18:43:52.294996+00:00 fv-az1236-360 kernel: 	Rude variant of Tasks RCU enabled.
+2025-02-21T18:43:52.294996+00:00 fv-az1236-360 kernel: 	Tracing variant of Tasks RCU enabled.
+2025-02-21T18:43:52.294997+00:00 fv-az1236-360 kernel: rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+2025-02-21T18:43:52.294999+00:00 fv-az1236-360 kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+2025-02-21T18:43:52.294999+00:00 fv-az1236-360 kernel: NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+2025-02-21T18:43:52.295000+00:00 fv-az1236-360 kernel: GICv3: 960 SPIs implemented
+2025-02-21T18:43:52.295000+00:00 fv-az1236-360 kernel: GICv3: 0 Extended SPIs implemented
+2025-02-21T18:43:52.295001+00:00 fv-az1236-360 kernel: Root IRQ handler: gic_handle_irq
+2025-02-21T18:43:52.295031+00:00 fv-az1236-360 kernel: GICv3: GICv3 features: 16 PPIs, RSS
+2025-02-21T18:43:52.295032+00:00 fv-az1236-360 kernel: GICv3: CPU0: found redistributor 0 region 0:0x00000000effee000
+2025-02-21T18:43:52.295033+00:00 fv-az1236-360 kernel: ITS: No ITS available, not enabling LPIs
+2025-02-21T18:43:52.295033+00:00 fv-az1236-360 kernel: rcu: srcu_init: Setting srcu_struct sizes based on contention.
+2025-02-21T18:43:52.295034+00:00 fv-az1236-360 kernel: arch_timer: cp15 timer(s) running at 1000.00MHz (virt).
+2025-02-21T18:43:52.295036+00:00 fv-az1236-360 kernel: clocksource: arch_sys_counter: mask: 0x1fffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+2025-02-21T18:43:52.295036+00:00 fv-az1236-360 kernel: sched_clock: 61 bits at 1000MHz, resolution 1ns, wraps every 4398046511103ns
+2025-02-21T18:43:52.295036+00:00 fv-az1236-360 kernel: Console: colour dummy device 80x25
+2025-02-21T18:43:52.295037+00:00 fv-az1236-360 kernel: printk: legacy console [tty1] enabled
+2025-02-21T18:43:52.295037+00:00 fv-az1236-360 kernel: ACPI: Core revision 20230628
+2025-02-21T18:43:52.295038+00:00 fv-az1236-360 kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 2000.00 BogoMIPS (lpj=1000000)
+2025-02-21T18:43:52.295039+00:00 fv-az1236-360 kernel: pid_max: default: 32768 minimum: 301
+2025-02-21T18:43:52.295039+00:00 fv-az1236-360 kernel: LSM: initializing lsm=lockdown,capability,landlock,yama,apparmor,integrity
+2025-02-21T18:43:52.295040+00:00 fv-az1236-360 kernel: landlock: Up and running.
+2025-02-21T18:43:52.295040+00:00 fv-az1236-360 kernel: Yama: becoming mindful.
+2025-02-21T18:43:52.295040+00:00 fv-az1236-360 kernel: AppArmor: AppArmor initialized
+2025-02-21T18:43:52.295042+00:00 fv-az1236-360 kernel: Mount-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+2025-02-21T18:43:52.295043+00:00 fv-az1236-360 kernel: Mountpoint-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+2025-02-21T18:43:52.295045+00:00 fv-az1236-360 kernel: RCU Tasks Rude: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1.
+2025-02-21T18:43:52.295045+00:00 fv-az1236-360 kernel: RCU Tasks Trace: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1.
+2025-02-21T18:43:52.295046+00:00 fv-az1236-360 kernel: Hyper-V: privilege flags low 0x2e7f, high 0x3b8030, hints 0x1e0000e, misc 0x31e1
+2025-02-21T18:43:52.295046+00:00 fv-az1236-360 kernel: Hyper-V: Host Build 10.0.26100.1145-1-0
+2025-02-21T18:43:52.295047+00:00 fv-az1236-360 kernel: Hyper-V: enabling crash_kexec_post_notifiers
+2025-02-21T18:43:52.295048+00:00 fv-az1236-360 kernel: rcu: Hierarchical SRCU implementation.
+2025-02-21T18:43:52.295048+00:00 fv-az1236-360 kernel: rcu: 	Max phase no-delay instances is 400.
+2025-02-21T18:43:52.295048+00:00 fv-az1236-360 kernel: Remapping and enabling EFI services.
+2025-02-21T18:43:52.295049+00:00 fv-az1236-360 kernel: smp: Bringing up secondary CPUs ...
+2025-02-21T18:43:52.295051+00:00 fv-az1236-360 kernel: Detected PIPT I-cache on CPU1
+2025-02-21T18:43:52.295051+00:00 fv-az1236-360 kernel: GICv3: CPU1: found redistributor 1 region 1:0x00000000f000e000
+2025-02-21T18:43:52.295052+00:00 fv-az1236-360 kernel: CPU1: Booted secondary processor 0x0000000001 [0x410fd490]
+2025-02-21T18:43:52.295053+00:00 fv-az1236-360 kernel: Detected PIPT I-cache on CPU2
+2025-02-21T18:43:52.295053+00:00 fv-az1236-360 kernel: GICv3: CPU2: found redistributor 2 region 2:0x00000000f002e000
+2025-02-21T18:43:52.295053+00:00 fv-az1236-360 kernel: CPU2: Booted secondary processor 0x0000000002 [0x410fd490]
+2025-02-21T18:43:52.295055+00:00 fv-az1236-360 kernel: Detected PIPT I-cache on CPU3
+2025-02-21T18:43:52.295055+00:00 fv-az1236-360 kernel: GICv3: CPU3: found redistributor 3 region 3:0x00000000f004e000
+2025-02-21T18:43:52.295057+00:00 fv-az1236-360 kernel: CPU3: Booted secondary processor 0x0000000003 [0x410fd490]
+2025-02-21T18:43:52.295058+00:00 fv-az1236-360 kernel: smp: Brought up 1 node, 4 CPUs
+2025-02-21T18:43:52.295058+00:00 fv-az1236-360 kernel: SMP: Total of 4 processors activated.
+2025-02-21T18:43:52.295060+00:00 fv-az1236-360 kernel: CPU: All CPU(s) started at EL1
+2025-02-21T18:43:52.295061+00:00 fv-az1236-360 kernel: CPU features: detected: 32-bit EL0 Support
+2025-02-21T18:43:52.295061+00:00 fv-az1236-360 kernel: CPU features: detected: Instruction cache invalidation not required for I/D coherence
+2025-02-21T18:43:52.295061+00:00 fv-az1236-360 kernel: CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+2025-02-21T18:43:52.295063+00:00 fv-az1236-360 kernel: CPU features: detected: Common not Private translations
+2025-02-21T18:43:52.295063+00:00 fv-az1236-360 kernel: CPU features: detected: CRC32 instructions
+2025-02-21T18:43:52.295064+00:00 fv-az1236-360 kernel: CPU features: detected: Data cache clean to Point of Deep Persistence
+2025-02-21T18:43:52.295064+00:00 fv-az1236-360 kernel: CPU features: detected: Data cache clean to Point of Persistence
+2025-02-21T18:43:52.295064+00:00 fv-az1236-360 kernel: CPU features: detected: Generic authentication (architected QARMA5 algorithm)
+2025-02-21T18:43:52.295066+00:00 fv-az1236-360 kernel: CPU features: detected: RCpc load-acquire (LDAPR)
+2025-02-21T18:43:52.295067+00:00 fv-az1236-360 kernel: CPU features: detected: LSE atomic instructions
+2025-02-21T18:43:52.295067+00:00 fv-az1236-360 kernel: CPU features: detected: Privileged Access Never
+2025-02-21T18:43:52.295068+00:00 fv-az1236-360 kernel: CPU features: detected: Speculation barrier (SB)
+2025-02-21T18:43:52.295070+00:00 fv-az1236-360 kernel: CPU features: detected: TLB range maintenance instructions
+2025-02-21T18:43:52.295070+00:00 fv-az1236-360 kernel: CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+2025-02-21T18:43:52.295071+00:00 fv-az1236-360 kernel: CPU features: detected: Scalable Vector Extension
+2025-02-21T18:43:52.295072+00:00 fv-az1236-360 kernel: alternatives: applying system-wide alternatives
+2025-02-21T18:43:52.295073+00:00 fv-az1236-360 kernel: CPU features: detected: Hardware dirty bit management on CPU0-3
+2025-02-21T18:43:52.295073+00:00 fv-az1236-360 kernel: SVE: maximum available vector length 16 bytes per vector
+2025-02-21T18:43:52.295074+00:00 fv-az1236-360 kernel: SVE: default vector length 16 bytes per vector
+2025-02-21T18:43:52.295075+00:00 fv-az1236-360 kernel: devtmpfs: initialized
+2025-02-21T18:43:52.295076+00:00 fv-az1236-360 kernel: setend instruction emulation is not supported on this system
+2025-02-21T18:43:52.295076+00:00 fv-az1236-360 kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+2025-02-21T18:43:52.295077+00:00 fv-az1236-360 kernel: futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+2025-02-21T18:43:52.295078+00:00 fv-az1236-360 kernel: pinctrl core: initialized pinctrl subsystem
+2025-02-21T18:43:52.295078+00:00 fv-az1236-360 kernel: SMBIOS 3.1.0 present.
+2025-02-21T18:43:52.295079+00:00 fv-az1236-360 kernel: DMI: Microsoft Corporation Virtual Machine/Virtual Machine, BIOS Hyper-V UEFI Release v4.1 09/28/2024
+2025-02-21T18:43:52.295341+00:00 fv-az1236-360 kernel: NET: Registered PF_NETLINK/PF_ROUTE protocol family
+2025-02-21T18:43:52.295342+00:00 fv-az1236-360 kernel: DMA: preallocated 2048 KiB GFP_KERNEL pool for atomic allocations
+2025-02-21T18:43:52.295344+00:00 fv-az1236-360 kernel: DMA: preallocated 2048 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+2025-02-21T18:43:52.295344+00:00 fv-az1236-360 kernel: DMA: preallocated 2048 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+2025-02-21T18:43:52.295345+00:00 fv-az1236-360 kernel: audit: initializing netlink subsys (disabled)
+2025-02-21T18:43:52.295345+00:00 fv-az1236-360 kernel: audit: type=2000 audit(0.066:1): state=initialized audit_enabled=0 res=1
+2025-02-21T18:43:52.295345+00:00 fv-az1236-360 kernel: thermal_sys: Registered thermal governor 'fair_share'
+2025-02-21T18:43:52.295346+00:00 fv-az1236-360 kernel: thermal_sys: Registered thermal governor 'bang_bang'
+2025-02-21T18:43:52.295347+00:00 fv-az1236-360 kernel: thermal_sys: Registered thermal governor 'step_wise'
+2025-02-21T18:43:52.295348+00:00 fv-az1236-360 kernel: thermal_sys: Registered thermal governor 'user_space'
+2025-02-21T18:43:52.295348+00:00 fv-az1236-360 kernel: thermal_sys: Registered thermal governor 'power_allocator'
+2025-02-21T18:43:52.295348+00:00 fv-az1236-360 kernel: cpuidle: using governor ladder
+2025-02-21T18:43:52.295349+00:00 fv-az1236-360 kernel: cpuidle: using governor menu
+2025-02-21T18:43:52.295349+00:00 fv-az1236-360 kernel: hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+2025-02-21T18:43:52.295349+00:00 fv-az1236-360 kernel: ASID allocator initialised with 32768 entries
+2025-02-21T18:43:52.295350+00:00 fv-az1236-360 kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+2025-02-21T18:43:52.295350+00:00 fv-az1236-360 kernel: Serial: AMBA PL011 UART driver
+2025-02-21T18:43:52.295351+00:00 fv-az1236-360 kernel: Modules: 2G module region forced by RANDOMIZE_MODULE_REGION_FULL
+2025-02-21T18:43:52.295353+00:00 fv-az1236-360 kernel: Modules: 0 pages in range for non-PLT usage
+2025-02-21T18:43:52.295353+00:00 fv-az1236-360 kernel: Modules: 510048 pages in range for PLT usage
+2025-02-21T18:43:52.295354+00:00 fv-az1236-360 kernel: HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+2025-02-21T18:43:52.295355+00:00 fv-az1236-360 kernel: HugeTLB: 0 KiB vmemmap can be freed for a 1.00 GiB page
+2025-02-21T18:43:52.295356+00:00 fv-az1236-360 kernel: HugeTLB: registered 32.0 MiB page size, pre-allocated 0 pages
+2025-02-21T18:43:52.295357+00:00 fv-az1236-360 kernel: HugeTLB: 0 KiB vmemmap can be freed for a 32.0 MiB page
+2025-02-21T18:43:52.295357+00:00 fv-az1236-360 kernel: HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+2025-02-21T18:43:52.295357+00:00 fv-az1236-360 kernel: HugeTLB: 0 KiB vmemmap can be freed for a 2.00 MiB page
+2025-02-21T18:43:52.295358+00:00 fv-az1236-360 kernel: HugeTLB: registered 64.0 KiB page size, pre-allocated 0 pages
+2025-02-21T18:43:52.295359+00:00 fv-az1236-360 kernel: HugeTLB: 0 KiB vmemmap can be freed for a 64.0 KiB page
+2025-02-21T18:43:52.295360+00:00 fv-az1236-360 kernel: fbcon: Taking over console
+2025-02-21T18:43:52.295361+00:00 fv-az1236-360 kernel: ACPI: Added _OSI(Module Device)
+2025-02-21T18:43:52.295362+00:00 fv-az1236-360 kernel: ACPI: Added _OSI(Processor Device)
+2025-02-21T18:43:52.295362+00:00 fv-az1236-360 kernel: ACPI: Added _OSI(3.0 _SCP Extensions)
+2025-02-21T18:43:52.295362+00:00 fv-az1236-360 kernel: ACPI: Added _OSI(Processor Aggregator Device)
+2025-02-21T18:43:52.295363+00:00 fv-az1236-360 kernel: ACPI: 1 ACPI AML tables successfully acquired and loaded
+2025-02-21T18:43:52.295377+00:00 fv-az1236-360 kernel: ACPI: Interpreter enabled
+2025-02-21T18:43:52.295378+00:00 fv-az1236-360 kernel: ACPI: Using GIC for interrupt routing
+2025-02-21T18:43:52.295379+00:00 fv-az1236-360 kernel: ARMH0011:00: ttyAMA0 at MMIO 0xeffec000 (irq = 12, base_baud = 0) is a SBSA
+2025-02-21T18:43:52.295380+00:00 fv-az1236-360 kernel: printk: legacy console [ttyAMA0] enabled
+2025-02-21T18:43:52.295380+00:00 fv-az1236-360 kernel: printk: legacy bootconsole [pl11] disabled
+2025-02-21T18:43:52.295380+00:00 fv-az1236-360 kernel: ARMH0011:01: ttyAMA1 at MMIO 0xeffeb000 (irq = 13, base_baud = 0) is a SBSA
+2025-02-21T18:43:52.295383+00:00 fv-az1236-360 kernel: iommu: Default domain type: Translated
+2025-02-21T18:43:52.295384+00:00 fv-az1236-360 kernel: iommu: DMA domain TLB invalidation policy: strict mode
+2025-02-21T18:43:52.295385+00:00 fv-az1236-360 kernel: SCSI subsystem initialized
+2025-02-21T18:43:52.295385+00:00 fv-az1236-360 kernel: libata version 3.00 loaded.
+2025-02-21T18:43:52.295385+00:00 fv-az1236-360 kernel: ACPI: bus type USB registered
+2025-02-21T18:43:52.295386+00:00 fv-az1236-360 kernel: usbcore: registered new interface driver usbfs
+2025-02-21T18:43:52.295387+00:00 fv-az1236-360 kernel: usbcore: registered new interface driver hub
+2025-02-21T18:43:52.295392+00:00 fv-az1236-360 kernel: usbcore: registered new device driver usb
+2025-02-21T18:43:52.295393+00:00 fv-az1236-360 kernel: pps_core: LinuxPPS API ver. 1 registered
+2025-02-21T18:43:52.295427+00:00 fv-az1236-360 kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+2025-02-21T18:43:52.295427+00:00 fv-az1236-360 kernel: PTP clock support registered
+2025-02-21T18:43:52.295428+00:00 fv-az1236-360 kernel: EDAC MC: Ver: 3.0.0
+2025-02-21T18:43:52.295429+00:00 fv-az1236-360 kernel: scmi_core: SCMI protocol bus registered
+2025-02-21T18:43:52.295432+00:00 fv-az1236-360 kernel: efivars: Registered efivars operations
+2025-02-21T18:43:52.295432+00:00 fv-az1236-360 kernel: hv_vmbus: Vmbus version:5.3
+2025-02-21T18:43:52.295433+00:00 fv-az1236-360 kernel: initcall arm_pmu_acpi_init blacklisted
+2025-02-21T18:43:52.295433+00:00 fv-az1236-360 kernel: NetLabel: Initializing
+2025-02-21T18:43:52.295434+00:00 fv-az1236-360 kernel: NetLabel:  domain hash size = 128
+2025-02-21T18:43:52.295435+00:00 fv-az1236-360 kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+2025-02-21T18:43:52.295435+00:00 fv-az1236-360 kernel: NetLabel:  unlabeled traffic allowed by default
+2025-02-21T18:43:52.295437+00:00 fv-az1236-360 kernel: mctp: management component transport protocol core
+2025-02-21T18:43:52.295438+00:00 fv-az1236-360 kernel: NET: Registered PF_MCTP protocol family
+2025-02-21T18:43:52.295439+00:00 fv-az1236-360 kernel: vgaarb: loaded
+2025-02-21T18:43:52.295440+00:00 fv-az1236-360 kernel: clocksource: Switched to clocksource arch_sys_counter
+2025-02-21T18:43:52.295440+00:00 fv-az1236-360 kernel: VFS: Disk quotas dquot_6.6.0
+2025-02-21T18:43:52.295440+00:00 fv-az1236-360 kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+2025-02-21T18:43:52.295444+00:00 fv-az1236-360 kernel: AppArmor: AppArmor Filesystem Enabled
+2025-02-21T18:43:52.295445+00:00 fv-az1236-360 kernel: pnp: PnP ACPI init
+2025-02-21T18:43:52.295446+00:00 fv-az1236-360 kernel: pnp: PnP ACPI: found 0 devices
+2025-02-21T18:43:52.295446+00:00 fv-az1236-360 kernel: NET: Registered PF_INET protocol family
+2025-02-21T18:43:52.295447+00:00 fv-az1236-360 kernel: IP idents hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+2025-02-21T18:43:52.295449+00:00 fv-az1236-360 kernel: tcp_listen_portaddr_hash hash table entries: 8192 (order: 5, 131072 bytes, linear)
+2025-02-21T18:43:52.295451+00:00 fv-az1236-360 kernel: Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+2025-02-21T18:43:52.295451+00:00 fv-az1236-360 kernel: TCP established hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+2025-02-21T18:43:52.295452+00:00 fv-az1236-360 kernel: TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+2025-02-21T18:43:52.295452+00:00 fv-az1236-360 kernel: TCP: Hash tables configured (established 131072 bind 65536)
+2025-02-21T18:43:52.295452+00:00 fv-az1236-360 kernel: MPTCP token hash table entries: 16384 (order: 6, 393216 bytes, linear)
+2025-02-21T18:43:52.295453+00:00 fv-az1236-360 kernel: UDP hash table entries: 8192 (order: 6, 262144 bytes, linear)
+2025-02-21T18:43:52.295454+00:00 fv-az1236-360 kernel: UDP-Lite hash table entries: 8192 (order: 6, 262144 bytes, linear)
+2025-02-21T18:43:52.295456+00:00 fv-az1236-360 kernel: NET: Registered PF_UNIX/PF_LOCAL protocol family
+2025-02-21T18:43:52.295458+00:00 fv-az1236-360 kernel: NET: Registered PF_XDP protocol family
+2025-02-21T18:43:52.295458+00:00 fv-az1236-360 kernel: PCI: CLS 0 bytes, default 64
+2025-02-21T18:43:52.295459+00:00 fv-az1236-360 kernel: kvm [1]: HYP mode not available
+2025-02-21T18:43:52.295459+00:00 fv-az1236-360 kernel: Initialise system trusted keyrings
+2025-02-21T18:43:52.295459+00:00 fv-az1236-360 kernel: Key type blacklist registered
+2025-02-21T18:43:52.295462+00:00 fv-az1236-360 kernel: workingset: timestamp_bits=40 max_order=22 bucket_order=0
+2025-02-21T18:43:52.295463+00:00 fv-az1236-360 kernel: zbud: loaded
+2025-02-21T18:43:52.295463+00:00 fv-az1236-360 kernel: squashfs: version 4.0 (2009/01/31) Phillip Lougher
+2025-02-21T18:43:52.295464+00:00 fv-az1236-360 kernel: fuse: init (API version 7.39)
+2025-02-21T18:43:52.295464+00:00 fv-az1236-360 kernel: integrity: Platform Keyring initialized
+2025-02-21T18:43:52.295464+00:00 fv-az1236-360 kernel: integrity: Machine keyring initialized
+2025-02-21T18:43:52.295465+00:00 fv-az1236-360 kernel: Key type asymmetric registered
+2025-02-21T18:43:52.295467+00:00 fv-az1236-360 kernel: Asymmetric key parser 'x509' registered
+2025-02-21T18:43:52.295468+00:00 fv-az1236-360 kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 242)
+2025-02-21T18:43:52.295469+00:00 fv-az1236-360 kernel: io scheduler mq-deadline registered
+2025-02-21T18:43:52.295469+00:00 fv-az1236-360 kernel: shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+2025-02-21T18:43:52.295470+00:00 fv-az1236-360 kernel: hv_vmbus: registering driver hv_pci
+2025-02-21T18:43:52.295471+00:00 fv-az1236-360 kernel: hv_pci 60a48af1-6632-433e-b3f0-a71efdbd8e42: PCI VMBus probing: Using version 0x10004
+2025-02-21T18:43:52.295472+00:00 fv-az1236-360 kernel: hv_pci 60a48af1-6632-433e-b3f0-a71efdbd8e42: PCI host bridge to bus 6632:00
+2025-02-21T18:43:52.295473+00:00 fv-az1236-360 kernel: pci_bus 6632:00: root bus resource [mem 0xfc0000000-0xfc00fffff window]
+2025-02-21T18:43:52.295474+00:00 fv-az1236-360 kernel: pci_bus 6632:00: No busn resource found for root bus, will use [bus 00-ff]
+2025-02-21T18:43:52.295474+00:00 fv-az1236-360 kernel: pci 6632:00:00.0: [1414:b111] type 00 class 0x010802 PCIe Endpoint
+2025-02-21T18:43:52.295474+00:00 fv-az1236-360 kernel: pci 6632:00:00.0: BAR 0 [mem 0xfc0000000-0xfc00fffff 64bit]
+2025-02-21T18:43:52.295475+00:00 fv-az1236-360 kernel: pci_bus 6632:00: busn_res: [bus 00-ff] end is updated to 00
+2025-02-21T18:43:52.295477+00:00 fv-az1236-360 kernel: pci 6632:00:00.0: BAR 0 [mem 0xfc0000000-0xfc00fffff 64bit]: assigned
+2025-02-21T18:43:52.295479+00:00 fv-az1236-360 kernel: Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+2025-02-21T18:43:52.295479+00:00 fv-az1236-360 kernel: msm_serial: driver initialized
+2025-02-21T18:43:52.295479+00:00 fv-az1236-360 kernel: SuperH (H)SCI(F) driver initialized
+2025-02-21T18:43:52.295480+00:00 fv-az1236-360 kernel: loop: module loaded
+2025-02-21T18:43:52.295480+00:00 fv-az1236-360 kernel: hv_vmbus: registering driver hv_storvsc
+2025-02-21T18:43:52.295481+00:00 fv-az1236-360 kernel: ACPI: bus type drm_connector registered
+2025-02-21T18:43:52.295483+00:00 fv-az1236-360 kernel: nvme nvme0: pci function 6632:00:00.0
+2025-02-21T18:43:52.295485+00:00 fv-az1236-360 kernel: scsi host1: storvsc_host_t
+2025-02-21T18:43:52.295485+00:00 fv-az1236-360 kernel: tun: Universal TUN/TAP device driver, 1.6
+2025-02-21T18:43:52.295485+00:00 fv-az1236-360 kernel: scsi host0: storvsc_host_t
+2025-02-21T18:43:52.295486+00:00 fv-az1236-360 kernel: PPP generic driver version 2.4.2
+2025-02-21T18:43:52.295486+00:00 fv-az1236-360 kernel: scsi 0:0:0:0: Direct-Access     Msft     Virtual Disk     1.0  PQ: 0 ANSI: 5
+2025-02-21T18:43:52.295489+00:00 fv-az1236-360 kernel: mousedev: PS/2 mouse device common for all mice
+2025-02-21T18:43:52.295491+00:00 fv-az1236-360 kernel: scsi 0:0:0:2: CD-ROM            Msft     Virtual DVD-ROM  1.0  PQ: 0 ANSI: 5
+2025-02-21T18:43:52.295491+00:00 fv-az1236-360 kernel: nvme 6632:00:00.0: enabling device (0000 -> 0002)
+2025-02-21T18:43:52.295491+00:00 fv-az1236-360 kernel: rtc-efi rtc-efi.0: registered as rtc0
+2025-02-21T18:43:52.295492+00:00 fv-az1236-360 kernel: rtc-efi rtc-efi.0: setting system clock to 2025-02-21T18:43:03 UTC (1740163383)
+2025-02-21T18:43:52.295492+00:00 fv-az1236-360 kernel: sd 0:0:0:0: Attached scsi generic sg0 type 0
+2025-02-21T18:43:52.295493+00:00 fv-az1236-360 kernel: sd 0:0:0:0: [sda] 157286400 512-byte logical blocks: (80.5 GB/75.0 GiB)
+2025-02-21T18:43:52.295495+00:00 fv-az1236-360 kernel: sd 0:0:0:0: [sda] 4096-byte physical blocks
+2025-02-21T18:43:52.295496+00:00 fv-az1236-360 kernel: sd 0:0:0:0: [sda] Write Protect is off
+2025-02-21T18:43:52.295496+00:00 fv-az1236-360 kernel: sd 0:0:0:0: [sda] Mode Sense: 0f 00 10 00
+2025-02-21T18:43:52.295497+00:00 fv-az1236-360 kernel: sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, supports DPO and FUA
+2025-02-21T18:43:52.295497+00:00 fv-az1236-360 kernel:  sda: sda1 sda15 sda16
+2025-02-21T18:43:52.295497+00:00 fv-az1236-360 kernel: sd 0:0:0:0: [sda] Attached SCSI disk
+2025-02-21T18:43:52.295499+00:00 fv-az1236-360 kernel: i2c_dev: i2c /dev entries driver
+2025-02-21T18:43:52.295500+00:00 fv-az1236-360 kernel: sr 0:0:0:2: [sr0] scsi-1 drive
+2025-02-21T18:43:52.295500+00:00 fv-az1236-360 kernel: device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+2025-02-21T18:43:52.295501+00:00 fv-az1236-360 kernel: cdrom: Uniform CD-ROM driver Revision: 3.20
+2025-02-21T18:43:52.295501+00:00 fv-az1236-360 kernel: device-mapper: uevent: version 1.0.3
+2025-02-21T18:43:52.295501+00:00 fv-az1236-360 kernel: sr 0:0:0:2: Attached scsi CD-ROM sr0
+2025-02-21T18:43:52.295503+00:00 fv-az1236-360 kernel: device-mapper: ioctl: 4.48.0-ioctl (2023-03-01) initialised: dm-devel@redhat.com
+2025-02-21T18:43:52.295504+00:00 fv-az1236-360 kernel: sr 0:0:0:2: Attached scsi generic sg1 type 5
+2025-02-21T18:43:52.295505+00:00 fv-az1236-360 kernel: ledtrig-cpu: registered to indicate activity on CPUs
+2025-02-21T18:43:52.295505+00:00 fv-az1236-360 kernel: [drm] Initialized simpledrm 1.0.0 20200625 for simple-framebuffer.0 on minor 0
+2025-02-21T18:43:52.295505+00:00 fv-az1236-360 kernel: Console: switching to colour frame buffer device 128x48
+2025-02-21T18:43:52.295508+00:00 fv-az1236-360 kernel: simple-framebuffer simple-framebuffer.0: [drm] fb0: simpledrmdrmfb frame buffer device
+2025-02-21T18:43:52.295508+00:00 fv-az1236-360 kernel: SMCCC: SOC_ID: ARCH_SOC_ID not implemented, skipping ....
+2025-02-21T18:43:52.295510+00:00 fv-az1236-360 kernel: hv_utils: Registering HyperV Utility Driver
+2025-02-21T18:43:52.295510+00:00 fv-az1236-360 kernel: hv_vmbus: registering driver hv_utils
+2025-02-21T18:43:52.295511+00:00 fv-az1236-360 kernel: hv_vmbus: registering driver hv_balloon
+2025-02-21T18:43:52.295512+00:00 fv-az1236-360 kernel: hv_utils: Heartbeat IC version 3.0
+2025-02-21T18:43:52.295513+00:00 fv-az1236-360 kernel: hv_utils: Shutdown IC version 3.2
+2025-02-21T18:43:52.295513+00:00 fv-az1236-360 kernel: hv_utils: TimeSync IC version 4.0
+2025-02-21T18:43:52.295515+00:00 fv-az1236-360 kernel: hw perfevents: enabled with armv8_pmuv3_0 PMU driver, 7 counters available
+2025-02-21T18:43:52.295515+00:00 fv-az1236-360 kernel: hv_balloon: Using Dynamic Memory protocol version 2.0
+2025-02-21T18:43:52.295516+00:00 fv-az1236-360 kernel: watchdog: Delayed init of the lockup detector failed: -19
+2025-02-21T18:43:52.295517+00:00 fv-az1236-360 kernel: hv_balloon: Memory hot add disabled on ARM64
+2025-02-21T18:43:52.295517+00:00 fv-az1236-360 kernel: watchdog: Hard watchdog permanently disabled
+2025-02-21T18:43:52.295518+00:00 fv-az1236-360 kernel: drop_monitor: Initializing network drop monitor service
+2025-02-21T18:43:52.295520+00:00 fv-az1236-360 kernel: NET: Registered PF_INET6 protocol family
+2025-02-21T18:43:52.295520+00:00 fv-az1236-360 kernel: Segment Routing with IPv6
+2025-02-21T18:43:52.295521+00:00 fv-az1236-360 kernel: In-situ OAM (IOAM) with IPv6
+2025-02-21T18:43:52.295521+00:00 fv-az1236-360 kernel: NET: Registered PF_PACKET protocol family
+2025-02-21T18:43:52.295522+00:00 fv-az1236-360 kernel: Key type dns_resolver registered
+2025-02-21T18:43:52.295522+00:00 fv-az1236-360 kernel: registered taskstats version 1
+2025-02-21T18:43:52.295522+00:00 fv-az1236-360 kernel: Loading compiled-in X.509 certificates
+2025-02-21T18:43:52.295524+00:00 fv-az1236-360 kernel: Loaded X.509 cert 'Build time autogenerated kernel key: 138508dbf08dfa311431149c12181222d93ce031'
+2025-02-21T18:43:52.295525+00:00 fv-az1236-360 kernel: Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+2025-02-21T18:43:52.295525+00:00 fv-az1236-360 kernel: Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+2025-02-21T18:43:52.295527+00:00 fv-az1236-360 kernel: blacklist: Loading compiled-in revocation X.509 certificates
+2025-02-21T18:43:52.295527+00:00 fv-az1236-360 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+2025-02-21T18:43:52.295551+00:00 fv-az1236-360 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2017): 242ade75ac4a15e50d50c84b0d45ff3eae707a03'
+2025-02-21T18:43:52.295554+00:00 fv-az1236-360 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (ESM 2018): 365188c1d374d6b07c3c8f240f8ef722433d6a8b'
+2025-02-21T18:43:52.295555+00:00 fv-az1236-360 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2019): c0746fd6c5da3ae827864651ad66ae47fe24b3e8'
+2025-02-21T18:43:52.295556+00:00 fv-az1236-360 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v1): a8d54bbb3825cfb94fa13c9f8a594a195c107b8d'
+2025-02-21T18:43:52.295556+00:00 fv-az1236-360 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v2): 4cf046892d6fd3c9a5b03f98d845f90851dc6a8c'
+2025-02-21T18:43:52.295557+00:00 fv-az1236-360 kernel: nvme nvme0: 2/0/0 default/read/poll queues
+2025-02-21T18:43:52.295558+00:00 fv-az1236-360 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v3): 100437bb6de6e469b581e61cd66bce3ef4ed53af'
+2025-02-21T18:43:52.295560+00:00 fv-az1236-360 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (Ubuntu Core 2019): c1d57b8f6b743f23ee41f4f7ee292f06eecadfb9'
+2025-02-21T18:43:52.295560+00:00 fv-az1236-360 kernel: Key type .fscrypt registered
+2025-02-21T18:43:52.295560+00:00 fv-az1236-360 kernel: Key type fscrypt-provisioning registered
+2025-02-21T18:43:52.295561+00:00 fv-az1236-360 kernel: Key type encrypted registered
+2025-02-21T18:43:52.295561+00:00 fv-az1236-360 kernel: AppArmor: AppArmor sha256 policy hashing enabled
+2025-02-21T18:43:52.295562+00:00 fv-az1236-360 kernel: integrity: Loading X.509 certificate: UEFI:db
+2025-02-21T18:43:52.295565+00:00 fv-az1236-360 kernel: integrity: Loaded X.509 cert 'Microsoft Windows Production PCA 2011: a92902398e16c49778cd90f99e4f9ae17c55af53'
+2025-02-21T18:43:52.295566+00:00 fv-az1236-360 kernel: integrity: Loading X.509 certificate: UEFI:db
+2025-02-21T18:43:52.295566+00:00 fv-az1236-360 kernel: integrity: Loaded X.509 cert 'Microsoft Corporation: Windows UEFI CA 2023: aefc5fbbbe055d8f8daa585473499417ab5a5272'
+2025-02-21T18:43:52.295566+00:00 fv-az1236-360 kernel: ima: secureboot mode disabled
+2025-02-21T18:43:52.295568+00:00 fv-az1236-360 kernel: ima: No TPM chip found, activating TPM-bypass!
+2025-02-21T18:43:52.295568+00:00 fv-az1236-360 kernel: Loading compiled-in module X.509 certificates
+2025-02-21T18:43:52.295570+00:00 fv-az1236-360 kernel: Loaded X.509 cert 'Build time autogenerated kernel key: 138508dbf08dfa311431149c12181222d93ce031'
+2025-02-21T18:43:52.295570+00:00 fv-az1236-360 kernel: ima: Allocated hash algorithm: sha256
+2025-02-21T18:43:52.295571+00:00 fv-az1236-360 kernel: ima: No architecture policies found
+2025-02-21T18:43:52.295571+00:00 fv-az1236-360 kernel: evm: Initialising EVM extended attributes:
+2025-02-21T18:43:52.295571+00:00 fv-az1236-360 kernel: evm: security.selinux
+2025-02-21T18:43:52.295572+00:00 fv-az1236-360 kernel: evm: security.SMACK64
+2025-02-21T18:43:52.295575+00:00 fv-az1236-360 kernel: evm: security.SMACK64EXEC
+2025-02-21T18:43:52.295575+00:00 fv-az1236-360 kernel: evm: security.SMACK64TRANSMUTE
+2025-02-21T18:43:52.295576+00:00 fv-az1236-360 kernel: evm: security.SMACK64MMAP
+2025-02-21T18:43:52.295576+00:00 fv-az1236-360 kernel: evm: security.apparmor
+2025-02-21T18:43:52.295576+00:00 fv-az1236-360 kernel: evm: security.ima
+2025-02-21T18:43:52.295578+00:00 fv-az1236-360 kernel: evm: security.capability
+2025-02-21T18:43:52.295580+00:00 fv-az1236-360 kernel: evm: HMAC attrs: 0x1
+2025-02-21T18:43:52.295581+00:00 fv-az1236-360 kernel: clk: Disabling unused clocks
+2025-02-21T18:43:52.295581+00:00 fv-az1236-360 kernel: md: Waiting for all devices to be available before autodetect
+2025-02-21T18:43:52.295581+00:00 fv-az1236-360 kernel: md: If you don't use raid, use raid=noautodetect
+2025-02-21T18:43:52.295582+00:00 fv-az1236-360 kernel: md: Autodetecting RAID arrays.
+2025-02-21T18:43:52.295583+00:00 fv-az1236-360 kernel: md: autorun ...
+2025-02-21T18:43:52.295583+00:00 fv-az1236-360 kernel: md: ... autorun DONE.
+2025-02-21T18:43:52.295585+00:00 fv-az1236-360 kernel: EXT4-fs (sda1): mounted filesystem 692c13d5-7245-4081-8358-4627061583d6 ro with ordered data mode. Quota mode: none.
+2025-02-21T18:43:52.295586+00:00 fv-az1236-360 kernel: VFS: Mounted root (ext4 filesystem) readonly on device 8:1.
+2025-02-21T18:43:52.295586+00:00 fv-az1236-360 kernel: devtmpfs: mounted
+2025-02-21T18:43:52.295586+00:00 fv-az1236-360 kernel: Freeing unused kernel memory: 12544K
+2025-02-21T18:43:52.295587+00:00 fv-az1236-360 kernel: Checked W+X mappings: passed, no W+X pages found
+2025-02-21T18:43:52.295587+00:00 fv-az1236-360 kernel: Run /sbin/init as init process
+2025-02-21T18:43:52.295589+00:00 fv-az1236-360 kernel:   with arguments:
+2025-02-21T18:43:52.295590+00:00 fv-az1236-360 kernel:     /sbin/init
+2025-02-21T18:43:52.295590+00:00 fv-az1236-360 kernel:   with environment:
+2025-02-21T18:43:52.295590+00:00 fv-az1236-360 kernel:     HOME=/
+2025-02-21T18:43:52.295591+00:00 fv-az1236-360 kernel:     TERM=linux
+2025-02-21T18:43:52.295591+00:00 fv-az1236-360 kernel:     BOOT_IMAGE=/vmlinuz-6.8.0-1020-azure
+2025-02-21T18:43:52.295653+00:00 fv-az1236-360 kernel: pstore: Using crash dump compression: deflate
+2025-02-21T18:43:52.295656+00:00 fv-az1236-360 kernel: pstore: Registered efi_pstore as persistent store backend
+2025-02-21T18:43:52.295665+00:00 fv-az1236-360 kernel: EXT4-fs (sda1): re-mounted 692c13d5-7245-4081-8358-4627061583d6 r/w. Quota mode: none.
+2025-02-21T18:43:52.295668+00:00 fv-az1236-360 kernel: hid: raw HID events driver (C) Jiri Kosina
+2025-02-21T18:43:52.295669+00:00 fv-az1236-360 kernel: hv_vmbus: registering driver hv_netvsc
+2025-02-21T18:43:52.295670+00:00 fv-az1236-360 kernel: hv_vmbus: registering driver hid_hyperv
+2025-02-21T18:43:52.295670+00:00 fv-az1236-360 kernel: input: Microsoft Vmbus HID-compliant Mouse as /devices/0006:045E:0621.0001/input/input0
+2025-02-21T18:43:52.295671+00:00 fv-az1236-360 kernel: hid 0006:045E:0621.0001: input: VIRTUAL HID v0.01 Mouse [Microsoft Vmbus HID-compliant Mouse] on 
+2025-02-21T18:43:52.295671+00:00 fv-az1236-360 kernel: hv_vmbus: registering driver hyperv_keyboard
+2025-02-21T18:43:52.295675+00:00 fv-az1236-360 kernel: hv_vmbus: registering driver hyperv_drm
+2025-02-21T18:43:52.295676+00:00 fv-az1236-360 kernel: input: AT Translated Set 2 keyboard as /devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/d34b2567-b9b6-42b9-8778-0a4ec0b955bf/serio0/input/input1
+2025-02-21T18:43:52.295676+00:00 fv-az1236-360 kernel: hyperv_drm 5620e0c7-8062-4dce-aeb7-520c7ef76171: [drm] Synthvid Version major 3, minor 5
+2025-02-21T18:43:52.295677+00:00 fv-az1236-360 kernel: Console: switching to colour dummy device 80x25
+2025-02-21T18:43:52.295679+00:00 fv-az1236-360 kernel: [drm] Initialized hyperv_drm 1.0.0 2020 for 5620e0c7-8062-4dce-aeb7-520c7ef76171 on minor 1
+2025-02-21T18:43:52.295679+00:00 fv-az1236-360 kernel: Console: switching to colour frame buffer device 128x48
+2025-02-21T18:43:52.295681+00:00 fv-az1236-360 kernel: hyperv_drm 5620e0c7-8062-4dce-aeb7-520c7ef76171: [drm] fb0: hyperv_drmdrmfb frame buffer device
+2025-02-21T18:43:52.295682+00:00 fv-az1236-360 kernel: hv_utils: KVP IC version 4.0
+2025-02-21T18:43:52.295682+00:00 fv-az1236-360 kernel: EXT4-fs (sda16): mounted filesystem 1f8687ed-884b-43d5-8241-13dd4b45b98d r/w with ordered data mode. Quota mode: none.
+2025-02-21T18:43:52.295683+00:00 fv-az1236-360 kernel: audit: type=1400 audit(1740163385.348:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="QtWebEngineProcess" pid=436 comm="apparmor_parser"
+2025-02-21T18:43:52.295684+00:00 fv-az1236-360 kernel: audit: type=1400 audit(1740163385.348:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name=4D6F6E676F444220436F6D70617373 pid=435 comm="apparmor_parser"
+2025-02-21T18:43:52.295686+00:00 fv-az1236-360 kernel: audit: type=1400 audit(1740163385.348:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="1password" pid=433 comm="apparmor_parser"
+2025-02-21T18:43:52.295686+00:00 fv-az1236-360 kernel: audit: type=1400 audit(1740163385.348:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="Discord" pid=434 comm="apparmor_parser"
+2025-02-21T18:43:52.295687+00:00 fv-az1236-360 kernel: audit: type=1400 audit(1740163385.357:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="balena-etcher" pid=438 comm="apparmor_parser"
+2025-02-21T18:43:52.295687+00:00 fv-az1236-360 kernel: audit: type=1400 audit(1740163385.357:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="busybox" pid=442 comm="apparmor_parser"
+2025-02-21T18:43:52.295687+00:00 fv-az1236-360 kernel: audit: type=1400 audit(1740163385.358:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="buildah" pid=441 comm="apparmor_parser"
+2025-02-21T18:43:52.295689+00:00 fv-az1236-360 kernel: audit: type=1400 audit(1740163385.358:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="brave" pid=439 comm="apparmor_parser"
+2025-02-21T18:43:52.295690+00:00 fv-az1236-360 kernel: audit: type=1400 audit(1740163385.363:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="chrome" pid=447 comm="apparmor_parser"
+2025-02-21T18:43:52.295691+00:00 fv-az1236-360 kernel: UDF-fs: INFO Mounting volume 'UDF Volume', timestamp 2025/02/22 00:00 (1000)
+2025-02-21T18:43:52.295691+00:00 fv-az1236-360 kernel: 8021q: 802.1Q VLAN Support v1.8
+2025-02-21T18:43:52.295692+00:00 fv-az1236-360 kernel: hv_netvsc 6045bd2e-eb5d-6045-bd2e-eb5d6045bd2e eth0: VF slot 1 added
+2025-02-21T18:43:52.295692+00:00 fv-az1236-360 kernel: hv_pci 3addc5b5-3999-4c9f-8f7c-35d39fb9c389: PCI VMBus probing: Using version 0x10004
+2025-02-21T18:43:52.295694+00:00 fv-az1236-360 kernel: hv_pci 3addc5b5-3999-4c9f-8f7c-35d39fb9c389: PCI host bridge to bus 3999:00
+2025-02-21T18:43:52.295695+00:00 fv-az1236-360 kernel: pci_bus 3999:00: root bus resource [mem 0xfc0100000-0xfc01fffff window]
+2025-02-21T18:43:52.295696+00:00 fv-az1236-360 kernel: pci_bus 3999:00: No busn resource found for root bus, will use [bus 00-ff]
+2025-02-21T18:43:52.295697+00:00 fv-az1236-360 kernel: pci 3999:00:02.0: [15b3:101a] type 00 class 0x020000 PCIe Endpoint
+2025-02-21T18:43:52.295697+00:00 fv-az1236-360 kernel: pci 3999:00:02.0: BAR 0 [mem 0xfc0100000-0xfc01fffff 64bit pref]
+2025-02-21T18:43:52.295698+00:00 fv-az1236-360 kernel: pci 3999:00:02.0: enabling Extended Tags
+2025-02-21T18:43:52.295699+00:00 fv-az1236-360 kernel: pci 3999:00:02.0: 0.000 Gb/s available PCIe bandwidth, limited by Unknown x0 link at 3999:00:02.0 (capable of 252.048 Gb/s with 16.0 GT/s PCIe x16 link)
+2025-02-21T18:43:52.295701+00:00 fv-az1236-360 kernel: pci_bus 3999:00: busn_res: [bus 00-ff] end is updated to 00
+2025-02-21T18:43:52.295702+00:00 fv-az1236-360 kernel: pci 3999:00:02.0: BAR 0 [mem 0xfc0100000-0xfc01fffff 64bit pref]: assigned
+2025-02-21T18:43:52.295702+00:00 fv-az1236-360 kernel: mlx5_core 3999:00:02.0: enabling device (0000 -> 0002)
+2025-02-21T18:43:52.295703+00:00 fv-az1236-360 kernel: mlx5_core 3999:00:02.0: firmware version: 16.30.1278
+2025-02-21T18:43:52.295703+00:00 fv-az1236-360 kernel: hv_netvsc 6045bd2e-eb5d-6045-bd2e-eb5d6045bd2e eth0: VF registering: eth1
+2025-02-21T18:43:52.295704+00:00 fv-az1236-360 kernel: mlx5_core 3999:00:02.0 eth1: joined to eth0
+2025-02-21T18:43:52.295705+00:00 fv-az1236-360 kernel: mlx5_core 3999:00:02.0: MLX5E: StrdRq(1) RqSz(8) StrdSz(256) RxCqeCmprss(0 basic)
+2025-02-21T18:43:52.295706+00:00 fv-az1236-360 kernel: mlx5_core 3999:00:02.0: is_dpll_supported:213:(pid 608): Missing SyncE capability
+2025-02-21T18:43:52.295707+00:00 fv-az1236-360 kernel: mlx5_core 3999:00:02.0 enP14745s1: renamed from eth1
+2025-02-21T18:43:52.295707+00:00 fv-az1236-360 kernel: MACsec IEEE 802.1AE
+2025-02-21T18:43:52.295708+00:00 fv-az1236-360 kernel: mlx5_core 3999:00:02.0 enP14745s1: Link up
+2025-02-21T18:43:52.295708+00:00 fv-az1236-360 kernel: hv_netvsc 6045bd2e-eb5d-6045-bd2e-eb5d6045bd2e eth0: Data path switched to VF: enP14745s1
+2025-02-21T18:43:52.295710+00:00 fv-az1236-360 kernel: hv_balloon: Max. dynamic memory size: 16384 MB
+2025-02-21T18:43:52.295711+00:00 fv-az1236-360 kernel: kauditd_printk_skb: 113 callbacks suppressed
+2025-02-21T18:43:52.295711+00:00 fv-az1236-360 kernel: audit: type=1400 audit(1740163431.950:124): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="rsyslogd" pid=790 comm="apparmor_parser"
+2025-02-21T18:43:52.295712+00:00 fv-az1236-360 kernel: block nvme0n1: No UUID available providing old NGUID
+2025-02-21T18:43:55.836240+00:00 fv-az1236-360 kernel: loop0: detected capacity change from 0 to 8
+2025-02-21T18:43:56.495230+00:00 fv-az1236-360 kernel: audit: type=1400 audit(1740163436.494:125): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/snapd/snap-confine" pid=1162 comm="apparmor_parser"
+2025-02-21T18:43:56.507237+00:00 fv-az1236-360 kernel: audit: type=1400 audit(1740163436.506:126): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=1162 comm="apparmor_parser"
+2025-02-21T18:44:05.249235+00:00 fv-az1236-360 kernel: audit: type=1400 audit(1740163445.247:127): apparmor="STATUS" operation="profile_load" profile="unconfined" name="docker-default" pid=1634 comm="apparmor_parser"
+2025-02-21T18:44:09.311239+00:00 fv-az1236-360 kernel: evm: overlay not supported
+2025-02-21T18:44:09.499235+00:00 fv-az1236-360 kernel: bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+2025-02-21T18:44:09.521226+00:00 fv-az1236-360 kernel: Bridge firewalling registered
+2025-02-21T18:44:09.766239+00:00 fv-az1236-360 kernel: Initializing XFRM netlink socket
+2025-02-21T18:45:42.357959+00:00 fv-az1236-360 kernel: hv_utils: Shutdown request received - graceful shutdown initiated
+2025-02-24T20:56:41.161230+00:00 fv-az1236-360 kernel: Booting Linux on physical CPU 0x0000000000 [0x410fd490]
+2025-02-24T20:56:41.161286+00:00 fv-az1236-360 kernel: Linux version 6.8.0-1020-azure (buildd@bos03-arm64-066) (aarch64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #23-Ubuntu SMP Fri Dec  6 22:49:57 UTC 2024 (Ubuntu 6.8.0-1020.23-azure 6.8.12)
+2025-02-24T20:56:41.161287+00:00 fv-az1236-360 kernel: KASLR enabled
+2025-02-24T20:56:41.161288+00:00 fv-az1236-360 kernel: earlycon: pl11 at MMIO 0x00000000effec000 (options '')
+2025-02-24T20:56:41.161300+00:00 fv-az1236-360 kernel: printk: legacy bootconsole [pl11] enabled
+2025-02-24T20:56:41.161301+00:00 fv-az1236-360 kernel: efi: EFI v2.7 by EDK II
+2025-02-24T20:56:41.161303+00:00 fv-az1236-360 kernel: efi: ACPI 2.0=0x3fd5f018 SMBIOS=0x3e580000 SMBIOS 3.0=0x3e560000 MEMATTR=0x3f20d418 MOKvar=0x3e340000 RNG=0x3fd5f698 MEMRESERVE=0x3e474c18 
+2025-02-24T20:56:41.161304+00:00 fv-az1236-360 kernel: random: crng init done
+2025-02-24T20:56:41.161305+00:00 fv-az1236-360 kernel: secureboot: Secure boot disabled
+2025-02-24T20:56:41.161306+00:00 fv-az1236-360 kernel: ACPI: Early table checksum verification disabled
+2025-02-24T20:56:41.161307+00:00 fv-az1236-360 kernel: ACPI: RSDP 0x000000003FD5F018 000024 (v02 VRTUAL)
+2025-02-24T20:56:41.161903+00:00 fv-az1236-360 kernel: ACPI: XSDT 0x000000003FD5FF18 00006C (v01 VRTUAL MICROSFT 00000001 MSFT 00000001)
+2025-02-24T20:56:41.161906+00:00 fv-az1236-360 kernel: ACPI: FACP 0x000000003FD5FC18 000114 (v06 VRTUAL MICROSFT 00000001 MSFT 00000001)
+2025-02-24T20:56:41.161913+00:00 fv-az1236-360 kernel: ACPI: DSDT 0x000000003FD41018 01DFCD (v02 MSFTVM DSDT01   00000001 INTL 20230628)
+2025-02-24T20:56:41.161914+00:00 fv-az1236-360 kernel: ACPI: DBG2 0x000000003FD5FB18 000072 (v00 VRTUAL MICROSFT 00000001 MSFT 00000001)
+2025-02-24T20:56:41.161914+00:00 fv-az1236-360 kernel: ACPI: GTDT 0x000000003FD5FD98 000060 (v02 VRTUAL MICROSFT 00000001 MSFT 00000001)
+2025-02-24T20:56:41.161914+00:00 fv-az1236-360 kernel: ACPI: OEM0 0x000000003FD5F098 000064 (v01 VRTUAL MICROSFT 00000001 MSFT 00000001)
+2025-02-24T20:56:41.161915+00:00 fv-az1236-360 kernel: ACPI: SPCR 0x000000003FD5FA98 000050 (v02 VRTUAL MICROSFT 00000001 MSFT 00000001)
+2025-02-24T20:56:41.161915+00:00 fv-az1236-360 kernel: ACPI: APIC 0x000000003FD5F818 00019C (v04 VRTUAL MICROSFT 00000001 MSFT 00000001)
+2025-02-24T20:56:41.161915+00:00 fv-az1236-360 kernel: ACPI: SRAT 0x000000003FD5F198 000258 (v03 VRTUAL MICROSFT 00000001 MSFT 00000001)
+2025-02-24T20:56:41.161917+00:00 fv-az1236-360 kernel: ACPI: PPTT 0x000000003FD5F418 0001E8 (v01 VRTUAL MICROSFT 00000000 MSFT 00000000)
+2025-02-24T20:56:41.161917+00:00 fv-az1236-360 kernel: ACPI: BGRT 0x000000003FD5FE98 000038 (v01 VRTUAL MICROSFT 00000001 MSFT 00000001)
+2025-02-24T20:56:41.161918+00:00 fv-az1236-360 kernel: ACPI: SPCR: console: pl011,mmio32,0xeffec000,115200
+2025-02-24T20:56:41.161918+00:00 fv-az1236-360 kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x00000000-0x3fffffff] hotplug
+2025-02-24T20:56:41.161918+00:00 fv-az1236-360 kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x100000000-0x4bfffffff] hotplug
+2025-02-24T20:56:41.161919+00:00 fv-az1236-360 kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x4c0000000-0xfbfffffff] hotplug
+2025-02-24T20:56:41.161920+00:00 fv-az1236-360 kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x1000000000-0xffffffffff] hotplug
+2025-02-24T20:56:41.161921+00:00 fv-az1236-360 kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x10000000000-0x1ffffffffff] hotplug
+2025-02-24T20:56:41.161921+00:00 fv-az1236-360 kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x20000000000-0x3ffffffffff] hotplug
+2025-02-24T20:56:41.161921+00:00 fv-az1236-360 kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x40000000000-0x7ffffffffff] hotplug
+2025-02-24T20:56:41.161922+00:00 fv-az1236-360 kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x80000000000-0xfffffffffff] hotplug
+2025-02-24T20:56:41.161922+00:00 fv-az1236-360 kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x100000000000-0x1fffffffffff] hotplug
+2025-02-24T20:56:41.161923+00:00 fv-az1236-360 kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x200000000000-0x3fffffffffff] hotplug
+2025-02-24T20:56:41.161924+00:00 fv-az1236-360 kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x400000000000-0x7fffffffffff] hotplug
+2025-02-24T20:56:41.161925+00:00 fv-az1236-360 kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x800000000000-0xffffffffffff] hotplug
+2025-02-24T20:56:41.161925+00:00 fv-az1236-360 kernel: NUMA: NODE_DATA [mem 0x4bdfef5c0-0x4bdff4fff]
+2025-02-24T20:56:41.161925+00:00 fv-az1236-360 kernel: Zone ranges:
+2025-02-24T20:56:41.161926+00:00 fv-az1236-360 kernel:   DMA      [mem 0x0000000000000000-0x00000000ffffffff]
+2025-02-24T20:56:41.161928+00:00 fv-az1236-360 kernel:   DMA32    empty
+2025-02-24T20:56:41.161929+00:00 fv-az1236-360 kernel:   Normal   [mem 0x0000000100000000-0x00000004bfffffff]
+2025-02-24T20:56:41.161930+00:00 fv-az1236-360 kernel:   Device   empty
+2025-02-24T20:56:41.161930+00:00 fv-az1236-360 kernel: Movable zone start for each node
+2025-02-24T20:56:41.161930+00:00 fv-az1236-360 kernel: Early memory node ranges
+2025-02-24T20:56:41.161931+00:00 fv-az1236-360 kernel:   node   0: [mem 0x0000000000000000-0x00000000007fffff]
+2025-02-24T20:56:41.161933+00:00 fv-az1236-360 kernel:   node   0: [mem 0x0000000000824000-0x000000003e33ffff]
+2025-02-24T20:56:41.161934+00:00 fv-az1236-360 kernel:   node   0: [mem 0x000000003e340000-0x000000003e34ffff]
+2025-02-24T20:56:41.161935+00:00 fv-az1236-360 kernel:   node   0: [mem 0x000000003e350000-0x000000003e45ffff]
+2025-02-24T20:56:41.161935+00:00 fv-az1236-360 kernel:   node   0: [mem 0x000000003e460000-0x000000003e46ffff]
+2025-02-24T20:56:41.161936+00:00 fv-az1236-360 kernel:   node   0: [mem 0x000000003e470000-0x000000003e54ffff]
+2025-02-24T20:56:41.161936+00:00 fv-az1236-360 kernel:   node   0: [mem 0x000000003e550000-0x000000003e87ffff]
+2025-02-24T20:56:41.161937+00:00 fv-az1236-360 kernel:   node   0: [mem 0x000000003e880000-0x000000003fc7ffff]
+2025-02-24T20:56:41.161937+00:00 fv-az1236-360 kernel:   node   0: [mem 0x000000003fc80000-0x000000003fcfffff]
+2025-02-24T20:56:41.161941+00:00 fv-az1236-360 kernel:   node   0: [mem 0x000000003fd00000-0x000000003fffffff]
+2025-02-24T20:56:41.161942+00:00 fv-az1236-360 kernel:   node   0: [mem 0x0000000100000000-0x00000004bfffffff]
+2025-02-24T20:56:41.161943+00:00 fv-az1236-360 kernel: Initmem setup node 0 [mem 0x0000000000000000-0x00000004bfffffff]
+2025-02-24T20:56:41.161944+00:00 fv-az1236-360 kernel: On node 0, zone DMA: 36 pages in unavailable ranges
+2025-02-24T20:56:41.161945+00:00 fv-az1236-360 kernel: cma: Reserved 32 MiB at 0x000000003c200000 on node -1
+2025-02-24T20:56:41.161945+00:00 fv-az1236-360 kernel: psci: probing for conduit method from ACPI.
+2025-02-24T20:56:41.161946+00:00 fv-az1236-360 kernel: psci: PSCIv1.1 detected in firmware.
+2025-02-24T20:56:41.161947+00:00 fv-az1236-360 kernel: psci: Using standard PSCI v0.2 function IDs
+2025-02-24T20:56:41.161947+00:00 fv-az1236-360 kernel: psci: MIGRATE_INFO_TYPE not supported.
+2025-02-24T20:56:41.161947+00:00 fv-az1236-360 kernel: psci: SMC Calling Convention v1.4
+2025-02-24T20:56:41.161948+00:00 fv-az1236-360 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x0 -> Node 0
+2025-02-24T20:56:41.161949+00:00 fv-az1236-360 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x1 -> Node 0
+2025-02-24T20:56:41.161950+00:00 fv-az1236-360 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x2 -> Node 0
+2025-02-24T20:56:41.161951+00:00 fv-az1236-360 kernel: ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x3 -> Node 0
+2025-02-24T20:56:41.161951+00:00 fv-az1236-360 kernel: percpu: Embedded 54 pages/cpu s94952 r8192 d118040 u221184
+2025-02-24T20:56:41.161952+00:00 fv-az1236-360 kernel: pcpu-alloc: s94952 r8192 d118040 u221184 alloc=54*4096
+2025-02-24T20:56:41.161952+00:00 fv-az1236-360 kernel: pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+2025-02-24T20:56:41.161952+00:00 fv-az1236-360 kernel: Detected PIPT I-cache on CPU0
+2025-02-24T20:56:41.161953+00:00 fv-az1236-360 kernel: CPU features: detected: Address authentication (architected QARMA5 algorithm)
+2025-02-24T20:56:41.161955+00:00 fv-az1236-360 kernel: CPU features: detected: GIC system register CPU interface
+2025-02-24T20:56:41.161956+00:00 fv-az1236-360 kernel: CPU features: detected: Spectre-v4
+2025-02-24T20:56:41.161957+00:00 fv-az1236-360 kernel: CPU features: detected: Spectre-BHB
+2025-02-24T20:56:41.161957+00:00 fv-az1236-360 kernel: CPU features: kernel page table isolation forced ON by KASLR
+2025-02-24T20:56:41.161957+00:00 fv-az1236-360 kernel: CPU features: detected: Kernel page table isolation (KPTI)
+2025-02-24T20:56:41.161958+00:00 fv-az1236-360 kernel: CPU features: detected: ARM erratum 2067961 or 2054223
+2025-02-24T20:56:41.161960+00:00 fv-az1236-360 kernel: CPU features: detected: SSBS not fully self-synchronizing
+2025-02-24T20:56:41.161960+00:00 fv-az1236-360 kernel: alternatives: applying boot alternatives
+2025-02-24T20:56:41.161960+00:00 fv-az1236-360 kernel: Kernel command line: BOOT_IMAGE=/vmlinuz-6.8.0-1020-azure root=PARTUUID=4f272e3f-0227-4db4-9524-8a66ff2d1348 ro console=tty1 console=ttyAMA0 earlycon=pl011,0xeffec000 initcall_blacklist=arm_pmu_acpi_init nvme_core.io_timeout=240 panic=-1
+2025-02-24T20:56:41.161961+00:00 fv-az1236-360 kernel: blacklisting initcall arm_pmu_acpi_init
+2025-02-24T20:56:41.161962+00:00 fv-az1236-360 kernel: Unknown kernel command line parameters "BOOT_IMAGE=/vmlinuz-6.8.0-1020-azure", will be passed to user space.
+2025-02-24T20:56:41.161963+00:00 fv-az1236-360 kernel: Dentry cache hash table entries: 2097152 (order: 12, 16777216 bytes, linear)
+2025-02-24T20:56:41.161964+00:00 fv-az1236-360 kernel: Inode-cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+2025-02-24T20:56:41.161965+00:00 fv-az1236-360 kernel: Fallback order for Node 0: 0 
+2025-02-24T20:56:41.161965+00:00 fv-az1236-360 kernel: Built 1 zonelists, mobility grouping on.  Total pages: 4128732
+2025-02-24T20:56:41.161965+00:00 fv-az1236-360 kernel: Policy zone: Normal
+2025-02-24T20:56:41.161966+00:00 fv-az1236-360 kernel: mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+2025-02-24T20:56:41.161966+00:00 fv-az1236-360 kernel: software IO TLB: area num 4.
+2025-02-24T20:56:41.161966+00:00 fv-az1236-360 kernel: software IO TLB: mapped [mem 0x0000000038200000-0x000000003c200000] (64MB)
+2025-02-24T20:56:41.161968+00:00 fv-az1236-360 kernel: Memory: 16296532K/16777072K available (21248K kernel code, 5256K rwdata, 16448K rodata, 12544K init, 1249K bss, 447772K reserved, 32768K cma-reserved)
+2025-02-24T20:56:41.161968+00:00 fv-az1236-360 kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+2025-02-24T20:56:41.161969+00:00 fv-az1236-360 kernel: ftrace: allocating 64138 entries in 251 pages
+2025-02-24T20:56:41.161969+00:00 fv-az1236-360 kernel: ftrace: allocated 251 pages with 7 groups
+2025-02-24T20:56:41.161969+00:00 fv-az1236-360 kernel: trace event string verifier disabled
+2025-02-24T20:56:41.161970+00:00 fv-az1236-360 kernel: rcu: Hierarchical RCU implementation.
+2025-02-24T20:56:41.161971+00:00 fv-az1236-360 kernel: rcu: 	RCU restricting CPUs from NR_CPUS=512 to nr_cpu_ids=4.
+2025-02-24T20:56:41.161971+00:00 fv-az1236-360 kernel: 	Rude variant of Tasks RCU enabled.
+2025-02-24T20:56:41.161972+00:00 fv-az1236-360 kernel: 	Tracing variant of Tasks RCU enabled.
+2025-02-24T20:56:41.161972+00:00 fv-az1236-360 kernel: rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+2025-02-24T20:56:41.161972+00:00 fv-az1236-360 kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+2025-02-24T20:56:41.161973+00:00 fv-az1236-360 kernel: NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+2025-02-24T20:56:41.161974+00:00 fv-az1236-360 kernel: GICv3: 960 SPIs implemented
+2025-02-24T20:56:41.161974+00:00 fv-az1236-360 kernel: GICv3: 0 Extended SPIs implemented
+2025-02-24T20:56:41.161975+00:00 fv-az1236-360 kernel: Root IRQ handler: gic_handle_irq
+2025-02-24T20:56:41.162009+00:00 fv-az1236-360 kernel: GICv3: GICv3 features: 16 PPIs, RSS
+2025-02-24T20:56:41.162010+00:00 fv-az1236-360 kernel: GICv3: CPU0: found redistributor 0 region 0:0x00000000effee000
+2025-02-24T20:56:41.162011+00:00 fv-az1236-360 kernel: ITS: No ITS available, not enabling LPIs
+2025-02-24T20:56:41.162011+00:00 fv-az1236-360 kernel: rcu: srcu_init: Setting srcu_struct sizes based on contention.
+2025-02-24T20:56:41.162013+00:00 fv-az1236-360 kernel: arch_timer: cp15 timer(s) running at 1000.00MHz (virt).
+2025-02-24T20:56:41.162014+00:00 fv-az1236-360 kernel: clocksource: arch_sys_counter: mask: 0x1fffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+2025-02-24T20:56:41.162014+00:00 fv-az1236-360 kernel: sched_clock: 61 bits at 1000MHz, resolution 1ns, wraps every 4398046511103ns
+2025-02-24T20:56:41.162016+00:00 fv-az1236-360 kernel: Console: colour dummy device 80x25
+2025-02-24T20:56:41.162016+00:00 fv-az1236-360 kernel: printk: legacy console [tty1] enabled
+2025-02-24T20:56:41.162017+00:00 fv-az1236-360 kernel: ACPI: Core revision 20230628
+2025-02-24T20:56:41.162018+00:00 fv-az1236-360 kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 2000.00 BogoMIPS (lpj=1000000)
+2025-02-24T20:56:41.162018+00:00 fv-az1236-360 kernel: pid_max: default: 32768 minimum: 301
+2025-02-24T20:56:41.162019+00:00 fv-az1236-360 kernel: LSM: initializing lsm=lockdown,capability,landlock,yama,apparmor,integrity
+2025-02-24T20:56:41.162019+00:00 fv-az1236-360 kernel: landlock: Up and running.
+2025-02-24T20:56:41.162021+00:00 fv-az1236-360 kernel: Yama: becoming mindful.
+2025-02-24T20:56:41.162021+00:00 fv-az1236-360 kernel: AppArmor: AppArmor initialized
+2025-02-24T20:56:41.162022+00:00 fv-az1236-360 kernel: Mount-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+2025-02-24T20:56:41.162023+00:00 fv-az1236-360 kernel: Mountpoint-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+2025-02-24T20:56:41.162023+00:00 fv-az1236-360 kernel: RCU Tasks Rude: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1.
+2025-02-24T20:56:41.162023+00:00 fv-az1236-360 kernel: RCU Tasks Trace: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1.
+2025-02-24T20:56:41.162024+00:00 fv-az1236-360 kernel: Hyper-V: privilege flags low 0x2e7f, high 0x3b8030, hints 0x1e0000e, misc 0x31e1
+2025-02-24T20:56:41.162024+00:00 fv-az1236-360 kernel: Hyper-V: Host Build 10.0.26100.1145-1-0
+2025-02-24T20:56:41.162026+00:00 fv-az1236-360 kernel: Hyper-V: enabling crash_kexec_post_notifiers
+2025-02-24T20:56:41.162027+00:00 fv-az1236-360 kernel: rcu: Hierarchical SRCU implementation.
+2025-02-24T20:56:41.162028+00:00 fv-az1236-360 kernel: rcu: 	Max phase no-delay instances is 400.
+2025-02-24T20:56:41.162028+00:00 fv-az1236-360 kernel: Remapping and enabling EFI services.
+2025-02-24T20:56:41.162029+00:00 fv-az1236-360 kernel: smp: Bringing up secondary CPUs ...
+2025-02-24T20:56:41.162029+00:00 fv-az1236-360 kernel: Detected PIPT I-cache on CPU1
+2025-02-24T20:56:41.162029+00:00 fv-az1236-360 kernel: GICv3: CPU1: found redistributor 1 region 1:0x00000000f000e000
+2025-02-24T20:56:41.162030+00:00 fv-az1236-360 kernel: CPU1: Booted secondary processor 0x0000000001 [0x410fd490]
+2025-02-24T20:56:41.162031+00:00 fv-az1236-360 kernel: Detected PIPT I-cache on CPU2
+2025-02-24T20:56:41.162031+00:00 fv-az1236-360 kernel: GICv3: CPU2: found redistributor 2 region 2:0x00000000f002e000
+2025-02-24T20:56:41.162032+00:00 fv-az1236-360 kernel: CPU2: Booted secondary processor 0x0000000002 [0x410fd490]
+2025-02-24T20:56:41.162033+00:00 fv-az1236-360 kernel: Detected PIPT I-cache on CPU3
+2025-02-24T20:56:41.162033+00:00 fv-az1236-360 kernel: GICv3: CPU3: found redistributor 3 region 3:0x00000000f004e000
+2025-02-24T20:56:41.162034+00:00 fv-az1236-360 kernel: CPU3: Booted secondary processor 0x0000000003 [0x410fd490]
+2025-02-24T20:56:41.162035+00:00 fv-az1236-360 kernel: smp: Brought up 1 node, 4 CPUs
+2025-02-24T20:56:41.162036+00:00 fv-az1236-360 kernel: SMP: Total of 4 processors activated.
+2025-02-24T20:56:41.162037+00:00 fv-az1236-360 kernel: CPU: All CPU(s) started at EL1
+2025-02-24T20:56:41.162037+00:00 fv-az1236-360 kernel: CPU features: detected: 32-bit EL0 Support
+2025-02-24T20:56:41.162037+00:00 fv-az1236-360 kernel: CPU features: detected: Instruction cache invalidation not required for I/D coherence
+2025-02-24T20:56:41.162040+00:00 fv-az1236-360 kernel: CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+2025-02-24T20:56:41.162042+00:00 fv-az1236-360 kernel: CPU features: detected: Common not Private translations
+2025-02-24T20:56:41.162043+00:00 fv-az1236-360 kernel: CPU features: detected: CRC32 instructions
+2025-02-24T20:56:41.162044+00:00 fv-az1236-360 kernel: CPU features: detected: Data cache clean to Point of Deep Persistence
+2025-02-24T20:56:41.162044+00:00 fv-az1236-360 kernel: CPU features: detected: Data cache clean to Point of Persistence
+2025-02-24T20:56:41.162046+00:00 fv-az1236-360 kernel: CPU features: detected: Generic authentication (architected QARMA5 algorithm)
+2025-02-24T20:56:41.162046+00:00 fv-az1236-360 kernel: CPU features: detected: RCpc load-acquire (LDAPR)
+2025-02-24T20:56:41.162047+00:00 fv-az1236-360 kernel: CPU features: detected: LSE atomic instructions
+2025-02-24T20:56:41.162048+00:00 fv-az1236-360 kernel: CPU features: detected: Privileged Access Never
+2025-02-24T20:56:41.162049+00:00 fv-az1236-360 kernel: CPU features: detected: Speculation barrier (SB)
+2025-02-24T20:56:41.162049+00:00 fv-az1236-360 kernel: CPU features: detected: TLB range maintenance instructions
+2025-02-24T20:56:41.162050+00:00 fv-az1236-360 kernel: CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+2025-02-24T20:56:41.162051+00:00 fv-az1236-360 kernel: CPU features: detected: Scalable Vector Extension
+2025-02-24T20:56:41.162052+00:00 fv-az1236-360 kernel: alternatives: applying system-wide alternatives
+2025-02-24T20:56:41.162053+00:00 fv-az1236-360 kernel: CPU features: detected: Hardware dirty bit management on CPU0-3
+2025-02-24T20:56:41.162054+00:00 fv-az1236-360 kernel: SVE: maximum available vector length 16 bytes per vector
+2025-02-24T20:56:41.162054+00:00 fv-az1236-360 kernel: SVE: default vector length 16 bytes per vector
+2025-02-24T20:56:41.162055+00:00 fv-az1236-360 kernel: devtmpfs: initialized
+2025-02-24T20:56:41.162055+00:00 fv-az1236-360 kernel: setend instruction emulation is not supported on this system
+2025-02-24T20:56:41.162055+00:00 fv-az1236-360 kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+2025-02-24T20:56:41.162057+00:00 fv-az1236-360 kernel: futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+2025-02-24T20:56:41.162058+00:00 fv-az1236-360 kernel: pinctrl core: initialized pinctrl subsystem
+2025-02-24T20:56:41.162059+00:00 fv-az1236-360 kernel: SMBIOS 3.1.0 present.
+2025-02-24T20:56:41.162059+00:00 fv-az1236-360 kernel: DMI: Microsoft Corporation Virtual Machine/Virtual Machine, BIOS Hyper-V UEFI Release v4.1 09/28/2024
+2025-02-24T20:56:41.162060+00:00 fv-az1236-360 kernel: NET: Registered PF_NETLINK/PF_ROUTE protocol family
+2025-02-24T20:56:41.162060+00:00 fv-az1236-360 kernel: DMA: preallocated 2048 KiB GFP_KERNEL pool for atomic allocations
+2025-02-24T20:56:41.162061+00:00 fv-az1236-360 kernel: DMA: preallocated 2048 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+2025-02-24T20:56:41.162062+00:00 fv-az1236-360 kernel: DMA: preallocated 2048 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+2025-02-24T20:56:41.162062+00:00 fv-az1236-360 kernel: audit: initializing netlink subsys (disabled)
+2025-02-24T20:56:41.162062+00:00 fv-az1236-360 kernel: audit: type=2000 audit(0.067:1): state=initialized audit_enabled=0 res=1
+2025-02-24T20:56:41.162063+00:00 fv-az1236-360 kernel: thermal_sys: Registered thermal governor 'fair_share'
+2025-02-24T20:56:41.162064+00:00 fv-az1236-360 kernel: thermal_sys: Registered thermal governor 'bang_bang'
+2025-02-24T20:56:41.162065+00:00 fv-az1236-360 kernel: thermal_sys: Registered thermal governor 'step_wise'
+2025-02-24T20:56:41.162066+00:00 fv-az1236-360 kernel: thermal_sys: Registered thermal governor 'user_space'
+2025-02-24T20:56:41.162066+00:00 fv-az1236-360 kernel: thermal_sys: Registered thermal governor 'power_allocator'
+2025-02-24T20:56:41.162067+00:00 fv-az1236-360 kernel: cpuidle: using governor ladder
+2025-02-24T20:56:41.162067+00:00 fv-az1236-360 kernel: cpuidle: using governor menu
+2025-02-24T20:56:41.162067+00:00 fv-az1236-360 kernel: hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+2025-02-24T20:56:41.162068+00:00 fv-az1236-360 kernel: ASID allocator initialised with 32768 entries
+2025-02-24T20:56:41.162070+00:00 fv-az1236-360 kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+2025-02-24T20:56:41.162070+00:00 fv-az1236-360 kernel: Serial: AMBA PL011 UART driver
+2025-02-24T20:56:41.162071+00:00 fv-az1236-360 kernel: Modules: 2G module region forced by RANDOMIZE_MODULE_REGION_FULL
+2025-02-24T20:56:41.162082+00:00 fv-az1236-360 kernel: Modules: 0 pages in range for non-PLT usage
+2025-02-24T20:56:41.162082+00:00 fv-az1236-360 kernel: Modules: 510048 pages in range for PLT usage
+2025-02-24T20:56:41.162083+00:00 fv-az1236-360 kernel: HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+2025-02-24T20:56:41.162084+00:00 fv-az1236-360 kernel: HugeTLB: 0 KiB vmemmap can be freed for a 1.00 GiB page
+2025-02-24T20:56:41.162084+00:00 fv-az1236-360 kernel: HugeTLB: registered 32.0 MiB page size, pre-allocated 0 pages
+2025-02-24T20:56:41.162084+00:00 fv-az1236-360 kernel: HugeTLB: 0 KiB vmemmap can be freed for a 32.0 MiB page
+2025-02-24T20:56:41.162085+00:00 fv-az1236-360 kernel: HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+2025-02-24T20:56:41.162085+00:00 fv-az1236-360 kernel: HugeTLB: 0 KiB vmemmap can be freed for a 2.00 MiB page
+2025-02-24T20:56:41.162085+00:00 fv-az1236-360 kernel: HugeTLB: registered 64.0 KiB page size, pre-allocated 0 pages
+2025-02-24T20:56:41.162086+00:00 fv-az1236-360 kernel: HugeTLB: 0 KiB vmemmap can be freed for a 64.0 KiB page
+2025-02-24T20:56:41.162087+00:00 fv-az1236-360 kernel: fbcon: Taking over console
+2025-02-24T20:56:41.162087+00:00 fv-az1236-360 kernel: ACPI: Added _OSI(Module Device)
+2025-02-24T20:56:41.162088+00:00 fv-az1236-360 kernel: ACPI: Added _OSI(Processor Device)
+2025-02-24T20:56:41.162088+00:00 fv-az1236-360 kernel: ACPI: Added _OSI(3.0 _SCP Extensions)
+2025-02-24T20:56:41.162088+00:00 fv-az1236-360 kernel: ACPI: Added _OSI(Processor Aggregator Device)
+2025-02-24T20:56:41.162089+00:00 fv-az1236-360 kernel: ACPI: 1 ACPI AML tables successfully acquired and loaded
+2025-02-24T20:56:41.162097+00:00 fv-az1236-360 kernel: ACPI: Interpreter enabled
+2025-02-24T20:56:41.162098+00:00 fv-az1236-360 kernel: ACPI: Using GIC for interrupt routing
+2025-02-24T20:56:41.162099+00:00 fv-az1236-360 kernel: ARMH0011:00: ttyAMA0 at MMIO 0xeffec000 (irq = 12, base_baud = 0) is a SBSA
+2025-02-24T20:56:41.162099+00:00 fv-az1236-360 kernel: printk: legacy console [ttyAMA0] enabled
+2025-02-24T20:56:41.162100+00:00 fv-az1236-360 kernel: printk: legacy bootconsole [pl11] disabled
+2025-02-24T20:56:41.162100+00:00 fv-az1236-360 kernel: ARMH0011:01: ttyAMA1 at MMIO 0xeffeb000 (irq = 13, base_baud = 0) is a SBSA
+2025-02-24T20:56:41.162103+00:00 fv-az1236-360 kernel: iommu: Default domain type: Translated
+2025-02-24T20:56:41.162104+00:00 fv-az1236-360 kernel: iommu: DMA domain TLB invalidation policy: strict mode
+2025-02-24T20:56:41.162104+00:00 fv-az1236-360 kernel: SCSI subsystem initialized
+2025-02-24T20:56:41.162104+00:00 fv-az1236-360 kernel: libata version 3.00 loaded.
+2025-02-24T20:56:41.162105+00:00 fv-az1236-360 kernel: ACPI: bus type USB registered
+2025-02-24T20:56:41.162105+00:00 fv-az1236-360 kernel: usbcore: registered new interface driver usbfs
+2025-02-24T20:56:41.162106+00:00 fv-az1236-360 kernel: usbcore: registered new interface driver hub
+2025-02-24T20:56:41.162108+00:00 fv-az1236-360 kernel: usbcore: registered new device driver usb
+2025-02-24T20:56:41.162108+00:00 fv-az1236-360 kernel: pps_core: LinuxPPS API ver. 1 registered
+2025-02-24T20:56:41.162138+00:00 fv-az1236-360 kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+2025-02-24T20:56:41.162139+00:00 fv-az1236-360 kernel: PTP clock support registered
+2025-02-24T20:56:41.162139+00:00 fv-az1236-360 kernel: EDAC MC: Ver: 3.0.0
+2025-02-24T20:56:41.162140+00:00 fv-az1236-360 kernel: scmi_core: SCMI protocol bus registered
+2025-02-24T20:56:41.162143+00:00 fv-az1236-360 kernel: efivars: Registered efivars operations
+2025-02-24T20:56:41.162144+00:00 fv-az1236-360 kernel: hv_vmbus: Vmbus version:5.3
+2025-02-24T20:56:41.162144+00:00 fv-az1236-360 kernel: initcall arm_pmu_acpi_init blacklisted
+2025-02-24T20:56:41.162144+00:00 fv-az1236-360 kernel: NetLabel: Initializing
+2025-02-24T20:56:41.162146+00:00 fv-az1236-360 kernel: NetLabel:  domain hash size = 128
+2025-02-24T20:56:41.162147+00:00 fv-az1236-360 kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+2025-02-24T20:56:41.162147+00:00 fv-az1236-360 kernel: NetLabel:  unlabeled traffic allowed by default
+2025-02-24T20:56:41.162149+00:00 fv-az1236-360 kernel: mctp: management component transport protocol core
+2025-02-24T20:56:41.162149+00:00 fv-az1236-360 kernel: NET: Registered PF_MCTP protocol family
+2025-02-24T20:56:41.162149+00:00 fv-az1236-360 kernel: vgaarb: loaded
+2025-02-24T20:56:41.162150+00:00 fv-az1236-360 kernel: clocksource: Switched to clocksource arch_sys_counter
+2025-02-24T20:56:41.162151+00:00 fv-az1236-360 kernel: VFS: Disk quotas dquot_6.6.0
+2025-02-24T20:56:41.162151+00:00 fv-az1236-360 kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+2025-02-24T20:56:41.162154+00:00 fv-az1236-360 kernel: AppArmor: AppArmor Filesystem Enabled
+2025-02-24T20:56:41.162155+00:00 fv-az1236-360 kernel: pnp: PnP ACPI init
+2025-02-24T20:56:41.162157+00:00 fv-az1236-360 kernel: pnp: PnP ACPI: found 0 devices
+2025-02-24T20:56:41.162157+00:00 fv-az1236-360 kernel: NET: Registered PF_INET protocol family
+2025-02-24T20:56:41.162158+00:00 fv-az1236-360 kernel: IP idents hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+2025-02-24T20:56:41.162158+00:00 fv-az1236-360 kernel: tcp_listen_portaddr_hash hash table entries: 8192 (order: 5, 131072 bytes, linear)
+2025-02-24T20:56:41.162159+00:00 fv-az1236-360 kernel: Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+2025-02-24T20:56:41.162160+00:00 fv-az1236-360 kernel: TCP established hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+2025-02-24T20:56:41.162161+00:00 fv-az1236-360 kernel: TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+2025-02-24T20:56:41.162161+00:00 fv-az1236-360 kernel: TCP: Hash tables configured (established 131072 bind 65536)
+2025-02-24T20:56:41.162162+00:00 fv-az1236-360 kernel: MPTCP token hash table entries: 16384 (order: 6, 393216 bytes, linear)
+2025-02-24T20:56:41.162162+00:00 fv-az1236-360 kernel: UDP hash table entries: 8192 (order: 6, 262144 bytes, linear)
+2025-02-24T20:56:41.162162+00:00 fv-az1236-360 kernel: UDP-Lite hash table entries: 8192 (order: 6, 262144 bytes, linear)
+2025-02-24T20:56:41.162164+00:00 fv-az1236-360 kernel: NET: Registered PF_UNIX/PF_LOCAL protocol family
+2025-02-24T20:56:41.162165+00:00 fv-az1236-360 kernel: NET: Registered PF_XDP protocol family
+2025-02-24T20:56:41.162165+00:00 fv-az1236-360 kernel: PCI: CLS 0 bytes, default 64
+2025-02-24T20:56:41.162166+00:00 fv-az1236-360 kernel: kvm [1]: HYP mode not available
+2025-02-24T20:56:41.162166+00:00 fv-az1236-360 kernel: Initialise system trusted keyrings
+2025-02-24T20:56:41.162167+00:00 fv-az1236-360 kernel: Key type blacklist registered
+2025-02-24T20:56:41.162168+00:00 fv-az1236-360 kernel: workingset: timestamp_bits=40 max_order=22 bucket_order=0
+2025-02-24T20:56:41.162169+00:00 fv-az1236-360 kernel: zbud: loaded
+2025-02-24T20:56:41.162169+00:00 fv-az1236-360 kernel: squashfs: version 4.0 (2009/01/31) Phillip Lougher
+2025-02-24T20:56:41.162171+00:00 fv-az1236-360 kernel: fuse: init (API version 7.39)
+2025-02-24T20:56:41.162171+00:00 fv-az1236-360 kernel: integrity: Platform Keyring initialized
+2025-02-24T20:56:41.162172+00:00 fv-az1236-360 kernel: integrity: Machine keyring initialized
+2025-02-24T20:56:41.162172+00:00 fv-az1236-360 kernel: Key type asymmetric registered
+2025-02-24T20:56:41.162174+00:00 fv-az1236-360 kernel: Asymmetric key parser 'x509' registered
+2025-02-24T20:56:41.162174+00:00 fv-az1236-360 kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 242)
+2025-02-24T20:56:41.162176+00:00 fv-az1236-360 kernel: io scheduler mq-deadline registered
+2025-02-24T20:56:41.162177+00:00 fv-az1236-360 kernel: shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+2025-02-24T20:56:41.162177+00:00 fv-az1236-360 kernel: hv_vmbus: registering driver hv_pci
+2025-02-24T20:56:41.162177+00:00 fv-az1236-360 kernel: hv_pci aa16d061-948d-4c55-9a5f-3d74b862ba5d: PCI VMBus probing: Using version 0x10004
+2025-02-24T20:56:41.162180+00:00 fv-az1236-360 kernel: hv_pci aa16d061-948d-4c55-9a5f-3d74b862ba5d: PCI host bridge to bus 948d:00
+2025-02-24T20:56:41.162180+00:00 fv-az1236-360 kernel: pci_bus 948d:00: root bus resource [mem 0xfc0000000-0xfc00fffff window]
+2025-02-24T20:56:41.162181+00:00 fv-az1236-360 kernel: pci_bus 948d:00: No busn resource found for root bus, will use [bus 00-ff]
+2025-02-24T20:56:41.162181+00:00 fv-az1236-360 kernel: pci 948d:00:00.0: [1414:b111] type 00 class 0x010802 PCIe Endpoint
+2025-02-24T20:56:41.162182+00:00 fv-az1236-360 kernel: pci 948d:00:00.0: BAR 0 [mem 0xfc0000000-0xfc00fffff 64bit]
+2025-02-24T20:56:41.162182+00:00 fv-az1236-360 kernel: pci_bus 948d:00: busn_res: [bus 00-ff] end is updated to 00
+2025-02-24T20:56:41.162185+00:00 fv-az1236-360 kernel: pci 948d:00:00.0: BAR 0 [mem 0xfc0000000-0xfc00fffff 64bit]: assigned
+2025-02-24T20:56:41.162186+00:00 fv-az1236-360 kernel: Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+2025-02-24T20:56:41.162186+00:00 fv-az1236-360 kernel: msm_serial: driver initialized
+2025-02-24T20:56:41.162186+00:00 fv-az1236-360 kernel: SuperH (H)SCI(F) driver initialized
+2025-02-24T20:56:41.162187+00:00 fv-az1236-360 kernel: loop: module loaded
+2025-02-24T20:56:41.162188+00:00 fv-az1236-360 kernel: hv_vmbus: registering driver hv_storvsc
+2025-02-24T20:56:41.162188+00:00 fv-az1236-360 kernel: ACPI: bus type drm_connector registered
+2025-02-24T20:56:41.162190+00:00 fv-az1236-360 kernel: nvme nvme0: pci function 948d:00:00.0
+2025-02-24T20:56:41.162191+00:00 fv-az1236-360 kernel: scsi host0: storvsc_host_t
+2025-02-24T20:56:41.162191+00:00 fv-az1236-360 kernel: scsi 0:0:0:0: Direct-Access     Msft     Virtual Disk     1.0  PQ: 0 ANSI: 5
+2025-02-24T20:56:41.162192+00:00 fv-az1236-360 kernel: sd 0:0:0:0: Attached scsi generic sg0 type 0
+2025-02-24T20:56:41.162192+00:00 fv-az1236-360 kernel: sd 0:0:0:0: [sda] 157286400 512-byte logical blocks: (80.5 GB/75.0 GiB)
+2025-02-24T20:56:41.162192+00:00 fv-az1236-360 kernel: sd 0:0:0:0: [sda] 4096-byte physical blocks
+2025-02-24T20:56:41.162194+00:00 fv-az1236-360 kernel: sd 0:0:0:0: [sda] Write Protect is off
+2025-02-24T20:56:41.162195+00:00 fv-az1236-360 kernel: sd 0:0:0:0: [sda] Mode Sense: 0f 00 10 00
+2025-02-24T20:56:41.162196+00:00 fv-az1236-360 kernel: sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, supports DPO and FUA
+2025-02-24T20:56:41.162196+00:00 fv-az1236-360 kernel: scsi host1: storvsc_host_t
+2025-02-24T20:56:41.162197+00:00 fv-az1236-360 kernel:  sda: sda1 sda15 sda16
+2025-02-24T20:56:41.162197+00:00 fv-az1236-360 kernel: tun: Universal TUN/TAP device driver, 1.6
+2025-02-24T20:56:41.162197+00:00 fv-az1236-360 kernel: sd 0:0:0:0: [sda] Attached SCSI disk
+2025-02-24T20:56:41.162199+00:00 fv-az1236-360 kernel: PPP generic driver version 2.4.2
+2025-02-24T20:56:41.162200+00:00 fv-az1236-360 kernel: mousedev: PS/2 mouse device common for all mice
+2025-02-24T20:56:41.162200+00:00 fv-az1236-360 kernel: rtc-efi rtc-efi.0: registered as rtc0
+2025-02-24T20:56:41.162200+00:00 fv-az1236-360 kernel: rtc-efi rtc-efi.0: setting system clock to 2025-02-24T20:56:31 UTC (1740430591)
+2025-02-24T20:56:41.162201+00:00 fv-az1236-360 kernel: nvme 948d:00:00.0: enabling device (0000 -> 0002)
+2025-02-24T20:56:41.162201+00:00 fv-az1236-360 kernel: i2c_dev: i2c /dev entries driver
+2025-02-24T20:56:41.162203+00:00 fv-az1236-360 kernel: device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+2025-02-24T20:56:41.162204+00:00 fv-az1236-360 kernel: device-mapper: uevent: version 1.0.3
+2025-02-24T20:56:41.162204+00:00 fv-az1236-360 kernel: device-mapper: ioctl: 4.48.0-ioctl (2023-03-01) initialised: dm-devel@redhat.com
+2025-02-24T20:56:41.162205+00:00 fv-az1236-360 kernel: ledtrig-cpu: registered to indicate activity on CPUs
+2025-02-24T20:56:41.162206+00:00 fv-az1236-360 kernel: [drm] Initialized simpledrm 1.0.0 20200625 for simple-framebuffer.0 on minor 0
+2025-02-24T20:56:41.162207+00:00 fv-az1236-360 kernel: Console: switching to colour frame buffer device 128x48
+2025-02-24T20:56:41.162209+00:00 fv-az1236-360 kernel: simple-framebuffer simple-framebuffer.0: [drm] fb0: simpledrmdrmfb frame buffer device
+2025-02-24T20:56:41.162209+00:00 fv-az1236-360 kernel: SMCCC: SOC_ID: ARCH_SOC_ID not implemented, skipping ....
+2025-02-24T20:56:41.162210+00:00 fv-az1236-360 kernel: hv_utils: Registering HyperV Utility Driver
+2025-02-24T20:56:41.162210+00:00 fv-az1236-360 kernel: hv_vmbus: registering driver hv_utils
+2025-02-24T20:56:41.162212+00:00 fv-az1236-360 kernel: hv_vmbus: registering driver hv_balloon
+2025-02-24T20:56:41.162212+00:00 fv-az1236-360 kernel: hv_utils: Heartbeat IC version 3.0
+2025-02-24T20:56:41.162213+00:00 fv-az1236-360 kernel: hv_utils: Shutdown IC version 3.2
+2025-02-24T20:56:41.162214+00:00 fv-az1236-360 kernel: hw perfevents: enabled with armv8_pmuv3_0 PMU driver, 7 counters available
+2025-02-24T20:56:41.162215+00:00 fv-az1236-360 kernel: hv_utils: TimeSync IC version 4.0
+2025-02-24T20:56:41.162215+00:00 fv-az1236-360 kernel: drop_monitor: Initializing network drop monitor service
+2025-02-24T20:56:41.162216+00:00 fv-az1236-360 kernel: hv_balloon: Using Dynamic Memory protocol version 2.0
+2025-02-24T20:56:41.162216+00:00 fv-az1236-360 kernel: watchdog: Delayed init of the lockup detector failed: -19
+2025-02-24T20:56:41.162217+00:00 fv-az1236-360 kernel: hv_balloon: Memory hot add disabled on ARM64
+2025-02-24T20:56:41.162219+00:00 fv-az1236-360 kernel: NET: Registered PF_INET6 protocol family
+2025-02-24T20:56:41.162220+00:00 fv-az1236-360 kernel: watchdog: Hard watchdog permanently disabled
+2025-02-24T20:56:41.162220+00:00 fv-az1236-360 kernel: Segment Routing with IPv6
+2025-02-24T20:56:41.162220+00:00 fv-az1236-360 kernel: In-situ OAM (IOAM) with IPv6
+2025-02-24T20:56:41.162221+00:00 fv-az1236-360 kernel: NET: Registered PF_PACKET protocol family
+2025-02-24T20:56:41.162222+00:00 fv-az1236-360 kernel: Key type dns_resolver registered
+2025-02-24T20:56:41.162224+00:00 fv-az1236-360 kernel: registered taskstats version 1
+2025-02-24T20:56:41.162224+00:00 fv-az1236-360 kernel: Loading compiled-in X.509 certificates
+2025-02-24T20:56:41.162225+00:00 fv-az1236-360 kernel: Loaded X.509 cert 'Build time autogenerated kernel key: 138508dbf08dfa311431149c12181222d93ce031'
+2025-02-24T20:56:41.162225+00:00 fv-az1236-360 kernel: Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+2025-02-24T20:56:41.162226+00:00 fv-az1236-360 kernel: Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+2025-02-24T20:56:41.162226+00:00 fv-az1236-360 kernel: blacklist: Loading compiled-in revocation X.509 certificates
+2025-02-24T20:56:41.162227+00:00 fv-az1236-360 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+2025-02-24T20:56:41.162229+00:00 fv-az1236-360 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2017): 242ade75ac4a15e50d50c84b0d45ff3eae707a03'
+2025-02-24T20:56:41.162231+00:00 fv-az1236-360 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (ESM 2018): 365188c1d374d6b07c3c8f240f8ef722433d6a8b'
+2025-02-24T20:56:41.162231+00:00 fv-az1236-360 kernel: nvme nvme0: 2/0/0 default/read/poll queues
+2025-02-24T20:56:41.162255+00:00 fv-az1236-360 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2019): c0746fd6c5da3ae827864651ad66ae47fe24b3e8'
+2025-02-24T20:56:41.162256+00:00 fv-az1236-360 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v1): a8d54bbb3825cfb94fa13c9f8a594a195c107b8d'
+2025-02-24T20:56:41.162258+00:00 fv-az1236-360 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v2): 4cf046892d6fd3c9a5b03f98d845f90851dc6a8c'
+2025-02-24T20:56:41.162259+00:00 fv-az1236-360 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v3): 100437bb6de6e469b581e61cd66bce3ef4ed53af'
+2025-02-24T20:56:41.162260+00:00 fv-az1236-360 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (Ubuntu Core 2019): c1d57b8f6b743f23ee41f4f7ee292f06eecadfb9'
+2025-02-24T20:56:41.162261+00:00 fv-az1236-360 kernel: Key type .fscrypt registered
+2025-02-24T20:56:41.162261+00:00 fv-az1236-360 kernel: Key type fscrypt-provisioning registered
+2025-02-24T20:56:41.162261+00:00 fv-az1236-360 kernel: Key type encrypted registered
+2025-02-24T20:56:41.162264+00:00 fv-az1236-360 kernel: AppArmor: AppArmor sha256 policy hashing enabled
+2025-02-24T20:56:41.162264+00:00 fv-az1236-360 kernel: integrity: Loading X.509 certificate: UEFI:db
+2025-02-24T20:56:41.162266+00:00 fv-az1236-360 kernel: integrity: Loaded X.509 cert 'Microsoft Windows Production PCA 2011: a92902398e16c49778cd90f99e4f9ae17c55af53'
+2025-02-24T20:56:41.162266+00:00 fv-az1236-360 kernel: integrity: Loading X.509 certificate: UEFI:db
+2025-02-24T20:56:41.162266+00:00 fv-az1236-360 kernel: integrity: Loaded X.509 cert 'Microsoft Corporation: Windows UEFI CA 2023: aefc5fbbbe055d8f8daa585473499417ab5a5272'
+2025-02-24T20:56:41.162267+00:00 fv-az1236-360 kernel: ima: secureboot mode disabled
+2025-02-24T20:56:41.162269+00:00 fv-az1236-360 kernel: ima: No TPM chip found, activating TPM-bypass!
+2025-02-24T20:56:41.162270+00:00 fv-az1236-360 kernel: Loading compiled-in module X.509 certificates
+2025-02-24T20:56:41.162270+00:00 fv-az1236-360 kernel: Loaded X.509 cert 'Build time autogenerated kernel key: 138508dbf08dfa311431149c12181222d93ce031'
+2025-02-24T20:56:41.162271+00:00 fv-az1236-360 kernel: ima: Allocated hash algorithm: sha256
+2025-02-24T20:56:41.162271+00:00 fv-az1236-360 kernel: ima: No architecture policies found
+2025-02-24T20:56:41.162272+00:00 fv-az1236-360 kernel: evm: Initialising EVM extended attributes:
+2025-02-24T20:56:41.162272+00:00 fv-az1236-360 kernel: evm: security.selinux
+2025-02-24T20:56:41.162275+00:00 fv-az1236-360 kernel: evm: security.SMACK64
+2025-02-24T20:56:41.162275+00:00 fv-az1236-360 kernel: evm: security.SMACK64EXEC
+2025-02-24T20:56:41.162276+00:00 fv-az1236-360 kernel: evm: security.SMACK64TRANSMUTE
+2025-02-24T20:56:41.162276+00:00 fv-az1236-360 kernel: evm: security.SMACK64MMAP
+2025-02-24T20:56:41.162276+00:00 fv-az1236-360 kernel: evm: security.apparmor
+2025-02-24T20:56:41.162278+00:00 fv-az1236-360 kernel: evm: security.ima
+2025-02-24T20:56:41.162280+00:00 fv-az1236-360 kernel: evm: security.capability
+2025-02-24T20:56:41.162281+00:00 fv-az1236-360 kernel: evm: HMAC attrs: 0x1
+2025-02-24T20:56:41.162281+00:00 fv-az1236-360 kernel: clk: Disabling unused clocks
+2025-02-24T20:56:41.162283+00:00 fv-az1236-360 kernel: md: Waiting for all devices to be available before autodetect
+2025-02-24T20:56:41.162283+00:00 fv-az1236-360 kernel: md: If you don't use raid, use raid=noautodetect
+2025-02-24T20:56:41.162284+00:00 fv-az1236-360 kernel: md: Autodetecting RAID arrays.
+2025-02-24T20:56:41.162285+00:00 fv-az1236-360 kernel: md: autorun ...
+2025-02-24T20:56:41.162286+00:00 fv-az1236-360 kernel: md: ... autorun DONE.
+2025-02-24T20:56:41.162288+00:00 fv-az1236-360 kernel: EXT4-fs (sda1): mounted filesystem 692c13d5-7245-4081-8358-4627061583d6 ro with ordered data mode. Quota mode: none.
+2025-02-24T20:56:41.162288+00:00 fv-az1236-360 kernel: VFS: Mounted root (ext4 filesystem) readonly on device 8:1.
+2025-02-24T20:56:41.162289+00:00 fv-az1236-360 kernel: devtmpfs: mounted
+2025-02-24T20:56:41.162290+00:00 fv-az1236-360 kernel: Freeing unused kernel memory: 12544K
+2025-02-24T20:56:41.162290+00:00 fv-az1236-360 kernel: Checked W+X mappings: passed, no W+X pages found
+2025-02-24T20:56:41.162292+00:00 fv-az1236-360 kernel: Run /sbin/init as init process
+2025-02-24T20:56:41.162293+00:00 fv-az1236-360 kernel:   with arguments:
+2025-02-24T20:56:41.162293+00:00 fv-az1236-360 kernel:     /sbin/init
+2025-02-24T20:56:41.162293+00:00 fv-az1236-360 kernel:   with environment:
+2025-02-24T20:56:41.162295+00:00 fv-az1236-360 kernel:     HOME=/
+2025-02-24T20:56:41.162296+00:00 fv-az1236-360 kernel:     TERM=linux
+2025-02-24T20:56:41.162297+00:00 fv-az1236-360 kernel:     BOOT_IMAGE=/vmlinuz-6.8.0-1020-azure
+2025-02-24T20:56:41.162360+00:00 fv-az1236-360 kernel: pstore: Using crash dump compression: deflate
+2025-02-24T20:56:41.162363+00:00 fv-az1236-360 kernel: pstore: Registered efi_pstore as persistent store backend
+2025-02-24T20:56:41.162369+00:00 fv-az1236-360 kernel: EXT4-fs (sda1): re-mounted 692c13d5-7245-4081-8358-4627061583d6 r/w. Quota mode: none.
+2025-02-24T20:56:41.162374+00:00 fv-az1236-360 kernel: hid: raw HID events driver (C) Jiri Kosina
+2025-02-24T20:56:41.162374+00:00 fv-az1236-360 kernel: hv_vmbus: registering driver hid_hyperv
+2025-02-24T20:56:41.162374+00:00 fv-az1236-360 kernel: hv_vmbus: registering driver hyperv_keyboard
+2025-02-24T20:56:41.162376+00:00 fv-az1236-360 kernel: input: Microsoft Vmbus HID-compliant Mouse as /devices/0006:045E:0621.0001/input/input0
+2025-02-24T20:56:41.162377+00:00 fv-az1236-360 kernel: hid 0006:045E:0621.0001: input: VIRTUAL HID v0.01 Mouse [Microsoft Vmbus HID-compliant Mouse] on 
+2025-02-24T20:56:41.162378+00:00 fv-az1236-360 kernel: hv_vmbus: registering driver hv_netvsc
+2025-02-24T20:56:41.162379+00:00 fv-az1236-360 kernel: input: AT Translated Set 2 keyboard as /devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/d34b2567-b9b6-42b9-8778-0a4ec0b955bf/serio0/input/input1
+2025-02-24T20:56:41.162379+00:00 fv-az1236-360 kernel: hv_vmbus: registering driver hyperv_drm
+2025-02-24T20:56:41.162379+00:00 fv-az1236-360 kernel: hyperv_drm 5620e0c7-8062-4dce-aeb7-520c7ef76171: [drm] Synthvid Version major 3, minor 5
+2025-02-24T20:56:41.162382+00:00 fv-az1236-360 kernel: Console: switching to colour dummy device 80x25
+2025-02-24T20:56:41.162383+00:00 fv-az1236-360 kernel: EXT4-fs (sda16): mounted filesystem 1f8687ed-884b-43d5-8241-13dd4b45b98d r/w with ordered data mode. Quota mode: none.
+2025-02-24T20:56:41.162383+00:00 fv-az1236-360 kernel: [drm] Initialized hyperv_drm 1.0.0 2020 for 5620e0c7-8062-4dce-aeb7-520c7ef76171 on minor 1
+2025-02-24T20:56:41.162384+00:00 fv-az1236-360 kernel: Console: switching to colour frame buffer device 128x48
+2025-02-24T20:56:41.162384+00:00 fv-az1236-360 kernel: hyperv_drm 5620e0c7-8062-4dce-aeb7-520c7ef76171: [drm] fb0: hyperv_drmdrmfb frame buffer device
+2025-02-24T20:56:41.162385+00:00 fv-az1236-360 kernel: hv_utils: KVP IC version 4.0
+2025-02-24T20:56:41.162386+00:00 fv-az1236-360 kernel: audit: type=1400 audit(1740430593.444:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="Discord" pid=405 comm="apparmor_parser"
+2025-02-24T20:56:41.162388+00:00 fv-az1236-360 kernel: audit: type=1400 audit(1740430593.444:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="1password" pid=404 comm="apparmor_parser"
+2025-02-24T20:56:41.162389+00:00 fv-az1236-360 kernel: audit: type=1400 audit(1740430593.444:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="QtWebEngineProcess" pid=407 comm="apparmor_parser"
+2025-02-24T20:56:41.162390+00:00 fv-az1236-360 kernel: audit: type=1400 audit(1740430593.445:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="balena-etcher" pid=408 comm="apparmor_parser"
+2025-02-24T20:56:41.162390+00:00 fv-az1236-360 kernel: audit: type=1400 audit(1740430593.445:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="brave" pid=409 comm="apparmor_parser"
+2025-02-24T20:56:41.162391+00:00 fv-az1236-360 kernel: audit: type=1400 audit(1740430593.445:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name=4D6F6E676F444220436F6D70617373 pid=406 comm="apparmor_parser"
+2025-02-24T20:56:41.162393+00:00 fv-az1236-360 kernel: audit: type=1400 audit(1740430593.445:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="buildah" pid=411 comm="apparmor_parser"
+2025-02-24T20:56:41.162393+00:00 fv-az1236-360 kernel: audit: type=1400 audit(1740430593.445:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="cam" pid=413 comm="apparmor_parser"
+2025-02-24T20:56:41.162395+00:00 fv-az1236-360 kernel: audit: type=1400 audit(1740430593.445:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ch-run" pid=415 comm="apparmor_parser"
+2025-02-24T20:56:41.162396+00:00 fv-az1236-360 kernel: /dev/sr0: Can't lookup blockdev
+2025-02-24T20:56:41.162396+00:00 fv-az1236-360 kernel: 8021q: 802.1Q VLAN Support v1.8
+2025-02-24T20:56:41.162399+00:00 fv-az1236-360 kernel: hv_netvsc 000d3aa5-70e0-000d-3aa5-70e0000d3aa5 eth0: VF slot 1 added
+2025-02-24T20:56:41.162400+00:00 fv-az1236-360 kernel: hv_pci 1f5ba9f6-fee3-415e-8472-b7b754fa437d: PCI VMBus probing: Using version 0x10004
+2025-02-24T20:56:41.162400+00:00 fv-az1236-360 kernel: hv_pci 1f5ba9f6-fee3-415e-8472-b7b754fa437d: PCI host bridge to bus fee3:00
+2025-02-24T20:56:41.162400+00:00 fv-az1236-360 kernel: pci_bus fee3:00: root bus resource [mem 0xfc0100000-0xfc01fffff window]
+2025-02-24T20:56:41.162401+00:00 fv-az1236-360 kernel: pci_bus fee3:00: No busn resource found for root bus, will use [bus 00-ff]
+2025-02-24T20:56:41.162402+00:00 fv-az1236-360 kernel: pci fee3:00:02.0: [15b3:101a] type 00 class 0x020000 PCIe Endpoint
+2025-02-24T20:56:41.162404+00:00 fv-az1236-360 kernel: pci fee3:00:02.0: BAR 0 [mem 0xfc0100000-0xfc01fffff 64bit pref]
+2025-02-24T20:56:41.162405+00:00 fv-az1236-360 kernel: pci fee3:00:02.0: enabling Extended Tags
+2025-02-24T20:56:41.162406+00:00 fv-az1236-360 kernel: pci fee3:00:02.0: 0.000 Gb/s available PCIe bandwidth, limited by Unknown x0 link at fee3:00:02.0 (capable of 252.048 Gb/s with 16.0 GT/s PCIe x16 link)
+2025-02-24T20:56:41.162406+00:00 fv-az1236-360 kernel: pci_bus fee3:00: busn_res: [bus 00-ff] end is updated to 00
+2025-02-24T20:56:41.162406+00:00 fv-az1236-360 kernel: pci fee3:00:02.0: BAR 0 [mem 0xfc0100000-0xfc01fffff 64bit pref]: assigned
+2025-02-24T20:56:41.162407+00:00 fv-az1236-360 kernel: mlx5_core fee3:00:02.0: enabling device (0000 -> 0002)
+2025-02-24T20:56:41.162408+00:00 fv-az1236-360 kernel: mlx5_core fee3:00:02.0: firmware version: 16.30.1278
+2025-02-24T20:56:41.162410+00:00 fv-az1236-360 kernel: hv_netvsc 000d3aa5-70e0-000d-3aa5-70e0000d3aa5 eth0: VF registering: eth1
+2025-02-24T20:56:41.162411+00:00 fv-az1236-360 kernel: mlx5_core fee3:00:02.0 eth1: joined to eth0
+2025-02-24T20:56:41.162411+00:00 fv-az1236-360 kernel: mlx5_core fee3:00:02.0: MLX5E: StrdRq(1) RqSz(8) StrdSz(256) RxCqeCmprss(0 basic)
+2025-02-24T20:56:41.162412+00:00 fv-az1236-360 kernel: mlx5_core fee3:00:02.0: is_dpll_supported:213:(pid 676): Missing SyncE capability
+2025-02-24T20:56:41.162412+00:00 fv-az1236-360 kernel: mlx5_core fee3:00:02.0 enP65251s1: renamed from eth1
+2025-02-24T20:56:41.162412+00:00 fv-az1236-360 kernel: MACsec IEEE 802.1AE
+2025-02-24T20:56:41.162414+00:00 fv-az1236-360 kernel: mlx5_core fee3:00:02.0 enP65251s1: Link up
+2025-02-24T20:56:41.162415+00:00 fv-az1236-360 kernel: hv_netvsc 000d3aa5-70e0-000d-3aa5-70e0000d3aa5 eth0: Data path switched to VF: enP65251s1
+2025-02-24T20:56:41.162416+00:00 fv-az1236-360 kernel: kauditd_printk_skb: 113 callbacks suppressed
+2025-02-24T20:56:41.162416+00:00 fv-az1236-360 kernel: audit: type=1400 audit(1740430600.942:124): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="rsyslogd" pid=773 comm="apparmor_parser"
+2025-02-24T20:56:41.162416+00:00 fv-az1236-360 kernel: block nvme0n1: No UUID available providing old NGUID
+2025-02-24T20:56:42.378719+00:00 fv-az1236-360 kernel: loop0: detected capacity change from 0 to 8
+2025-02-24T20:56:42.606721+00:00 fv-az1236-360 kernel: audit: type=1400 audit(1740430602.605:125): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/snapd/snap-confine" pid=1055 comm="apparmor_parser"
+2025-02-24T20:56:42.612713+00:00 fv-az1236-360 kernel: audit: type=1400 audit(1740430602.611:126): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=1055 comm="apparmor_parser"
+2025-02-24T20:56:46.816739+00:00 fv-az1236-360 kernel: audit: type=1400 audit(1740430606.815:127): apparmor="STATUS" operation="profile_load" profile="unconfined" name="docker-default" pid=1269 comm="apparmor_parser"
+2025-02-24T20:56:46.958732+00:00 fv-az1236-360 kernel: evm: overlay not supported
+2025-02-24T20:56:47.033724+00:00 fv-az1236-360 kernel: bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+2025-02-24T20:56:47.041716+00:00 fv-az1236-360 kernel: Bridge firewalling registered
+2025-02-24T20:56:47.191716+00:00 fv-az1236-360 kernel: Initializing XFRM netlink socket
+2025-02-24T20:57:07.785716+00:00 fv-az1236-360 kernel: Adding 3145724k swap on /swapfile.  Priority:-2 extents:75 across:30130176k 
+2025-02-24T20:57:19.933627+00:00 fv-az1236-360 kernel: hv_balloon: Max. dynamic memory size: 16384 MB
+2025-02-24T21:03:35.448745+00:00 fv-az1236-360 kernel: rustc: rustc: potentially unexpected fatal signal 6.
+2025-02-24T21:03:35.448763+00:00 fv-az1236-360 kernel: CPU: 2 PID: 1793 Comm: rustc Not tainted 6.8.0-1020-azure #23-Ubuntu
+2025-02-24T21:03:35.448764+00:00 fv-az1236-360 kernel: Hardware name: Microsoft Corporation Virtual Machine/Virtual Machine, BIOS Hyper-V UEFI Release v4.1 09/28/2024
+2025-02-24T21:03:35.448766+00:00 fv-az1236-360 kernel: pstate: 60001000 (nZCv daif -PAN -UAO -TCO -DIT +SSBS BTYPE=--)
+2025-02-24T21:03:35.448766+00:00 fv-az1236-360 kernel: pc : 0000ffcd374e7628
+2025-02-24T21:03:35.448767+00:00 fv-az1236-360 kernel: lr : 0000ffcd374e7614
+2025-02-24T21:03:35.448767+00:00 fv-az1236-360 kernel: sp : 0000ffffc8c85e70
+2025-02-24T21:03:35.448768+00:00 fv-az1236-360 kernel: x29: 0000ffffc8c85e80 x28: 0000ffcd37610a50 x27: 0000000000000002
+2025-02-24T21:03:35.448768+00:00 fv-az1236-360 kernel: x26: 0000000000000000 x25: 000000000000001d x24: 0000ffffc8c85ff8
+2025-02-24T21:03:35.448769+00:00 fv-az1236-360 kernel: x23: 0000ffffc8c85ff8 x22: 0000ffffc8c85ff8 x21: 0000000000000006
+2025-02-24T21:03:35.448769+00:00 fv-az1236-360 kernel: x20: 0000ffcd37658020 x19: 0000000000000701 x18: 0000aadbaec6a76b
+2025-02-24T21:03:35.448770+00:00 fv-az1236-360 kernel: x17: 0000ffcd374f65d0 x16: 0000000000000001 x15: 0000000000aadbae
+2025-02-24T21:03:35.448770+00:00 fv-az1236-360 kernel: x14: 0000000000000000 x13: 0000000000000001 x12: 0000ffffc8c8629b
+2025-02-24T21:03:35.448771+00:00 fv-az1236-360 kernel: x11: 0000000000000009 x10: 000000000000000a x9 : 000000000000000f
+2025-02-24T21:03:35.448771+00:00 fv-az1236-360 kernel: x8 : 0000000000000083 x7 : 0000000000000004 x6 : 0000000000000020
+2025-02-24T21:03:35.448784+00:00 fv-az1236-360 kernel: x5 : 0000000000000001 x4 : 0000ffcd3766db50 x3 : 0000ffcd37658020
+2025-02-24T21:03:35.448784+00:00 fv-az1236-360 kernel: x2 : 0000000000000006 x1 : 0000000000000701 x0 : 0000000000000000

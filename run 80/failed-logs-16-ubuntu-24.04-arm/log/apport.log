@@ -1,0 +1,2 @@
+INFO: apport (pid 1806) 2025-02-24 21:03:35,846: executable: /home/runner/.rustup/toolchains/stable-aarch64-unknown-linux-gnu/bin/rustc (command line "/home/runner/.rustup/toolchains/stable-aarch64-unknown-linux-gnu/bin/rustc --version")
+ERROR: apport (pid 1806) 2025-02-24 21:03:35,853: executable does not belong to a package, ignoring

@@ -1,0 +1,123 @@
+2025-01-20T21:02:17.797942+00:00 pkrvmdm07f8kizn sudo:     root : PWD=/home/packer ; USER=root ; COMMAND=/usr/bin/rm -f /usr/local/bin/apt
+2025-01-20T21:02:17.856271+00:00 pkrvmdm07f8kizn sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=0)
+2025-01-20T21:02:17.856337+00:00 pkrvmdm07f8kizn sudo: pam_unix(sudo:session): session closed for user root
+2025-01-20T21:02:17.856404+00:00 pkrvmdm07f8kizn sudo:     root : PWD=/home/packer ; USER=root ; COMMAND=/usr/bin/rm -f /usr/local/bin/apt-get
+2025-01-20T21:02:17.856432+00:00 pkrvmdm07f8kizn sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=0)
+2025-01-20T21:02:17.856461+00:00 pkrvmdm07f8kizn sudo: pam_unix(sudo:session): session closed for user root
+2025-01-20T21:02:17.856513+00:00 pkrvmdm07f8kizn sudo:     root : PWD=/home/packer ; USER=root ; COMMAND=/usr/bin/rm -f /usr/local/bin/apt-key
+2025-01-20T21:02:17.856537+00:00 pkrvmdm07f8kizn sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=0)
+2025-01-20T21:02:17.856554+00:00 pkrvmdm07f8kizn sudo: pam_unix(sudo:session): session closed for user root
+2025-01-20T21:02:17.856578+00:00 pkrvmdm07f8kizn sudo: pam_unix(sudo:session): session closed for user root
+2025-01-20T21:02:18.335065+00:00 pkrvmdm07f8kizn sudo:   packer : PWD=/home/packer ; USER=root ; COMMAND=/usr/bin/sh -c 'HELPER_SCRIPT_FOLDER=/imagegeneration/helpers IMAGE_FOLDER=/imagegeneration INSTALLER_SCRIPT_FOLDER=/imagegeneration/installers PACKER_BUILDER_TYPE=azure-arm PACKER_BUILD_NAME=build_image  /tmp/script_7385.sh'
+2025-01-20T21:02:18.335332+00:00 pkrvmdm07f8kizn sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
+2025-01-20T21:02:22.970573+00:00 pkrvmdm07f8kizn sudo:     root : PWD=/home/packer ; USER=root ; COMMAND=/usr/bin/sed -i -e s%^PATH=.*$%PATH=/snap/bin:$HOME/.local/bin:/opt/pipx_bin:$HOME/.cargo/bin:$HOME/.config/composer/vendor/bin:/opt/google-cloud-sdk/bin:$HOME/.dotnet/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin% /etc/environment
+2025-01-20T21:02:22.970729+00:00 pkrvmdm07f8kizn sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=0)
+2025-01-20T21:02:22.972801+00:00 pkrvmdm07f8kizn sudo: pam_unix(sudo:session): session closed for user root
+2025-01-20T21:02:25.099522+00:00 pkrvmdm07f8kizn sudo:     root : PWD=/home/packer ; USER=root ; COMMAND=/usr/bin/apt-get purge needrestart -y
+2025-01-20T21:02:25.099706+00:00 pkrvmdm07f8kizn sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=0)
+2025-01-20T21:02:38.159480+00:00 pkrvmdm07f8kizn sudo: pam_unix(sudo:session): session closed for user root
+2025-01-20T21:02:38.160699+00:00 pkrvmdm07f8kizn sudo: pam_unix(sudo:session): session closed for user root
+2025-01-20T21:02:38.724151+00:00 pkrvmdm07f8kizn sudo:   packer : PWD=/home/packer ; USER=root ; COMMAND=/usr/bin/sh -c 'PACKER_BUILDER_TYPE=azure-arm PACKER_BUILD_NAME=build_image  /tmp/script_7412.sh'
+2025-01-20T21:02:38.724432+00:00 pkrvmdm07f8kizn sudo: pam_unix(sudo:session): session opened for user root(uid=0) by packer(uid=1000)
+2025-01-20T21:03:09.286106+00:00 pkrvmdm07f8kizn userdel[2193]: delete user 'packer'
+2025-01-20T21:03:09.286217+00:00 pkrvmdm07f8kizn userdel[2193]: delete 'packer' from group 'adm'
+2025-01-20T21:03:09.286263+00:00 pkrvmdm07f8kizn userdel[2193]: delete 'packer' from group 'cdrom'
+2025-01-20T21:03:09.286301+00:00 pkrvmdm07f8kizn userdel[2193]: delete 'packer' from group 'sudo'
+2025-01-20T21:03:09.286338+00:00 pkrvmdm07f8kizn userdel[2193]: delete 'packer' from group 'dip'
+2025-01-20T21:03:09.286376+00:00 pkrvmdm07f8kizn userdel[2193]: delete 'packer' from group 'lxd'
+2025-01-20T21:03:09.286417+00:00 pkrvmdm07f8kizn userdel[2193]: removed group 'packer' owned by 'packer'
+2025-01-20T21:03:09.286457+00:00 pkrvmdm07f8kizn userdel[2193]: removed shadow group 'packer' owned by 'packer'
+2025-01-20T21:03:09.286495+00:00 pkrvmdm07f8kizn userdel[2193]: delete 'packer' from shadow group 'adm'
+2025-01-20T21:03:09.286532+00:00 pkrvmdm07f8kizn userdel[2193]: delete 'packer' from shadow group 'cdrom'
+2025-01-20T21:03:09.286570+00:00 pkrvmdm07f8kizn userdel[2193]: delete 'packer' from shadow group 'sudo'
+2025-01-20T21:03:09.286608+00:00 pkrvmdm07f8kizn userdel[2193]: delete 'packer' from shadow group 'dip'
+2025-01-20T21:03:09.286647+00:00 pkrvmdm07f8kizn userdel[2193]: delete 'packer' from shadow group 'lxd'
+2025-01-20T21:03:09.910835+00:00 pkrvmdm07f8kizn sudo: pam_unix(sudo:session): session closed for user root
+2025-01-20T21:03:12.742833+00:00 pkrvmdm07f8kizn systemd-logind[767]: The system will power off now!
+2025-01-20T21:03:12.750877+00:00 pkrvmdm07f8kizn systemd-logind[767]: System is powering down.
+2025-01-20T21:03:12.762844+00:00 pkrvmdm07f8kizn sshd[1263]: pam_unix(sshd:session): session closed for user packer
+2025-02-21T18:43:52.295530+00:00 fv-az1236-360 useradd[741]: new group: name=runneradmin, GID=1002
+2025-02-21T18:43:52.295533+00:00 fv-az1236-360 useradd[741]: new user: name=runneradmin, UID=1002, GID=1002, home=/home/runneradmin, shell=/bin/bash, from=none
+2025-02-21T18:43:52.295535+00:00 fv-az1236-360 useradd[741]: add 'runneradmin' to group 'adm'
+2025-02-21T18:43:52.295539+00:00 fv-az1236-360 useradd[741]: add 'runneradmin' to group 'cdrom'
+2025-02-21T18:43:52.295540+00:00 fv-az1236-360 useradd[741]: add 'runneradmin' to group 'sudo'
+2025-02-21T18:43:52.295542+00:00 fv-az1236-360 useradd[741]: add 'runneradmin' to group 'dip'
+2025-02-21T18:43:52.295544+00:00 fv-az1236-360 useradd[741]: add 'runneradmin' to group 'lxd'
+2025-02-21T18:43:52.295546+00:00 fv-az1236-360 useradd[741]: add 'runneradmin' to shadow group 'adm'
+2025-02-21T18:43:52.295548+00:00 fv-az1236-360 useradd[741]: add 'runneradmin' to shadow group 'cdrom'
+2025-02-21T18:43:52.295549+00:00 fv-az1236-360 useradd[741]: add 'runneradmin' to shadow group 'sudo'
+2025-02-21T18:43:52.295555+00:00 fv-az1236-360 useradd[741]: add 'runneradmin' to shadow group 'dip'
+2025-02-21T18:43:52.295558+00:00 fv-az1236-360 useradd[741]: add 'runneradmin' to shadow group 'lxd'
+2025-02-21T18:43:52.295564+00:00 fv-az1236-360 passwd[756]: password for 'runneradmin' changed by 'root'
+2025-02-21T18:43:52.295841+00:00 fv-az1236-360 systemd-logind[792]: New seat seat0.
+2025-02-21T18:43:52.295844+00:00 fv-az1236-360 systemd-logind[792]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+2025-02-21T18:43:52.439078+00:00 fv-az1236-360 polkitd[782]: Loading rules from directory /etc/polkit-1/rules.d
+2025-02-21T18:43:52.439171+00:00 fv-az1236-360 polkitd[782]: Loading rules from directory /usr/share/polkit-1/rules.d
+2025-02-21T18:43:52.468304+00:00 fv-az1236-360 polkitd[782]: Finished loading, compiling and executing 6 rules
+2025-02-21T18:43:52.468860+00:00 fv-az1236-360 polkitd[782]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2025-02-21T18:44:04.394331+00:00 fv-az1236-360 usermod[1602]: change user 'runner' GID from '1001' to '117'
+2025-02-21T18:44:04.681798+00:00 fv-az1236-360 usermod[1614]: add 'runner' to group 'adm'
+2025-02-21T18:44:04.681859+00:00 fv-az1236-360 usermod[1614]: add 'runner' to group 'systemd-journal'
+2025-02-21T18:44:04.681886+00:00 fv-az1236-360 usermod[1614]: add 'runner' to shadow group 'adm'
+2025-02-21T18:44:04.681903+00:00 fv-az1236-360 usermod[1614]: add 'runner' to shadow group 'systemd-journal'
+2025-02-21T18:44:42.819677+00:00 fv-az1236-360 sudo:     root : PWD=/var/lib/waagent/custom-script/download/0 ; USER=root ; COMMAND=/usr/bin/tee -a /etc/environment
+2025-02-21T18:44:42.820158+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+2025-02-21T18:44:42.821412+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session closed for user root
+2025-02-21T18:44:42.860354+00:00 fv-az1236-360 sudo:     root : PWD=/var/lib/waagent/custom-script/download/0 ; USER=root ; COMMAND=/usr/bin/tee -a /etc/environment
+2025-02-21T18:44:42.860506+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+2025-02-21T18:44:42.861631+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session closed for user root
+2025-02-21T18:44:42.869864+00:00 fv-az1236-360 sudo:     root : PWD=/var/lib/waagent/custom-script/download/0 ; USER=root ; COMMAND=/usr/bin/tee -a /etc/environment
+2025-02-21T18:44:42.870003+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+2025-02-21T18:44:42.871058+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session closed for user root
+2025-02-21T18:44:49.317631+00:00 fv-az1236-360 sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/tee -a /etc/environment
+2025-02-21T18:44:49.317766+00:00 fv-az1236-360 sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/sed -i s|$HOME|/home/runner|g /etc/environment
+2025-02-21T18:44:49.317861+00:00 fv-az1236-360 sudo:     root : PWD=/ ; USER=runner ; COMMAND=/usr/bin/docker login -u githubactions -p 3d6472b9-3d49-4d17-9fc9-90d24258043b
+2025-02-21T18:44:49.317886+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+2025-02-21T18:44:49.317903+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+2025-02-21T18:44:49.318483+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session opened for user runner(uid=1001) by (uid=0)
+2025-02-21T18:44:49.319326+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session closed for user root
+2025-02-21T18:44:49.319917+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session closed for user root
+2025-02-21T18:44:49.326185+00:00 fv-az1236-360 sudo:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/loginctl enable-linger 1001
+2025-02-21T18:44:49.326366+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+2025-02-21T18:44:49.333439+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session closed for user root
+2025-02-21T18:44:49.430450+00:00 fv-az1236-360 (systemd): pam_unix(systemd-user:session): session opened for user runner(uid=1001) by runner(uid=0)
+2025-02-21T18:44:52.631854+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session closed for user runner
+2025-02-21T18:45:01.315815+00:00 fv-az1236-360 CRON[1983]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-02-21T18:45:01.317517+00:00 fv-az1236-360 CRON[1983]: pam_unix(cron:session): session closed for user root
+2025-02-21T18:45:42.360969+00:00 fv-az1236-360 systemd-logind[792]: The system will power off now!
+2025-02-21T18:45:42.363378+00:00 fv-az1236-360 systemd-logind[792]: System is powering down.
+2025-02-24T20:56:41.161825+00:00 fv-az1236-360 passwd[740]: password for 'runneradmin' changed by 'root'
+2025-02-24T20:56:41.162130+00:00 fv-az1236-360 systemd-logind[776]: New seat seat0.
+2025-02-24T20:56:41.162137+00:00 fv-az1236-360 systemd-logind[776]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+2025-02-24T20:56:41.190628+00:00 fv-az1236-360 polkitd[765]: Loading rules from directory /etc/polkit-1/rules.d
+2025-02-24T20:56:41.191003+00:00 fv-az1236-360 polkitd[765]: Loading rules from directory /usr/share/polkit-1/rules.d
+2025-02-24T20:56:41.198875+00:00 fv-az1236-360 polkitd[765]: Finished loading, compiling and executing 6 rules
+2025-02-24T20:56:41.199411+00:00 fv-az1236-360 polkitd[765]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2025-02-24T20:56:41.404232+00:00 fv-az1236-360 (systemd): pam_unix(systemd-user:session): session opened for user runner(uid=1001) by runner(uid=0)
+2025-02-24T20:57:07.708657+00:00 fv-az1236-360 sudo:   runner : PWD=/ ; USER=root ; COMMAND=/usr/bin/systemd-tmpfiles --create /tmp/1001-users.conf
+2025-02-24T20:57:07.708943+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+2025-02-24T20:57:07.711596+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session closed for user root
+2025-02-24T20:57:07.715515+00:00 fv-az1236-360 sudo:   runner : PWD=/ ; USER=root ; COMMAND=/usr/bin/tee -a /etc/environment
+2025-02-24T20:57:07.715714+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+2025-02-24T20:57:07.716813+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session closed for user root
+2025-02-24T20:57:07.728163+00:00 fv-az1236-360 sudo:   runner : PWD=/ ; USER=root ; COMMAND=/usr/bin/fallocate -l 3G /swapfile
+2025-02-24T20:57:07.728382+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+2025-02-24T20:57:07.742287+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session closed for user root
+2025-02-24T20:57:07.746002+00:00 fv-az1236-360 sudo:   runner : PWD=/ ; USER=root ; COMMAND=/usr/bin/chmod 600 /swapfile
+2025-02-24T20:57:07.746210+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+2025-02-24T20:57:07.747227+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session closed for user root
+2025-02-24T20:57:07.750822+00:00 fv-az1236-360 sudo:   runner : PWD=/ ; USER=root ; COMMAND=/usr/sbin/mkswap /swapfile
+2025-02-24T20:57:07.751042+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+2025-02-24T20:57:07.762906+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session closed for user root
+2025-02-24T20:57:07.766562+00:00 fv-az1236-360 sudo:   runner : PWD=/ ; USER=root ; COMMAND=/usr/sbin/swapon /swapfile
+2025-02-24T20:57:07.766765+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+2025-02-24T20:57:07.786011+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session closed for user root
+2025-02-24T20:57:07.821717+00:00 fv-az1236-360 sudo:   runner : PWD=/ ; USER=root ; COMMAND=/usr/bin/tee /proc/768/oom_score_adj
+2025-02-24T20:57:07.821929+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+2025-02-24T20:57:07.823026+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session closed for user root
+2025-02-24T21:03:26.098258+00:00 fv-az1236-360 sudo:   runner : PWD=/home/runner/work/mitesch-public2/mitesch-public2 ; USER=root ; COMMAND=/usr/sbin/sysctl -w kernel.print-fatal-signals=1
+2025-02-24T21:03:26.098406+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+2025-02-24T21:03:26.099472+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session closed for user root
+2025-02-24T21:03:35.672492+00:00 fv-az1236-360 sudo:   runner : PWD=/home/runner/work/mitesch-public2/mitesch-public2 ; USER=root ; COMMAND=/usr/bin/chown -R runner:runner /var/log /var/lib/systemd
+2025-02-24T21:03:35.676506+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+2025-02-24T21:03:35.684686+00:00 fv-az1236-360 sudo: pam_unix(sudo:session): session closed for user root

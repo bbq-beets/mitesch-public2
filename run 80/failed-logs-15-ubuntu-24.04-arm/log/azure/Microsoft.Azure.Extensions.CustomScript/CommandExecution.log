@@ -1,0 +1,118 @@
+2025-02-21T18:44:00.260280Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Target handler state: enabled [incarnation_2]
+2025-02-21T18:44:00.260500Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] [Enable] current handler state is: notinstalled
+2025-02-21T18:44:00.507038Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Initializing extension Microsoft.Azure.Extensions.CustomScript-2.1.13
+2025-02-21T18:44:00.507854Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Update settings file: 0.settings
+2025-02-21T18:44:00.508058Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Install extension [bin/custom-script-shim install]
+2025-02-21T18:44:00.508261Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Executing command: /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13/bin/custom-script-shim install with environment variables: {"AZURE_GUEST_AGENT_UNINSTALL_CMD_EXIT_CODE": "NOT_RUN", "AZURE_GUEST_AGENT_EXTENSION_PATH": "/var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13", "AZURE_GUEST_AGENT_EXTENSION_VERSION": "2.1.13", "AZURE_GUEST_AGENT_WIRE_PROTOCOL_ADDRESS": "168.63.129.16", "ConfigSequenceNumber": "0", "AZURE_GUEST_AGENT_EXTENSION_SUPPORTED_FEATURES": "[{\"Key\": \"ExtensionTelemetryPipeline\", \"Value\": \"1.0\"}]"}
+2025-02-21T18:44:02.560034Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Command: bin/custom-script-shim install
+[stdout]
++ /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13/bin/custom-script-extension-arm64 install
+time=2025-02-21T18:44:00Z version=v2.1.12/git@4636e53-dirty operation=install seq=0 event=start
+time=2025-02-21T18:44:00Z version=v2.1.12/git@4636e53-dirty operation=install seq=0 status="not reported for operation (by design)"
+time=2025-02-21T18:44:00Z version=v2.1.12/git@4636e53-dirty operation=install seq=0 event="created data dir" path=/var/lib/waagent/custom-script
+time=2025-02-21T18:44:00Z version=v2.1.12/git@4636e53-dirty operation=install seq=0 event=installed
+time=2025-02-21T18:44:00Z version=v2.1.12/git@4636e53-dirty operation=install seq=0 status="not reported for operation (by design)"
+time=2025-02-21T18:44:00Z version=v2.1.12/git@4636e53-dirty operation=install seq=0 event=end
+[stderr]
+2025-02-21T18:44:02.560981Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Requested extension state: enabled
+2025-02-21T18:44:02.561379Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Enable extension: [bin/custom-script-shim enable]
+2025-02-21T18:44:02.561761Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Executing command: /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13/bin/custom-script-shim enable with environment variables: {"AZURE_GUEST_AGENT_UNINSTALL_CMD_EXIT_CODE": "NOT_RUN", "AZURE_GUEST_AGENT_EXTENSION_PATH": "/var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13", "AZURE_GUEST_AGENT_EXTENSION_VERSION": "2.1.13", "AZURE_GUEST_AGENT_WIRE_PROTOCOL_ADDRESS": "168.63.129.16", "ConfigSequenceNumber": "0", "AZURE_GUEST_AGENT_EXTENSION_SUPPORTED_FEATURES": "[{\"Key\": \"ExtensionTelemetryPipeline\", \"Value\": \"1.0\"}]"}
+2025-02-21T18:44:04.564337Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Command: bin/custom-script-shim enable
+[stdout]
+r status file indicating progress before forking: /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13/status/0.status
++ nohup /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13/bin/custom-script-extension-arm64 enable
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event=start
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event=pre-check
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="comparing seqnum" path=mrseq
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="seqnum saved" path=mrseq
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="reading configuration"
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="read configuration"
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="validating json schema"
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="json schema valid"
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="parsing configuration json"
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="parsed configuration json"
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="validating configuration logically"
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="validated configuration"
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="creating output directory" path=/var/lib/waagent/custom-script/download/0
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="created output directory"
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 files=2
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 file=0 event="download start"
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 file=0 retry=0 info="starting download with client request ID dc507530-68b3-4927-ab15-6b86c98390fb"
+time=2025-02-21T18:44:03Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 file=0 retry=0 info="file download sucessful: downloaded and saved 120627200 bytes in 1237 milliseconds"
+time=2025-02-21T18:44:03Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 file=0 event="download complete" output=/var/lib/waagent/custom-script/download/0
+time=2025-02-21T18:44:03Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 file=1 event="download start"
+time=2025-02-21T18:44:03Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 file=1 retry=0 info="starting download with client request ID 04924acc-4c84-47b6-a844-dacdff7c63a7"
+time=2025-02-21T18:44:03Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 file=1 retry=0 info="file download sucessful: downloaded and saved 2759 bytes in 6 milliseconds"
+time=2025-02-21T18:44:03Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 file=1 e
+[stderr]
+2025-02-21T18:45:10.868930Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Target handler state: uninstall [etag_18355220294281539739]
+2025-02-21T18:45:10.869060Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] [Uninstall] current handler state is: enabled
+2025-02-21T18:45:10.869155Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Disable extension: [bin/custom-script-shim disable]
+2025-02-21T18:45:10.869319Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Executing command: /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13/bin/custom-script-shim disable with environment variables: {"AZURE_GUEST_AGENT_EXTENSION_PATH": "/var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13", "AZURE_GUEST_AGENT_EXTENSION_VERSION": "2.1.13", "AZURE_GUEST_AGENT_WIRE_PROTOCOL_ADDRESS": "168.63.129.16", "ConfigSequenceNumber": "0", "AZURE_GUEST_AGENT_EXTENSION_SUPPORTED_FEATURES": "[{\"Key\": \"ExtensionTelemetryPipeline\", \"Value\": \"1.0\"}]"}
+2025-02-21T18:45:12.872095Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Command: bin/custom-script-shim disable
+[stdout]
++ /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13/bin/custom-script-extension-arm64 disable
+time=2025-02-21T18:45:10Z version=v2.1.12/git@4636e53-dirty operation=disable seq=0 event=start
+time=2025-02-21T18:45:10Z version=v2.1.12/git@4636e53-dirty operation=disable seq=0 event=noop
+time=2025-02-21T18:45:10Z version=v2.1.12/git@4636e53-dirty operation=disable seq=0 event=end
+[stderr]
+2025-02-21T18:45:12.873202Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Uninstall extension [bin/custom-script-shim uninstall]
+2025-02-21T18:45:12.873441Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Executing command: /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13/bin/custom-script-shim uninstall with environment variables: {"AZURE_GUEST_AGENT_EXTENSION_PATH": "/var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13", "AZURE_GUEST_AGENT_EXTENSION_VERSION": "2.1.13", "AZURE_GUEST_AGENT_WIRE_PROTOCOL_ADDRESS": "168.63.129.16", "ConfigSequenceNumber": "0", "AZURE_GUEST_AGENT_EXTENSION_SUPPORTED_FEATURES": "[{\"Key\": \"ExtensionTelemetryPipeline\", \"Value\": \"1.0\"}]"}
+2025-02-21T18:45:14.876164Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Command: bin/custom-script-shim uninstall
+[stdout]
++ /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13/bin/custom-script-extension-arm64 uninstall
+time=2025-02-21T18:45:12Z version=v2.1.12/git@4636e53-dirty operation=uninstall seq=0 event=start
+time=2025-02-21T18:45:12Z version=v2.1.12/git@4636e53-dirty operation=uninstall seq=0 status="not reported for operation (by design)"
+time=2025-02-21T18:45:12Z version=v2.1.12/git@4636e53-dirty operation=uninstall seq=0 path=/var/lib/waagent/custom-script event="removing data dir" path=/var/lib/waagent/custom-script
+time=2025-02-21T18:45:12Z version=v2.1.12/git@4636e53-dirty operation=uninstall seq=0 path=/var/lib/waagent/custom-script event="removed data dir"
+time=2025-02-21T18:45:12Z version=v2.1.12/git@4636e53-dirty operation=uninstall seq=0 path=/var/lib/waagent/custom-script event=uninstalled
+time=2025-02-21T18:45:12Z version=v2.1.12/git@4636e53-dirty operation=uninstall seq=0 status="not reported for operation (by design)"
+time=2025-02-21T18:45:12Z version=v2.1.12/git@4636e53-dirty operation=uninstall seq=0 event=end
+[stderr]
+2025-02-21T18:45:14.877011Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Remove extension handler directory: /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13
+2025-02-21T18:45:14.879163Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Remove the extension slice: Microsoft.Azure.Extensions.CustomScript-2.1.13
+2025-02-24T20:57:02.609806Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Target handler state: enabled [etag_10742205144323390471]
+2025-02-24T20:57:02.610139Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] [Enable] current handler state is: notinstalled
+2025-02-24T20:57:02.875880Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Initializing extension Microsoft.Azure.Extensions.CustomScript-2.1.13
+2025-02-24T20:57:02.876618Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Update settings file: 0.settings
+2025-02-24T20:57:02.876812Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Install extension [bin/custom-script-shim install]
+2025-02-24T20:57:02.876987Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Executing command: /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13/bin/custom-script-shim install with environment variables: {"AZURE_GUEST_AGENT_UNINSTALL_CMD_EXIT_CODE": "NOT_RUN", "AZURE_GUEST_AGENT_EXTENSION_PATH": "/var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13", "AZURE_GUEST_AGENT_EXTENSION_VERSION": "2.1.13", "AZURE_GUEST_AGENT_WIRE_PROTOCOL_ADDRESS": "168.63.129.16", "ConfigSequenceNumber": "0", "AZURE_GUEST_AGENT_EXTENSION_SUPPORTED_FEATURES": "[{\"Key\": \"ExtensionTelemetryPipeline\", \"Value\": \"1.0\"}]"}
+2025-02-24T20:57:04.880100Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Command: bin/custom-script-shim install
+[stdout]
++ /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13/bin/custom-script-extension-arm64 install
+time=2025-02-24T20:57:02Z version=v2.1.12/git@4636e53-dirty operation=install seq=0 event=start
+time=2025-02-24T20:57:02Z version=v2.1.12/git@4636e53-dirty operation=install seq=0 status="not reported for operation (by design)"
+time=2025-02-24T20:57:02Z version=v2.1.12/git@4636e53-dirty operation=install seq=0 event="created data dir" path=/var/lib/waagent/custom-script
+time=2025-02-24T20:57:02Z version=v2.1.12/git@4636e53-dirty operation=install seq=0 event=installed
+time=2025-02-24T20:57:02Z version=v2.1.12/git@4636e53-dirty operation=install seq=0 status="not reported for operation (by design)"
+time=2025-02-24T20:57:02Z version=v2.1.12/git@4636e53-dirty operation=install seq=0 event=end
+[stderr]
+2025-02-24T20:57:04.881098Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Requested extension state: enabled
+2025-02-24T20:57:04.881371Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Enable extension: [bin/custom-script-shim enable]
+2025-02-24T20:57:04.881604Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Executing command: /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13/bin/custom-script-shim enable with environment variables: {"AZURE_GUEST_AGENT_UNINSTALL_CMD_EXIT_CODE": "NOT_RUN", "AZURE_GUEST_AGENT_EXTENSION_PATH": "/var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13", "AZURE_GUEST_AGENT_EXTENSION_VERSION": "2.1.13", "AZURE_GUEST_AGENT_WIRE_PROTOCOL_ADDRESS": "168.63.129.16", "ConfigSequenceNumber": "0", "AZURE_GUEST_AGENT_EXTENSION_SUPPORTED_FEATURES": "[{\"Key\": \"ExtensionTelemetryPipeline\", \"Value\": \"1.0\"}]"}
+2025-02-24T20:57:06.884552Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Command: bin/custom-script-shim enable
+[stdout]
+Writing a placeholder status file indicating progress before forking: /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13/status/0.status
++ nohup /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13/bin/custom-script-extension-arm64 enable
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event=start
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event=pre-check
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="comparing seqnum" path=mrseq
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="seqnum saved" path=mrseq
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="reading configuration"
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="read configuration"
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="validating json schema"
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="json schema valid"
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="parsing configuration json"
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="parsed configuration json"
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="validating configuration logically"
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="validated configuration"
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="creating output directory" path=/var/lib/waagent/custom-script/download/0
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="created output directory"
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 files=0
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="executing command" output=/var/lib/waagent/custom-script/download/0
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="executing protected commandToExecute" output=/var/lib/waagent/custom-script/download/0
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="executed command" output=/var/lib/waagent/custom-script/download/0
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event=enabled
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="clearing settings and script files except most recent seq num"
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event=end
+[stderr]

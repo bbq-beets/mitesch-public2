@@ -1,0 +1,2 @@
+INFO: apport (pid 1791) 2025-02-24 21:03:30,681: executable: /usr/local/bin/node (command line "node /usr/local/bin/npm --version")
+ERROR: apport (pid 1791) 2025-02-24 21:03:30,688: executable does not belong to a package, ignoring

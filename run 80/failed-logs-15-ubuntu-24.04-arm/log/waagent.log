@@ -1,0 +1,539 @@
+2025-02-21T18:43:53.965049Z INFO Daemon Daemon Azure Linux Agent Version: 2.9.1.1
+2025-02-21T18:43:53.968832Z INFO Daemon Daemon OS: ubuntu 24.04
+2025-02-21T18:43:53.971627Z INFO Daemon Daemon Python: 3.12.3
+2025-02-21T18:43:53.974376Z INFO Daemon Daemon Run daemon
+2025-02-21T18:43:53.980910Z INFO Daemon Daemon cloud-init is enabled: True
+2025-02-21T18:43:53.984163Z INFO Daemon Daemon Using cloud-init for provisioning
+2025-02-21T18:43:53.987709Z INFO Daemon Daemon Activate resource disk
+2025-02-21T18:43:53.990678Z INFO Daemon Daemon Searching gen1 prefix 00000000-0001 or gen2 f8b3781a-1e82-4818-a1c3-63d806ec15bb
+2025-02-21T18:43:53.997679Z INFO Daemon Daemon Found device: None
+2025-02-21T18:43:54.000758Z ERROR Daemon Daemon Failed to mount resource disk [ResourceDiskError] unable to detect disk topology
+2025-02-21T18:43:54.006155Z ERROR Daemon Daemon Event: name=WALinuxAgent, op=ActivateResourceDisk, message=[ResourceDiskError] unable to detect disk topology, duration=0
+2025-02-21T18:43:54.013491Z INFO Daemon Daemon Clean protocol and wireserver endpoint
+2025-02-21T18:43:54.017259Z INFO Daemon Daemon Running CloudInit provisioning handler
+2025-02-21T18:43:54.022731Z INFO Daemon Daemon Detect protocol endpoint
+2025-02-21T18:43:54.025825Z INFO Daemon Daemon Clean protocol and wireserver endpoint
+2025-02-21T18:43:54.029571Z INFO Daemon Daemon WireServer endpoint is not found. Rerun dhcp handler
+2025-02-21T18:43:54.033739Z INFO Daemon Daemon Test for route to 168.63.129.16
+2025-02-21T18:43:54.037084Z INFO Daemon Daemon Route to 168.63.129.16 exists
+2025-02-21T18:43:54.040324Z INFO Daemon Daemon Wire server endpoint:168.63.129.16
+2025-02-21T18:43:54.052124Z INFO Daemon Daemon Fabric preferred wire protocol version:2015-04-05
+2025-02-21T18:43:54.056485Z INFO Daemon Daemon Wire protocol version:2012-11-30
+2025-02-21T18:43:54.059989Z INFO Daemon Daemon Server preferred version:2015-04-05
+2025-02-21T18:43:54.467702Z INFO Daemon Daemon Initializing goal state during protocol detection
+2025-02-21T18:43:54.472435Z INFO Daemon Daemon Forcing an update of the goal state.
+2025-02-21T18:43:54.489176Z INFO Daemon Fetched a new incarnation for the WireServer goal state [incarnation 2]
+2025-02-21T18:43:54.504770Z INFO Daemon Daemon HostGAPlugin version: 1.0.8.159
+2025-02-21T18:43:54.508764Z INFO Daemon 
+2025-02-21T18:43:54.510734Z INFO Daemon Fetched new vmSettings [HostGAPlugin correlation ID: e08d5ecf-18c0-4572-afa4-8c4c1a586c27 eTag: 11388107510446397308 source: Fabric]
+2025-02-21T18:43:54.518322Z INFO Daemon The vmSettings originated via Fabric; will ignore them.
+2025-02-21T18:43:54.522975Z INFO Daemon 
+2025-02-21T18:43:54.524880Z INFO Daemon Fetching full goal state from the WireServer [incarnation 2]
+2025-02-21T18:43:54.637779Z INFO Daemon Daemon Downloading artifacts profile blob
+2025-02-21T18:43:54.850517Z INFO Daemon Downloaded certificate {'thumbprint': '3A9C4E56C70658D2533CD39B3502D12FD6725DB0', 'hasPrivateKey': True}
+2025-02-21T18:43:54.857393Z INFO Daemon Fetch goal state completed
+2025-02-21T18:43:54.865554Z INFO Daemon Daemon ssh host key found at: /etc/ssh/ssh_host_rsa_key.pub
+2025-02-21T18:43:54.873634Z INFO Daemon Daemon Thumbprint obtained from : /etc/ssh/ssh_host_rsa_key.pub
+2025-02-21T18:43:54.878526Z INFO Daemon Daemon Finished provisioning
+2025-02-21T18:43:55.928697Z INFO Daemon Daemon RDMA capabilities are not enabled, skipping
+2025-02-21T18:43:55.932867Z INFO Daemon Daemon End of log to /dev/console. The agent will now check for updates and then will process extensions.
+2025-02-21T18:43:55.939271Z INFO Daemon Daemon Installed Agent WALinuxAgent-2.9.1.1 is the most current agent
+2025-02-21T18:43:56.073437Z INFO ExtHandler ExtHandler Azure Linux Agent (Goal State Agent version 2.9.1.1)
+2025-02-21T18:43:56.073538Z INFO ExtHandler ExtHandler OS: ubuntu 24.04
+2025-02-21T18:43:56.073578Z INFO ExtHandler ExtHandler Python: 3.12.3
+2025-02-21T18:43:56.145546Z INFO ExtHandler ExtHandler Distro: ubuntu-24.04; OSUtil: Ubuntu18OSUtil; AgentService: walinuxagent; Python: 3.12.3; systemd: True; LISDrivers: Absent; logrotate: logrotate 3.21.0;
+2025-02-21T18:43:56.145715Z INFO ExtHandler ExtHandler WireServer endpoint 168.63.129.16 read from file
+2025-02-21T18:43:56.145769Z INFO ExtHandler ExtHandler Wire server endpoint:168.63.129.16
+2025-02-21T18:43:56.151272Z INFO ExtHandler Fetched a new incarnation for the WireServer goal state [incarnation 2]
+2025-02-21T18:43:56.157815Z INFO ExtHandler ExtHandler HostGAPlugin version: 1.0.8.159
+2025-02-21T18:43:56.158138Z INFO ExtHandler 
+2025-02-21T18:43:56.158233Z INFO ExtHandler Fetched new vmSettings [HostGAPlugin correlation ID: 1cef561b-f424-406d-ac25-aa3bb38fe36e eTag: 11388107510446397308 source: Fabric]
+2025-02-21T18:43:56.158421Z INFO ExtHandler The vmSettings originated via Fabric; will ignore them.
+2025-02-21T18:43:56.158817Z INFO ExtHandler 
+2025-02-21T18:43:56.158876Z INFO ExtHandler Fetching full goal state from the WireServer [incarnation 2]
+2025-02-21T18:43:56.163857Z INFO ExtHandler ExtHandler Downloading artifacts profile blob
+2025-02-21T18:43:56.355075Z INFO ExtHandler Downloaded certificate {'thumbprint': '3A9C4E56C70658D2533CD39B3502D12FD6725DB0', 'hasPrivateKey': True}
+2025-02-21T18:43:56.355474Z INFO ExtHandler Fetch goal state completed
+2025-02-21T18:43:56.366271Z INFO ExtHandler ExtHandler WALinuxAgent-2.9.1.1 running as process 1083
+2025-02-21T18:43:56.369119Z INFO ExtHandler ExtHandler [CGI] systemd version: systemd 255 (255.4-1ubuntu8.4)
++PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified
+
+2025-02-21T18:43:56.374563Z INFO ExtHandler ExtHandler [CGI] Created /lib/systemd/system/azure-walinuxagent-logcollector.slice
+2025-02-21T18:43:56.374808Z INFO ExtHandler ExtHandler Executing systemctl daemon-reload...
+2025-02-21T18:43:56.553670Z INFO ExtHandler ExtHandler [CGW] The CPU cgroup controller is not mounted
+2025-02-21T18:43:56.553999Z INFO ExtHandler ExtHandler [CGW] The memory cgroup controller is not mounted
+2025-02-21T18:43:56.555442Z INFO ExtHandler ExtHandler [CGI] cgroups v2 mounted at /sys/fs/cgroup.  Controllers: [cpuset cpu io memory pids
+]
+2025-02-21T18:43:56.560246Z INFO ExtHandler ExtHandler [CGI] CPUAccounting: yes
+2025-02-21T18:43:56.564267Z INFO ExtHandler ExtHandler [CGI] CPUQuota: infinity
+2025-02-21T18:43:56.571664Z INFO ExtHandler ExtHandler [CGI] MemoryAccounting: yes
+2025-02-21T18:43:56.571945Z INFO ExtHandler ExtHandler [CGI] Agent CPU cgroup: /sys/fs/cgroup/azure.slice/walinuxagent.service
+2025-02-21T18:43:56.572175Z INFO ExtHandler ExtHandler [CGI] Ensuring the agent's CPUQuota is 50%
+2025-02-21T18:43:56.572512Z INFO ExtHandler ExtHandler [CGI] Created /lib/systemd/system/walinuxagent.service.d/12-CPUQuota.conf
+2025-02-21T18:43:56.572710Z INFO ExtHandler ExtHandler Executing systemctl daemon-reload...
+2025-02-21T18:43:56.751578Z INFO ExtHandler ExtHandler Started tracking cgroup walinuxagent.service [/sys/fs/cgroup/azure.slice/walinuxagent.service]
+2025-02-21T18:43:56.751682Z INFO ExtHandler ExtHandler [CGI] Agent Memory cgroup: /sys/fs/cgroup/azure.slice/walinuxagent.service
+2025-02-21T18:43:56.751943Z INFO ExtHandler ExtHandler [CGI] Agent cgroups enabled: True
+2025-02-21T18:43:56.752385Z INFO ExtHandler ExtHandler Starting setup for Persistent firewall rules
+2025-02-21T18:43:56.935583Z INFO ExtHandler ExtHandler Firewalld service not running/unavailable, trying to set up walinuxagent-network-setup.service
+2025-02-21T18:43:56.935743Z INFO ExtHandler ExtHandler Successfully updated the Binary file /var/lib/waagent/waagent-network-setup.py for firewall setup
+2025-02-21T18:43:56.939020Z INFO ExtHandler ExtHandler Service: walinuxagent-network-setup.service not enabled. Adding it now
+2025-02-21T18:43:57.115821Z INFO ExtHandler ExtHandler Executing systemctl daemon-reload for setting up walinuxagent-network-setup.service
+2025-02-21T18:43:57.306583Z INFO ExtHandler ExtHandler Successfully added and enabled the walinuxagent-network-setup.service
+2025-02-21T18:43:57.306733Z INFO ExtHandler ExtHandler Persistent firewall rules setup successfully
+2025-02-21T18:43:57.505934Z INFO ExtHandler ExtHandler DROP rule is not available which implies no firewall rules are set yet. Environment thread will set it up.
+2025-02-21T18:43:57.506703Z INFO ExtHandler ExtHandler Checking if log collection is allowed at this time [True]. All three conditions must be met: configuration enabled [True], cgroups enabled [True], python supported: [True]
+2025-02-21T18:43:57.507363Z INFO ExtHandler ExtHandler Starting env monitor service.
+2025-02-21T18:43:57.507550Z INFO MonitorHandler ExtHandler WireServer endpoint 168.63.129.16 read from file
+2025-02-21T18:43:57.507923Z INFO ExtHandler ExtHandler Start SendTelemetryHandler service.
+2025-02-21T18:43:57.507874Z INFO MonitorHandler ExtHandler Wire server endpoint:168.63.129.16
+2025-02-21T18:43:57.508189Z INFO EnvHandler ExtHandler WireServer endpoint 168.63.129.16 read from file
+2025-02-21T18:43:57.508778Z INFO SendTelemetryHandler ExtHandler Successfully started the SendTelemetryHandler thread
+2025-02-21T18:43:57.508483Z INFO EnvHandler ExtHandler Wire server endpoint:168.63.129.16
+2025-02-21T18:43:57.508683Z INFO MonitorHandler ExtHandler Monitor.NetworkConfigurationChanges is disabled.
+2025-02-21T18:43:57.509155Z INFO EnvHandler ExtHandler Configure routes
+2025-02-21T18:43:57.509436Z INFO EnvHandler ExtHandler Gateway:None
+2025-02-21T18:43:57.508997Z INFO ExtHandler ExtHandler Start Extension Telemetry service.
+2025-02-21T18:43:57.509720Z INFO EnvHandler ExtHandler Routes:None
+2025-02-21T18:43:57.509676Z INFO MonitorHandler ExtHandler Routing table from /proc/net/route:
+Iface	Destination	Gateway 	Flags	RefCnt	Use	Metric	Mask		MTU	Window	IRTT                                                       
+eth0	00000000	0100010A	0003	0	0	100	00000000	0	0	0                                                                             
+eth0	0000010A	00000000	0001	0	0	100	0000FFFF	0	0	0                                                                             
+eth0	0100010A	00000000	0005	0	0	100	FFFFFFFF	0	0	0                                                                             
+eth0	10813FA8	0100010A	0007	0	0	100	FFFFFFFF	0	0	0                                                                             
+eth0	FEA9FEA9	0100010A	0007	0	0	100	FFFFFFFF	0	0	0                                                                             
+
+2025-02-21T18:43:57.510414Z INFO TelemetryEventsCollector ExtHandler Extension Telemetry pipeline enabled: True
+2025-02-21T18:43:57.510590Z INFO ExtHandler ExtHandler Goal State Period: 6 sec. This indicates how often the agent checks for new goal states and reports status.
+2025-02-21T18:43:57.510663Z INFO TelemetryEventsCollector ExtHandler Successfully started the TelemetryEventsCollector thread
+2025-02-21T18:43:57.516058Z INFO ExtHandler ExtHandler No requested version specified, checking for all versions for agent update (family: Prod)
+2025-02-21T18:43:57.516337Z INFO ExtHandler ExtHandler Downloading manifest
+2025-02-21T18:43:57.576738Z INFO MonitorHandler ExtHandler Network interfaces:
+Executing ['ip', '-a', '-o', 'link']:
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000\    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000\    link/ether 60:45:bd:2e:eb:5d brd ff:ff:ff:ff:ff:ff
+3: enP14745s1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc mq master eth0 state UP mode DEFAULT group default qlen 1000\    link/ether 60:45:bd:2e:eb:5d brd ff:ff:ff:ff:ff:ff\    altname enP14745p0s2
+
+Executing ['ip', '-4', '-a', '-o', 'address']:
+1: lo    inet 127.0.0.1/8 scope host lo\       valid_lft forever preferred_lft forever
+2: eth0    inet 10.1.0.4/16 metric 100 brd 10.1.255.255 scope global eth0\       valid_lft forever preferred_lft forever
+
+Executing ['ip', '-6', '-a', '-o', 'address']:
+1: lo    inet6 ::1/128 scope host noprefixroute \       valid_lft forever preferred_lft forever
+2: eth0    inet6 fe80::6245:bdff:fe2e:eb5d/64 scope link \       valid_lft forever preferred_lft forever
+3: enP14745s1    inet6 fe80::6245:bdff:fe2e:eb5d/64 scope link \       valid_lft forever preferred_lft forever
+
+
+2025-02-21T18:43:57.578081Z INFO MonitorHandler ExtHandler Stopped tracking cgroup walinuxagent.service [/sys/fs/cgroup/azure.slice/walinuxagent.service]
+2025-02-21T18:43:57.578174Z INFO ExtHandler ExtHandler Downloading agent package
+2025-02-21T18:43:57.678358Z INFO ExtHandler ExtHandler Unzipping agent package: /var/lib/waagent/WALinuxAgent-2.9.1.1.zip
+2025-02-21T18:43:57.689556Z INFO ExtHandler ExtHandler Downloading agent package
+2025-02-21T18:43:57.755476Z INFO ExtHandler ExtHandler Unzipping agent package: /var/lib/waagent/WALinuxAgent-2.10.0.8.zip
+2025-02-21T18:43:57.760515Z INFO ExtHandler ExtHandler Downloading agent package
+2025-02-21T18:43:57.761156Z INFO EnvHandler ExtHandler Successfully added Azure fabric firewall rules. Current Firewall rules:
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+    pkts      bytes target     prot opt in     out     source               destination         
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+    pkts      bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+    pkts      bytes target     prot opt in     out     source               destination         
+       0        0 ACCEPT     6    --  *      *       0.0.0.0/0            168.63.129.16        tcp dpt:53
+       0        0 ACCEPT     6    --  *      *       0.0.0.0/0            168.63.129.16        owner UID match 0
+       0        0 DROP       6    --  *      *       0.0.0.0/0            168.63.129.16        ctstate INVALID,NEW
+
+2025-02-21T18:43:57.763522Z INFO EnvHandler ExtHandler Current Firewall rules:
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+    pkts      bytes target     prot opt in     out     source               destination         
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+    pkts      bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+    pkts      bytes target     prot opt in     out     source               destination         
+       0        0 ACCEPT     6    --  *      *       0.0.0.0/0            168.63.129.16        tcp dpt:53
+       0        0 ACCEPT     6    --  *      *       0.0.0.0/0            168.63.129.16        owner UID match 0
+       0        0 DROP       6    --  *      *       0.0.0.0/0            168.63.129.16        ctstate INVALID,NEW
+
+2025-02-21T18:43:57.763711Z INFO EnvHandler ExtHandler Set block dev timeout: sda with timeout: 300
+2025-02-21T18:43:57.839406Z INFO ExtHandler ExtHandler Unzipping agent package: /var/lib/waagent/WALinuxAgent-2.11.1.4.zip
+2025-02-21T18:43:57.843682Z INFO ExtHandler ExtHandler Downloading agent package
+2025-02-21T18:43:57.922189Z INFO ExtHandler ExtHandler Unzipping agent package: /var/lib/waagent/WALinuxAgent-2.11.1.12.zip
+2025-02-21T18:43:57.926475Z INFO ExtHandler ExtHandler Downloading agent package
+2025-02-21T18:43:57.988497Z INFO ExtHandler ExtHandler Unzipping agent package: /var/lib/waagent/WALinuxAgent-2.12.0.2.zip
+2025-02-21T18:43:57.994125Z INFO ExtHandler ExtHandler Discovered new Normal upgrade WALinuxAgent-2.12.0.2; Will upgrade on or after 2025-02-21T18:43:57.993920Z
+2025-02-21T18:43:57.995194Z INFO ExtHandler ExtHandler Normal Agent upgrade discovered, updating to WALinuxAgent-2.12.0.2 -- exiting
+2025-02-21T18:43:58.940085Z INFO Daemon Daemon Agent WALinuxAgent-2.9.1.1 launched with command '/usr/bin/python3 -u /usr/sbin/waagent -run-exthandlers' is successfully running
+2025-02-21T18:43:58.941578Z INFO Daemon Daemon Determined Agent WALinuxAgent-2.12.0.2 to be the latest agent
+2025-02-21T18:43:59.588730Z INFO ExtHandler ExtHandler Azure Linux Agent (Goal State Agent version 2.12.0.2)
+2025-02-21T18:43:59.588863Z INFO ExtHandler ExtHandler OS: ubuntu 24.04
+2025-02-21T18:43:59.588903Z INFO ExtHandler ExtHandler Python: 3.12.3
+2025-02-21T18:43:59.588945Z INFO ExtHandler ExtHandler CPU Arch: aarch64
+2025-02-21T18:43:59.594202Z INFO ExtHandler ExtHandler Distro: ubuntu-24.04; OSUtil: Ubuntu18OSUtil; AgentService: walinuxagent; Python: 3.12.3; Arch: aarch64; systemd: True; LISDrivers: Absent; logrotate: logrotate 3.21.0;
+2025-02-21T18:43:59.594343Z INFO ExtHandler ExtHandler WireServer endpoint 168.63.129.16 read from file
+2025-02-21T18:43:59.594388Z INFO ExtHandler ExtHandler Wire server endpoint:168.63.129.16
+2025-02-21T18:43:59.599536Z INFO ExtHandler Fetched a new incarnation for the WireServer goal state [incarnation 2]
+2025-02-21T18:43:59.608717Z INFO ExtHandler ExtHandler HostGAPlugin version: 1.0.8.159
+2025-02-21T18:43:59.609026Z INFO ExtHandler 
+2025-02-21T18:43:59.609093Z INFO ExtHandler Fetched new vmSettings [HostGAPlugin correlation ID: 5ed28fa0-09cd-455f-9dbb-333dedaf4752 eTag: 11388107510446397308 source: Fabric]
+2025-02-21T18:43:59.609304Z INFO ExtHandler The vmSettings originated via Fabric; will ignore them.
+2025-02-21T18:43:59.609738Z INFO ExtHandler 
+2025-02-21T18:43:59.609795Z INFO ExtHandler Fetching full goal state from the WireServer [incarnation 2]
+2025-02-21T18:43:59.612998Z INFO ExtHandler ExtHandler Downloading artifacts profile blob
+2025-02-21T18:43:59.794302Z INFO ExtHandler Downloaded certificate {'thumbprint': '3A9C4E56C70658D2533CD39B3502D12FD6725DB0', 'hasPrivateKey': True}
+2025-02-21T18:43:59.794632Z INFO ExtHandler Fetch goal state completed
+2025-02-21T18:43:59.806430Z INFO ExtHandler ExtHandler OpenSSL version: OpenSSL 3.0.13 30 Jan 2024 (Library: OpenSSL 3.0.13 30 Jan 2024)
+
+2025-02-21T18:43:59.810538Z INFO ExtHandler ExtHandler WALinuxAgent-2.12.0.2 running as process 1377
+2025-02-21T18:43:59.813000Z INFO ExtHandler ExtHandler [CGI] systemd version: systemd 255 (255.4-1ubuntu8.4)
++PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified
+
+2025-02-21T18:43:59.868779Z INFO ExtHandler ExtHandler [CGI] Using cgroup v2 for resource enforcement and monitoring
+2025-02-21T18:43:59.870756Z INFO ExtHandler ExtHandler [CGI] Agent and extensions resource monitoring is not currently supported on cgroup v2
+2025-02-21T18:43:59.870996Z INFO ExtHandler ExtHandler [CGI] Agent cgroups enabled: False
+2025-02-21T18:43:59.871407Z INFO ExtHandler ExtHandler Starting setup for Persistent firewall rules
+2025-02-21T18:43:59.872609Z INFO ExtHandler ExtHandler Firewalld service not running/unavailable, trying to set up walinuxagent-network-setup.service
+2025-02-21T18:43:59.872763Z INFO ExtHandler ExtHandler Successfully updated the Binary file /var/lib/waagent/waagent-network-setup.py for firewall setup
+2025-02-21T18:43:59.876713Z INFO ExtHandler ExtHandler Unit file version: 1.3 does not match with expected version: 1.4, overwriting unit file
+2025-02-21T18:43:59.876808Z INFO ExtHandler ExtHandler Unit file /lib/systemd/system/walinuxagent-network-setup.service version modified to 1.4, setting it up again
+2025-02-21T18:44:00.051500Z INFO ExtHandler ExtHandler Successfully added and enabled the walinuxagent-network-setup.service
+2025-02-21T18:44:00.051600Z INFO ExtHandler ExtHandler Persistent firewall rules setup successfully
+2025-02-21T18:44:00.054809Z INFO ExtHandler ExtHandler Not setting the firewall rule to allow DNS TCP request to wireserver for a non root user since it already exists
+2025-02-21T18:44:00.055019Z INFO ExtHandler ExtHandler Checking if log collection is allowed at this time [False]. All three conditions must be met: 1. configuration enabled [True], 2. cgroups v1 enabled [False] OR cgroups v2 is in use and v2 resource limiting configuration enabled [False], 3. python supported: [True]
+2025-02-21T18:44:00.055579Z INFO ExtHandler ExtHandler Starting env monitor service.
+2025-02-21T18:44:00.055942Z INFO ExtHandler ExtHandler Start SendTelemetryHandler service.
+2025-02-21T18:44:00.055995Z INFO MonitorHandler ExtHandler WireServer endpoint 168.63.129.16 read from file
+2025-02-21T18:44:00.056262Z INFO MonitorHandler ExtHandler Wire server endpoint:168.63.129.16
+2025-02-21T18:44:00.056432Z INFO SendTelemetryHandler ExtHandler Successfully started the SendTelemetryHandler thread
+2025-02-21T18:44:00.056485Z INFO ExtHandler ExtHandler Start Extension Telemetry service.
+2025-02-21T18:44:00.056952Z INFO MonitorHandler ExtHandler Monitor.NetworkConfigurationChanges is disabled.
+2025-02-21T18:44:00.057028Z INFO EnvHandler ExtHandler WireServer endpoint 168.63.129.16 read from file
+2025-02-21T18:44:00.057351Z INFO TelemetryEventsCollector ExtHandler Extension Telemetry pipeline enabled: True
+2025-02-21T18:44:00.057719Z INFO EnvHandler ExtHandler Wire server endpoint:168.63.129.16
+2025-02-21T18:44:00.057808Z INFO ExtHandler ExtHandler Goal State Period: 6 sec. This indicates how often the agent checks for new goal states and reports status.
+2025-02-21T18:44:00.057771Z INFO TelemetryEventsCollector ExtHandler Successfully started the TelemetryEventsCollector thread
+2025-02-21T18:44:00.058118Z INFO MonitorHandler ExtHandler Routing table from /proc/net/route:
+Iface	Destination	Gateway 	Flags	RefCnt	Use	Metric	Mask		MTU	Window	IRTT                                                       
+eth0	00000000	0100010A	0003	0	0	100	00000000	0	0	0                                                                             
+eth0	0000010A	00000000	0001	0	0	100	0000FFFF	0	0	0                                                                             
+eth0	0100010A	00000000	0005	0	0	100	FFFFFFFF	0	0	0                                                                             
+eth0	10813FA8	0100010A	0007	0	0	100	FFFFFFFF	0	0	0                                                                             
+eth0	FEA9FEA9	0100010A	0007	0	0	100	FFFFFFFF	0	0	0                                                                             
+
+2025-02-21T18:44:00.058480Z INFO EnvHandler ExtHandler Configure routes
+2025-02-21T18:44:00.059159Z INFO EnvHandler ExtHandler Gateway:None
+2025-02-21T18:44:00.059539Z INFO EnvHandler ExtHandler Routes:None
+2025-02-21T18:44:00.064456Z INFO ExtHandler ExtHandler Downloading agent manifest
+2025-02-21T18:44:00.065508Z INFO MonitorHandler ExtHandler Network interfaces:
+Executing ['ip', '-a', '-o', 'link']:
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000\    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000\    link/ether 60:45:bd:2e:eb:5d brd ff:ff:ff:ff:ff:ff
+3: enP14745s1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc mq master eth0 state UP mode DEFAULT group default qlen 1000\    link/ether 60:45:bd:2e:eb:5d brd ff:ff:ff:ff:ff:ff\    altname enP14745p0s2
+
+Executing ['ip', '-4', '-a', '-o', 'address']:
+1: lo    inet 127.0.0.1/8 scope host lo\       valid_lft forever preferred_lft forever
+2: eth0    inet 10.1.0.4/16 metric 100 brd 10.1.255.255 scope global eth0\       valid_lft forever preferred_lft forever
+
+Executing ['ip', '-6', '-a', '-o', 'address']:
+1: lo    inet6 ::1/128 scope host noprefixroute \       valid_lft forever preferred_lft forever
+2: eth0    inet6 fe80::6245:bdff:fe2e:eb5d/64 scope link \       valid_lft forever preferred_lft forever
+3: enP14745s1    inet6 fe80::6245:bdff:fe2e:eb5d/64 scope link \       valid_lft forever preferred_lft forever
+
+
+2025-02-21T18:44:00.073514Z INFO EnvHandler ExtHandler Current Firewall rules:
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+    pkts      bytes target     prot opt in     out     source               destination         
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+    pkts      bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 356 packets, 27475 bytes)
+    pkts      bytes target     prot opt in     out     source               destination         
+       0        0 ACCEPT     6    --  *      *       0.0.0.0/0            168.63.129.16        tcp dpt:53
+      50     6970 ACCEPT     6    --  *      *       0.0.0.0/0            168.63.129.16        owner UID match 0
+       0        0 DROP       6    --  *      *       0.0.0.0/0            168.63.129.16        ctstate INVALID,NEW
+
+2025-02-21T18:44:00.199048Z INFO ExtHandler ExtHandler 
+2025-02-21T18:44:00.199127Z INFO ExtHandler ExtHandler ProcessExtensionsGoalState started [incarnation_2 channel: WireServer source: Fabric activity: 9dd02e56-79f2-473e-9ebf-cc207b39608c correlation ea65f453-e9e1-4150-8184-2043bd323d96 created: 2025-02-21T18:43:34.808807Z]
+2025-02-21T18:44:00.199532Z INFO ExtHandler ExtHandler Downloading extension manifest
+2025-02-21T18:44:00.260280Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Target handler state: enabled [incarnation_2]
+2025-02-21T18:44:00.260500Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] [Enable] current handler state is: notinstalled
+2025-02-21T18:44:00.260717Z INFO ExtHandler ExtHandler Downloading extension package
+2025-02-21T18:44:00.420708Z INFO ExtHandler ExtHandler Unzipping extension package: /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript__2.1.13.zip
+2025-02-21T18:44:00.507038Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Initializing extension Microsoft.Azure.Extensions.CustomScript-2.1.13
+2025-02-21T18:44:00.507854Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Update settings file: 0.settings
+2025-02-21T18:44:00.508058Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Install extension [bin/custom-script-shim install]
+2025-02-21T18:44:00.508261Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Executing command: /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13/bin/custom-script-shim install with environment variables: {"AZURE_GUEST_AGENT_UNINSTALL_CMD_EXIT_CODE": "NOT_RUN", "AZURE_GUEST_AGENT_EXTENSION_PATH": "/var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13", "AZURE_GUEST_AGENT_EXTENSION_VERSION": "2.1.13", "AZURE_GUEST_AGENT_WIRE_PROTOCOL_ADDRESS": "168.63.129.16", "ConfigSequenceNumber": "0", "AZURE_GUEST_AGENT_EXTENSION_SUPPORTED_FEATURES": "[{\"Key\": \"ExtensionTelemetryPipeline\", \"Value\": \"1.0\"}]"}
+2025-02-21T18:44:02.560034Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Command: bin/custom-script-shim install
+[stdout]
++ /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13/bin/custom-script-extension-arm64 install
+time=2025-02-21T18:44:00Z version=v2.1.12/git@4636e53-dirty operation=install seq=0 event=start
+time=2025-02-21T18:44:00Z version=v2.1.12/git@4636e53-dirty operation=install seq=0 status="not reported for operation (by design)"
+time=2025-02-21T18:44:00Z version=v2.1.12/git@4636e53-dirty operation=install seq=0 event="created data dir" path=/var/lib/waagent/custom-script
+time=2025-02-21T18:44:00Z version=v2.1.12/git@4636e53-dirty operation=install seq=0 event=installed
+time=2025-02-21T18:44:00Z version=v2.1.12/git@4636e53-dirty operation=install seq=0 status="not reported for operation (by design)"
+time=2025-02-21T18:44:00Z version=v2.1.12/git@4636e53-dirty operation=install seq=0 event=end
+[stderr]
+2025-02-21T18:44:02.560981Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Requested extension state: enabled
+2025-02-21T18:44:02.561379Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Enable extension: [bin/custom-script-shim enable]
+2025-02-21T18:44:02.561761Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Executing command: /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13/bin/custom-script-shim enable with environment variables: {"AZURE_GUEST_AGENT_UNINSTALL_CMD_EXIT_CODE": "NOT_RUN", "AZURE_GUEST_AGENT_EXTENSION_PATH": "/var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13", "AZURE_GUEST_AGENT_EXTENSION_VERSION": "2.1.13", "AZURE_GUEST_AGENT_WIRE_PROTOCOL_ADDRESS": "168.63.129.16", "ConfigSequenceNumber": "0", "AZURE_GUEST_AGENT_EXTENSION_SUPPORTED_FEATURES": "[{\"Key\": \"ExtensionTelemetryPipeline\", \"Value\": \"1.0\"}]"}
+2025-02-21T18:44:04.564337Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Command: bin/custom-script-shim enable
+[stdout]
+r status file indicating progress before forking: /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13/status/0.status
++ nohup /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13/bin/custom-script-extension-arm64 enable
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event=start
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event=pre-check
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="comparing seqnum" path=mrseq
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="seqnum saved" path=mrseq
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="reading configuration"
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="read configuration"
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="validating json schema"
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="json schema valid"
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="parsing configuration json"
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="parsed configuration json"
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="validating configuration logically"
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="validated configuration"
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="creating output directory" path=/var/lib/waagent/custom-script/download/0
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="created output directory"
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 files=2
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 file=0 event="download start"
+time=2025-02-21T18:44:02Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 file=0 retry=0 info="starting download with client request ID dc507530-68b3-4927-ab15-6b86c98390fb"
+time=2025-02-21T18:44:03Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 file=0 retry=0 info="file download sucessful: downloaded and saved 120627200 bytes in 1237 milliseconds"
+time=2025-02-21T18:44:03Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 file=0 event="download complete" output=/var/lib/waagent/custom-script/download/0
+time=2025-02-21T18:44:03Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 file=1 event="download start"
+time=2025-02-21T18:44:03Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 file=1 retry=0 info="starting download with client request ID 04924acc-4c84-47b6-a844-dacdff7c63a7"
+time=2025-02-21T18:44:03Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 file=1 retry=0 info="file download sucessful: downloaded and saved 2759 bytes in 6 milliseconds"
+time=2025-02-21T18:44:03Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 file=1 e
+[stderr]
+2025-02-21T18:44:04.565787Z INFO ExtHandler ExtHandler ProcessExtensionsGoalState completed [incarnation_2 4366 ms]
+
+2025-02-21T18:44:04.585865Z INFO ExtHandler ExtHandler Extension status: [('Microsoft.Azure.Extensions.CustomScript', 'transitioning')]
+2025-02-21T18:44:04.586202Z INFO ExtHandler ExtHandler Looking for existing remote access users.
+2025-02-21T18:44:04.599857Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.12.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 0;HeartbeatId: 929231D4-71E9-4A95-A8FE-3D2BF07B634E;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1;UpdateMode: SelfUpdate;]
+2025-02-21T18:44:46.722277Z INFO ExtHandler ExtHandler Extension status: [('Microsoft.Azure.Extensions.CustomScript', 'success')]
+2025-02-21T18:44:46.722619Z INFO ExtHandler ExtHandler All extensions in the goal state have reached a terminal state: [('Microsoft.Azure.Extensions.CustomScript', 'success')]
+2025-02-21T18:45:10.815120Z INFO ExtHandler 
+2025-02-21T18:45:10.815227Z INFO ExtHandler Fetched new vmSettings [HostGAPlugin correlation ID: 67736927-e8bf-4b97-a220-136aba939a02 eTag: 18355220294281539739 source: FastTrack]
+2025-02-21T18:45:10.815944Z INFO ExtHandler ExtHandler 
+2025-02-21T18:45:10.816012Z INFO ExtHandler ExtHandler ProcessExtensionsGoalState started [etag_18355220294281539739 channel: HostGAPlugin source: FastTrack activity: e6544dc8-cbcd-42d9-b469-4ce345443475 correlation 20a460f0-2672-489c-a319-2e65e499ac72 created: 2025-02-21T18:45:09.825294Z]
+2025-02-21T18:45:10.816242Z INFO ExtHandler ExtHandler No extension/run-time settings settings found for Microsoft.Azure.Extensions.CustomScript
+2025-02-21T18:45:10.816363Z INFO ExtHandler ExtHandler Downloading extension manifest
+2025-02-21T18:45:10.868930Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Target handler state: uninstall [etag_18355220294281539739]
+2025-02-21T18:45:10.869060Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] [Uninstall] current handler state is: enabled
+2025-02-21T18:45:10.869155Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Disable extension: [bin/custom-script-shim disable]
+2025-02-21T18:45:10.869319Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Executing command: /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13/bin/custom-script-shim disable with environment variables: {"AZURE_GUEST_AGENT_EXTENSION_PATH": "/var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13", "AZURE_GUEST_AGENT_EXTENSION_VERSION": "2.1.13", "AZURE_GUEST_AGENT_WIRE_PROTOCOL_ADDRESS": "168.63.129.16", "ConfigSequenceNumber": "0", "AZURE_GUEST_AGENT_EXTENSION_SUPPORTED_FEATURES": "[{\"Key\": \"ExtensionTelemetryPipeline\", \"Value\": \"1.0\"}]"}
+2025-02-21T18:45:12.872095Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Command: bin/custom-script-shim disable
+[stdout]
++ /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13/bin/custom-script-extension-arm64 disable
+time=2025-02-21T18:45:10Z version=v2.1.12/git@4636e53-dirty operation=disable seq=0 event=start
+time=2025-02-21T18:45:10Z version=v2.1.12/git@4636e53-dirty operation=disable seq=0 event=noop
+time=2025-02-21T18:45:10Z version=v2.1.12/git@4636e53-dirty operation=disable seq=0 event=end
+[stderr]
+2025-02-21T18:45:12.873202Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Uninstall extension [bin/custom-script-shim uninstall]
+2025-02-21T18:45:12.873441Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Executing command: /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13/bin/custom-script-shim uninstall with environment variables: {"AZURE_GUEST_AGENT_EXTENSION_PATH": "/var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13", "AZURE_GUEST_AGENT_EXTENSION_VERSION": "2.1.13", "AZURE_GUEST_AGENT_WIRE_PROTOCOL_ADDRESS": "168.63.129.16", "ConfigSequenceNumber": "0", "AZURE_GUEST_AGENT_EXTENSION_SUPPORTED_FEATURES": "[{\"Key\": \"ExtensionTelemetryPipeline\", \"Value\": \"1.0\"}]"}
+2025-02-21T18:45:14.876164Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Command: bin/custom-script-shim uninstall
+[stdout]
++ /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13/bin/custom-script-extension-arm64 uninstall
+time=2025-02-21T18:45:12Z version=v2.1.12/git@4636e53-dirty operation=uninstall seq=0 event=start
+time=2025-02-21T18:45:12Z version=v2.1.12/git@4636e53-dirty operation=uninstall seq=0 status="not reported for operation (by design)"
+time=2025-02-21T18:45:12Z version=v2.1.12/git@4636e53-dirty operation=uninstall seq=0 path=/var/lib/waagent/custom-script event="removing data dir" path=/var/lib/waagent/custom-script
+time=2025-02-21T18:45:12Z version=v2.1.12/git@4636e53-dirty operation=uninstall seq=0 path=/var/lib/waagent/custom-script event="removed data dir"
+time=2025-02-21T18:45:12Z version=v2.1.12/git@4636e53-dirty operation=uninstall seq=0 path=/var/lib/waagent/custom-script event=uninstalled
+time=2025-02-21T18:45:12Z version=v2.1.12/git@4636e53-dirty operation=uninstall seq=0 status="not reported for operation (by design)"
+time=2025-02-21T18:45:12Z version=v2.1.12/git@4636e53-dirty operation=uninstall seq=0 event=end
+[stderr]
+2025-02-21T18:45:14.877011Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Remove extension handler directory: /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13
+2025-02-21T18:45:14.879163Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Remove the extension slice: Microsoft.Azure.Extensions.CustomScript-2.1.13
+2025-02-21T18:45:14.879729Z INFO ExtHandler ExtHandler ProcessExtensionsGoalState completed [etag_18355220294281539739 4063 ms]
+
+2025-02-21T18:45:42.534615Z INFO Daemon Daemon Agent WALinuxAgent-2.9.1.1 forwarding signal 15 to WALinuxAgent-2.12.0.2
+
+2025-02-24T20:56:41.136794Z INFO Daemon Daemon Azure Linux Agent Version: 2.9.1.1
+2025-02-24T20:56:41.137047Z INFO Daemon Daemon OS: ubuntu 24.04
+2025-02-24T20:56:41.137111Z INFO Daemon Daemon Python: 3.12.3
+2025-02-24T20:56:41.137221Z INFO Daemon Daemon Run daemon
+2025-02-24T20:56:41.141621Z INFO Daemon Daemon cloud-init is enabled: True
+2025-02-24T20:56:41.141802Z INFO Daemon Daemon Using cloud-init for provisioning
+2025-02-24T20:56:41.142307Z INFO Daemon Daemon Activate resource disk
+2025-02-24T20:56:41.142383Z INFO Daemon Daemon Searching gen1 prefix 00000000-0001 or gen2 f8b3781a-1e82-4818-a1c3-63d806ec15bb
+2025-02-24T20:56:41.143923Z INFO Daemon Daemon Found device: None
+2025-02-24T20:56:41.144012Z ERROR Daemon Daemon Failed to mount resource disk [ResourceDiskError] unable to detect disk topology
+2025-02-24T20:56:41.144058Z ERROR Daemon Daemon Event: name=WALinuxAgent, op=ActivateResourceDisk, message=[ResourceDiskError] unable to detect disk topology, duration=0
+2025-02-24T20:56:41.150512Z INFO Daemon Daemon Clean protocol and wireserver endpoint
+2025-02-24T20:56:41.168518Z WARNING Daemon Daemon VM is provisioned, but the VM unique identifier has changed -- clearing cached state
+2025-02-24T20:56:41.189774Z INFO Daemon Daemon Detect protocol endpoint
+2025-02-24T20:56:41.189853Z INFO Daemon Daemon Clean protocol and wireserver endpoint
+2025-02-24T20:56:41.189906Z INFO Daemon Daemon WireServer endpoint is not found. Rerun dhcp handler
+2025-02-24T20:56:41.189938Z INFO Daemon Daemon Test for route to 168.63.129.16
+2025-02-24T20:56:41.190028Z INFO Daemon Daemon Route to 168.63.129.16 exists
+2025-02-24T20:56:41.190074Z INFO Daemon Daemon Wire server endpoint:168.63.129.16
+2025-02-24T20:56:41.199272Z INFO Daemon Daemon Fabric preferred wire protocol version:2015-04-05
+2025-02-24T20:56:41.199491Z INFO Daemon Daemon Wire protocol version:2012-11-30
+2025-02-24T20:56:41.199533Z INFO Daemon Daemon Server preferred version:2015-04-05
+2025-02-24T20:56:41.952076Z INFO Daemon Daemon Initializing goal state during protocol detection
+2025-02-24T20:56:41.952252Z INFO Daemon Daemon Forcing an update of the goal state.
+2025-02-24T20:56:41.955666Z INFO Daemon Fetched a new incarnation for the WireServer goal state [incarnation 1]
+2025-02-24T20:56:41.967079Z INFO Daemon Daemon HostGAPlugin version: 1.0.8.159
+2025-02-24T20:56:41.967498Z INFO Daemon 
+2025-02-24T20:56:41.967571Z INFO Daemon Fetched new vmSettings [HostGAPlugin correlation ID: 26435ea4-fe1b-4caf-907d-ca113a4683b0 eTag: 4128230227502650133 source: Fabric]
+2025-02-24T20:56:41.967763Z INFO Daemon The vmSettings originated via Fabric; will ignore them.
+2025-02-24T20:56:41.968259Z INFO Daemon 
+2025-02-24T20:56:41.968319Z INFO Daemon Fetching full goal state from the WireServer [incarnation 1]
+2025-02-24T20:56:41.971703Z INFO Daemon Daemon Downloading artifacts profile blob
+2025-02-24T20:56:43.170541Z INFO Daemon Downloaded certificate {'thumbprint': '3B16EE1DA17B486351028E031A620A2C68C14E26', 'hasPrivateKey': True}
+2025-02-24T20:56:43.170919Z INFO Daemon Fetch goal state completed
+2025-02-24T20:56:43.176079Z INFO Daemon Daemon Provisioning already completed, skipping.
+2025-02-24T20:56:43.188779Z INFO Daemon Daemon RDMA capabilities are not enabled, skipping
+2025-02-24T20:56:43.216176Z INFO Daemon Daemon Determined Agent WALinuxAgent-2.12.0.2 to be the latest agent
+2025-02-24T20:56:43.928821Z INFO ExtHandler ExtHandler Azure Linux Agent (Goal State Agent version 2.12.0.2)
+2025-02-24T20:56:43.928944Z INFO ExtHandler ExtHandler OS: ubuntu 24.04
+2025-02-24T20:56:43.928983Z INFO ExtHandler ExtHandler Python: 3.12.3
+2025-02-24T20:56:43.929015Z INFO ExtHandler ExtHandler CPU Arch: aarch64
+2025-02-24T20:56:43.947491Z INFO ExtHandler ExtHandler Distro: ubuntu-24.04; OSUtil: Ubuntu18OSUtil; AgentService: walinuxagent; Python: 3.12.3; Arch: aarch64; systemd: True; LISDrivers: Absent; logrotate: logrotate 3.21.0;
+2025-02-24T20:56:43.947637Z INFO ExtHandler ExtHandler WireServer endpoint 168.63.129.16 read from file
+2025-02-24T20:56:43.947686Z INFO ExtHandler ExtHandler Wire server endpoint:168.63.129.16
+2025-02-24T20:56:43.958326Z INFO ExtHandler Fetched a new incarnation for the WireServer goal state [incarnation 1]
+2025-02-24T20:56:43.963054Z INFO ExtHandler ExtHandler HostGAPlugin version: 1.0.8.159
+2025-02-24T20:56:43.963365Z INFO ExtHandler 
+2025-02-24T20:56:43.963453Z INFO ExtHandler Fetched new vmSettings [HostGAPlugin correlation ID: 48a48ede-b1ee-44bc-8583-9e03e0cf9d79 eTag: 4128230227502650133 source: Fabric]
+2025-02-24T20:56:43.963640Z INFO ExtHandler The vmSettings originated via Fabric; will ignore them.
+2025-02-24T20:56:43.964053Z INFO ExtHandler 
+2025-02-24T20:56:43.964107Z INFO ExtHandler Fetching full goal state from the WireServer [incarnation 1]
+2025-02-24T20:56:43.967286Z INFO ExtHandler ExtHandler Downloading artifacts profile blob
+2025-02-24T20:56:44.135624Z INFO ExtHandler Downloaded certificate {'thumbprint': '3B16EE1DA17B486351028E031A620A2C68C14E26', 'hasPrivateKey': True}
+2025-02-24T20:56:44.136021Z INFO ExtHandler Fetch goal state completed
+2025-02-24T20:56:44.148127Z INFO ExtHandler ExtHandler OpenSSL version: OpenSSL 3.0.13 30 Jan 2024 (Library: OpenSSL 3.0.13 30 Jan 2024)
+
+2025-02-24T20:56:44.152542Z INFO ExtHandler ExtHandler WALinuxAgent-2.12.0.2 running as process 1070
+2025-02-24T20:56:44.155254Z INFO ExtHandler ExtHandler [CGI] systemd version: systemd 255 (255.4-1ubuntu8.4)
++PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified
+
+2025-02-24T20:56:44.177080Z INFO ExtHandler ExtHandler [CGI] Using cgroup v2 for resource enforcement and monitoring
+2025-02-24T20:56:44.179136Z INFO ExtHandler ExtHandler [CGI] Agent and extensions resource monitoring is not currently supported on cgroup v2
+2025-02-24T20:56:44.179382Z INFO ExtHandler ExtHandler [CGI] Agent cgroups enabled: False
+2025-02-24T20:56:44.179848Z INFO ExtHandler ExtHandler Starting setup for Persistent firewall rules
+2025-02-24T20:56:44.181180Z INFO ExtHandler ExtHandler Firewalld service not running/unavailable, trying to set up walinuxagent-network-setup.service
+2025-02-24T20:56:44.181301Z INFO ExtHandler ExtHandler Successfully updated the Binary file /var/lib/waagent/waagent-network-setup.py for firewall setup
+2025-02-24T20:56:44.188469Z INFO ExtHandler ExtHandler Service: walinuxagent-network-setup.service not enabled. Adding it now
+2025-02-24T20:56:44.377961Z INFO ExtHandler ExtHandler Successfully added and enabled the walinuxagent-network-setup.service
+2025-02-24T20:56:44.378092Z INFO ExtHandler ExtHandler Persistent firewall rules setup successfully
+2025-02-24T20:56:44.381559Z INFO ExtHandler ExtHandler Not setting the firewall rule to allow DNS TCP request to wireserver for a non root user since it already exists
+2025-02-24T20:56:44.381791Z INFO ExtHandler ExtHandler Checking if log collection is allowed at this time [False]. All three conditions must be met: 1. configuration enabled [True], 2. cgroups v1 enabled [False] OR cgroups v2 is in use and v2 resource limiting configuration enabled [False], 3. python supported: [True]
+2025-02-24T20:56:44.382342Z INFO ExtHandler ExtHandler Starting env monitor service.
+2025-02-24T20:56:44.382460Z INFO MonitorHandler ExtHandler WireServer endpoint 168.63.129.16 read from file
+2025-02-24T20:56:44.382868Z INFO MonitorHandler ExtHandler Wire server endpoint:168.63.129.16
+2025-02-24T20:56:44.382819Z INFO ExtHandler ExtHandler Start SendTelemetryHandler service.
+2025-02-24T20:56:44.383284Z INFO MonitorHandler ExtHandler Monitor.NetworkConfigurationChanges is disabled.
+2025-02-24T20:56:44.383690Z INFO SendTelemetryHandler ExtHandler Successfully started the SendTelemetryHandler thread
+2025-02-24T20:56:44.383866Z INFO ExtHandler ExtHandler Start Extension Telemetry service.
+2025-02-24T20:56:44.383946Z INFO EnvHandler ExtHandler WireServer endpoint 168.63.129.16 read from file
+2025-02-24T20:56:44.384564Z INFO ExtHandler ExtHandler Goal State Period: 6 sec. This indicates how often the agent checks for new goal states and reports status.
+2025-02-24T20:56:44.384448Z INFO TelemetryEventsCollector ExtHandler Extension Telemetry pipeline enabled: True
+2025-02-24T20:56:44.384267Z INFO EnvHandler ExtHandler Wire server endpoint:168.63.129.16
+2025-02-24T20:56:44.384513Z INFO MonitorHandler ExtHandler Routing table from /proc/net/route:
+Iface	Destination	Gateway 	Flags	RefCnt	Use	Metric	Mask		MTU	Window	IRTT                                                       
+eth0	00000000	0100010A	0003	0	0	100	00000000	0	0	0                                                                             
+eth0	0000010A	00000000	0001	0	0	100	0000FFFF	0	0	0                                                                             
+eth0	0100010A	00000000	0005	0	0	100	FFFFFFFF	0	0	0                                                                             
+eth0	10813FA8	0100010A	0007	0	0	100	FFFFFFFF	0	0	0                                                                             
+eth0	FEA9FEA9	0100010A	0007	0	0	100	FFFFFFFF	0	0	0                                                                             
+
+2025-02-24T20:56:44.384972Z INFO TelemetryEventsCollector ExtHandler Successfully started the TelemetryEventsCollector thread
+2025-02-24T20:56:44.385308Z INFO EnvHandler ExtHandler Configure routes
+2025-02-24T20:56:44.385761Z INFO EnvHandler ExtHandler Gateway:None
+2025-02-24T20:56:44.385953Z INFO EnvHandler ExtHandler Routes:None
+2025-02-24T20:56:44.389506Z INFO MonitorHandler ExtHandler Network interfaces:
+Executing ['ip', '-a', '-o', 'link']:
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000\    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000\    link/ether 00:0d:3a:a6:cc:be brd ff:ff:ff:ff:ff:ff
+3: enP61027s1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc mq master eth0 state UP mode DEFAULT group default qlen 1000\    link/ether 00:0d:3a:a6:cc:be brd ff:ff:ff:ff:ff:ff\    altname enP61027p0s2
+
+Executing ['ip', '-4', '-a', '-o', 'address']:
+1: lo    inet 127.0.0.1/8 scope host lo\       valid_lft forever preferred_lft forever
+2: eth0    inet 10.1.0.6/16 metric 100 brd 10.1.255.255 scope global eth0\       valid_lft forever preferred_lft forever
+
+Executing ['ip', '-6', '-a', '-o', 'address']:
+1: lo    inet6 ::1/128 scope host noprefixroute \       valid_lft forever preferred_lft forever
+2: eth0    inet6 fe80::20d:3aff:fea6:ccbe/64 scope link \       valid_lft forever preferred_lft forever
+3: enP61027s1    inet6 fe80::20d:3aff:fea6:ccbe/64 scope link \       valid_lft forever preferred_lft forever
+
+
+2025-02-24T20:56:44.390685Z INFO ExtHandler ExtHandler Downloading agent manifest
+2025-02-24T20:56:44.398036Z INFO EnvHandler ExtHandler Current Firewall rules:
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+    pkts      bytes target     prot opt in     out     source               destination         
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+    pkts      bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 144 packets, 16816 bytes)
+    pkts      bytes target     prot opt in     out     source               destination         
+       0        0 ACCEPT     6    --  *      *       0.0.0.0/0            168.63.129.16        tcp dpt:53
+     100    14570 ACCEPT     6    --  *      *       0.0.0.0/0            168.63.129.16        owner UID match 0
+       0        0 DROP       6    --  *      *       0.0.0.0/0            168.63.129.16        ctstate INVALID,NEW
+
+2025-02-24T20:56:44.398332Z INFO EnvHandler ExtHandler Set block dev timeout: sda with timeout: 300
+2025-02-24T20:56:44.462929Z INFO ExtHandler ExtHandler 
+2025-02-24T20:56:44.463031Z INFO ExtHandler ExtHandler ProcessExtensionsGoalState started [incarnation_1 channel: WireServer source: Fabric activity: 68453a6e-7020-4d04-82c7-7960d91a3ed0 correlation 9bd5efec-a5f4-4e80-b510-90302044b994 created: 2025-02-24T20:55:55.391640Z]
+2025-02-24T20:56:44.463264Z INFO ExtHandler ExtHandler No extension handlers found, not processing anything.
+2025-02-24T20:56:44.463717Z INFO ExtHandler ExtHandler ProcessExtensionsGoalState completed [incarnation_1 0 ms]
+
+2025-02-24T20:56:44.481654Z INFO ExtHandler ExtHandler Looking for existing remote access users.
+2025-02-24T20:56:44.521030Z INFO ExtHandler ExtHandler [HEARTBEAT] Agent WALinuxAgent-2.12.0.2 is running as the goal state agent [DEBUG HeartbeatCounter: 0;HeartbeatId: 45D5D43B-94B5-422A-B31B-A34648130BAB;DroppedPackets: 0;UpdateGSErrors: 0;AutoUpdate: 1;UpdateMode: SelfUpdate;]
+2025-02-24T20:57:02.553756Z INFO ExtHandler 
+2025-02-24T20:57:02.553841Z INFO ExtHandler Fetched new vmSettings [HostGAPlugin correlation ID: b81cfb49-0b1c-4295-916f-cec8b070c1b4 eTag: 10742205144323390471 source: FastTrack]
+2025-02-24T20:57:02.554568Z INFO ExtHandler ExtHandler 
+2025-02-24T20:57:02.554639Z INFO ExtHandler ExtHandler ProcessExtensionsGoalState started [etag_10742205144323390471 channel: HostGAPlugin source: FastTrack activity: 05388bf5-f21f-4006-8b73-5a1a8f89cf0b correlation afe81cba-b20e-4896-a6d1-bb559ab34ea4 created: 2025-02-24T20:57:01.018127Z]
+2025-02-24T20:57:02.554944Z INFO ExtHandler ExtHandler Downloading extension manifest
+2025-02-24T20:57:02.609806Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Target handler state: enabled [etag_10742205144323390471]
+2025-02-24T20:57:02.610139Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] [Enable] current handler state is: notinstalled
+2025-02-24T20:57:02.610370Z INFO ExtHandler ExtHandler Downloading extension package
+2025-02-24T20:57:02.798288Z INFO ExtHandler ExtHandler Unzipping extension package: /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript__2.1.13.zip
+2025-02-24T20:57:02.875880Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Initializing extension Microsoft.Azure.Extensions.CustomScript-2.1.13
+2025-02-24T20:57:02.876618Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Update settings file: 0.settings
+2025-02-24T20:57:02.876812Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Install extension [bin/custom-script-shim install]
+2025-02-24T20:57:02.876987Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Executing command: /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13/bin/custom-script-shim install with environment variables: {"AZURE_GUEST_AGENT_UNINSTALL_CMD_EXIT_CODE": "NOT_RUN", "AZURE_GUEST_AGENT_EXTENSION_PATH": "/var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13", "AZURE_GUEST_AGENT_EXTENSION_VERSION": "2.1.13", "AZURE_GUEST_AGENT_WIRE_PROTOCOL_ADDRESS": "168.63.129.16", "ConfigSequenceNumber": "0", "AZURE_GUEST_AGENT_EXTENSION_SUPPORTED_FEATURES": "[{\"Key\": \"ExtensionTelemetryPipeline\", \"Value\": \"1.0\"}]"}
+2025-02-24T20:57:04.880100Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Command: bin/custom-script-shim install
+[stdout]
++ /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13/bin/custom-script-extension-arm64 install
+time=2025-02-24T20:57:02Z version=v2.1.12/git@4636e53-dirty operation=install seq=0 event=start
+time=2025-02-24T20:57:02Z version=v2.1.12/git@4636e53-dirty operation=install seq=0 status="not reported for operation (by design)"
+time=2025-02-24T20:57:02Z version=v2.1.12/git@4636e53-dirty operation=install seq=0 event="created data dir" path=/var/lib/waagent/custom-script
+time=2025-02-24T20:57:02Z version=v2.1.12/git@4636e53-dirty operation=install seq=0 event=installed
+time=2025-02-24T20:57:02Z version=v2.1.12/git@4636e53-dirty operation=install seq=0 status="not reported for operation (by design)"
+time=2025-02-24T20:57:02Z version=v2.1.12/git@4636e53-dirty operation=install seq=0 event=end
+[stderr]
+2025-02-24T20:57:04.881098Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Requested extension state: enabled
+2025-02-24T20:57:04.881371Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Enable extension: [bin/custom-script-shim enable]
+2025-02-24T20:57:04.881604Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Executing command: /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13/bin/custom-script-shim enable with environment variables: {"AZURE_GUEST_AGENT_UNINSTALL_CMD_EXIT_CODE": "NOT_RUN", "AZURE_GUEST_AGENT_EXTENSION_PATH": "/var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13", "AZURE_GUEST_AGENT_EXTENSION_VERSION": "2.1.13", "AZURE_GUEST_AGENT_WIRE_PROTOCOL_ADDRESS": "168.63.129.16", "ConfigSequenceNumber": "0", "AZURE_GUEST_AGENT_EXTENSION_SUPPORTED_FEATURES": "[{\"Key\": \"ExtensionTelemetryPipeline\", \"Value\": \"1.0\"}]"}
+2025-02-24T20:57:06.884552Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Command: bin/custom-script-shim enable
+[stdout]
+Writing a placeholder status file indicating progress before forking: /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13/status/0.status
++ nohup /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13/bin/custom-script-extension-arm64 enable
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event=start
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event=pre-check
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="comparing seqnum" path=mrseq
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="seqnum saved" path=mrseq
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="reading configuration"
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="read configuration"
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="validating json schema"
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="json schema valid"
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="parsing configuration json"
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="parsed configuration json"
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="validating configuration logically"
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="validated configuration"
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="creating output directory" path=/var/lib/waagent/custom-script/download/0
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="created output directory"
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 files=0
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="executing command" output=/var/lib/waagent/custom-script/download/0
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="executing protected commandToExecute" output=/var/lib/waagent/custom-script/download/0
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="executed command" output=/var/lib/waagent/custom-script/download/0
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event=enabled
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event="clearing settings and script files except most recent seq num"
+time=2025-02-24T20:57:04Z version=v2.1.12/git@4636e53-dirty operation=enable seq=0 event=end
+[stderr]
+2025-02-24T20:57:06.886106Z INFO ExtHandler ExtHandler ProcessExtensionsGoalState completed [etag_10742205144323390471 4331 ms]
+
+2025-02-24T20:57:06.911135Z INFO ExtHandler ExtHandler Extension status: [('Microsoft.Azure.Extensions.CustomScript', 'success')]
+2025-02-24T20:57:06.911446Z INFO ExtHandler ExtHandler All extensions in the goal state have reached a terminal state: [('Microsoft.Azure.Extensions.CustomScript', 'success')]
