@@ -17,6 +17,7 @@ jobs:
     steps:
       - name: vm info
         run: |
+          lsb_release -a
           curl -s -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/instance?api-version=2021-02-01" | jq      
           echo '::warning:: ' $(curl -s -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/instance?api-version=2021-02-01" | jq | grep "vmSize")
           sudo sysctl -w kernel.print-fatal-signals=1
