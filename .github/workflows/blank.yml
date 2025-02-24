@@ -35,13 +35,21 @@ jobs:
         run: uptime
           
       - name: chown
-        if: failure()
+        if: always()
         run: sudo chown -R runner:runner /var/log* /var/lib/systemd
         
       - uses: actions/upload-artifact@v4
         if: failure()
         with:
-          name: logs-${{ matrix.directory }}-${{ matrix.os }}
+          name: failed-logs-${{ matrix.directory }}-${{ matrix.os }}
+          path: |
+            /var/lib/systemd/coredump
+            /var/log*
+
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: success-logs-${{ matrix.directory }}-${{ matrix.os }}
           path: |
             /var/lib/systemd/coredump
             /var/log*
