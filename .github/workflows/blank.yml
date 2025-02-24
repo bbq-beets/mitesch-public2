@@ -31,7 +31,7 @@ jobs:
           grep CONFIG_ARM_ARCH_TIMER_EVTSTREAM /boot/config-`uname -r`
 
       - name: uptime
-        if: always
+        if: always()
         run: uptime
           
       - name: chown
