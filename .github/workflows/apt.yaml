@@ -48,11 +48,11 @@ jobs:
           path: |
             /var/lib/systemd/coredump
             /var/log*
-            /lib/aarch64-linux-gnu/libc*
-            /lib/aarch64-linux-gnu/libdl*
-            /lib/aarch64-linux-gnu/libpthread*
-            /lib/aarch64-linux-gnu/libm*
-            /lib/ld-linux-aarch64*
+            /lib/aarch64-linux-gnu/libc.*
+            /lib/aarch64-linux-gnu/libdl.*
+            /lib/aarch64-linux-gnu/libpthread.*
+            /lib/aarch64-linux-gnu/libm.*
+            /lib/ld-linux-aarch64.*
             
 
       - uses: actions/upload-artifact@v4
