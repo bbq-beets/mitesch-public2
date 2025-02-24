@@ -42,10 +42,12 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: failure()
         with:
+          include-hidden-files: true
           name: failed-logs-${{ matrix.directory }}-${{ matrix.os }}
           path: |
             /var/lib/systemd/coredump
             /var/log*
+            /home/runner/.rustup
 
       - uses: actions/upload-artifact@v4
         if: success()
@@ -54,3 +56,4 @@ jobs:
           path: |
             /var/lib/systemd/coredump
             /var/log*
+
