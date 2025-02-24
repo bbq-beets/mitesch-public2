@@ -1,0 +1,58 @@
+name: npm seg fault
+# This workflow tests examples from the examples directory of this repo.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  example:
+    strategy:
+      fail-fast: false
+      matrix:
+        directory: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+        os: [ ubuntu-24.04-arm ]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: vm info
+        run: |
+          curl -s -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/instance?api-version=2021-02-01" | jq      
+          echo '::warning:: ' $(curl -s -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/instance?api-version=2021-02-01" | jq | grep "vmSize")
+          sudo sysctl -w kernel.print-fatal-signals=1
+          sudo apt-get update
+          sudo apt-get upgrade -y
+        
+      - uses: actions/checkout@v4
+      - name: Run test script
+        #run: valgrind --leak-check=full  npm --version
+        run: | 
+          npm --version
+          rustc --version
+
+      - name: evtstream
+        if: always()
+        run: |
+          grep CONFIG_ARM_ARCH_TIMER_EVTSTREAM /boot/config-`uname -r`
+
+      - name: uptime
+        if: always()
+        run: uptime
+          
+      - name: chown
+        if: always()
+        run: sudo chown -R runner:runner /var/log* /var/lib/systemd
+        
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: failed-logs-${{ matrix.directory }}-${{ matrix.os }}
+          path: |
+            /var/lib/systemd/coredump
+            /var/log*
+
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: success-logs-${{ matrix.directory }}-${{ matrix.os }}
+          path: |
+            /var/lib/systemd/coredump
+            /var/log*
