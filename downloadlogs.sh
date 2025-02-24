@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Install gh cli if this fails: https://github.com/cli/cli/blob/trunk/docs/install_linux.md"
+
 # Get failed workflow runs and store them in a temporary JSON file
 gh run list --workflow "apt update" --status failure --limit 100 --json databaseId > failed_runs.json
 
