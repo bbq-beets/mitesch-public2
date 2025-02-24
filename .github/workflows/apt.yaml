@@ -1,4 +1,4 @@
-name: npm seg fault
+name: apt update
 # This workflow tests examples from the examples directory of this repo.
 
 on:
