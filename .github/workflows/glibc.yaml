@@ -18,9 +18,6 @@ jobs:
           curl -s -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/instance?api-version=2021-02-01" | jq      
           echo '::warning:: ' $(curl -s -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/instance?api-version=2021-02-01" | jq | grep "vmSize")
           sudo sysctl -w kernel.print-fatal-signals=1
-          sudo apt-get update
-          sudo apt-get upgrade
-          sudo apt-get install gettext -y
 
       - name: clone glibc
         run: |
