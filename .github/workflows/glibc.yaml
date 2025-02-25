@@ -3,15 +3,20 @@ name: glibc
 
 on:
   workflow_dispatch:
+    inputs:
+      version:
+        default: glibc-2.35
 
 jobs:
-  example:
+  do-test:
     strategy:
       fail-fast: false
       matrix:
-        version: [glibc-2.35, glibc-2.36, glibc-2.37, glibc-2.38, glibc-2.39, c804cd1c00adde061ca51711f63068c103e94eef]
+        version: [  glibc-2.35 ]
+        testNum: [1] #[1,2,3,4,5,6,7,8,9,10]
         os: [ ubuntu-22.04-arm ]
     runs-on: ${{ matrix.os }}
+    timeout-minutes: 25
     steps:
       - name: vm info
         run: |
@@ -23,7 +28,7 @@ jobs:
         run: |
           mkdir $HOME/src
           cd $HOME/src
-          git clone https://github.com/mitesch/glibc-mirror glibc
+          git clone https://git.launchpad.net/~ubuntu-core-dev/ubuntu/+source/glibc glibc
           cd glibc
           git checkout ${{ matrix.version }}
           mkdir -p $HOME/build/glibc
@@ -34,17 +39,13 @@ jobs:
           sed -i 's/^# PARALLELMFLAGS/PARALLELMFLAGS/' $HOME/src/glibc/Makefile.in
           $HOME/src/glibc/configure --prefix=/usr
           make
-          
-      - uses: actions/upload-artifact@v4
-        with:
-          include-hidden-files: true
-          name: glibc-${{ matrix.version }}
-          path: |
-            /home/runner/build
 
+      - uses: actions/checkout@v4
       - name: test rustc
         run: |
-          cd $HOME/build/glibc
-          ./testrun.sh rustc --version
+          cd $GITHUB_WORKSPACE
+          pipx install pyyaml
+          chown +x runtasks.py
+          ./runtasks.py -q  tasks-ubuntuglibc-239.yml 
 
 
