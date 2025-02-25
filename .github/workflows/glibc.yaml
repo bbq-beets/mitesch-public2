@@ -33,15 +33,18 @@ jobs:
           cd $HOME/build/glibc
           $HOME/src/glibc/configure --prefix=/usr
           make
-
-      - name: test rustc
-        run: |
-          cd $HOME/build/glibc
-          ./testrun.sh rustc --version
-
+          
       - uses: actions/upload-artifact@v4
         with:
           include-hidden-files: true
           name: glibc-${{ matrix.version }}
           path: |
             /home/runner/build
+
+      - name: test rustc
+        run: |
+          cd $HOME/build/glibc
+          sudo ldconfig /home/runner/build/glibc
+          ./testrun.sh rustc --version
+
+
