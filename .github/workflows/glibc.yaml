@@ -1,0 +1,34 @@
+name: npm seg fault
+# This workflow tests examples from the examples directory of this repo.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  example:
+    strategy:
+      fail-fast: false
+      matrix:
+        version: [1]
+        os: [ ubuntu-24.04-arm ]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: vm info
+        run: |
+          curl -s -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/instance?api-version=2021-02-01" | jq      
+          echo '::warning:: ' $(curl -s -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/instance?api-version=2021-02-01" | jq | grep "vmSize")
+          sudo sysctl -w kernel.print-fatal-signals=1
+
+      - name: clone glibc
+        run: |
+          mkdir $HOME/src
+          cd $HOME/src
+          git clone git://sourceware.org/git/glibc.git
+          mkdir -p $HOME/build/glibc
+        
+      - name: build glibc
+        run: |
+          cd $HOME/build/glibc
+          $HOME/src/glibc/configure --prefix=/usr
+          make
+    
