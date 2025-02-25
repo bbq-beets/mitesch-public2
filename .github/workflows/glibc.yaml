@@ -31,8 +31,8 @@ jobs:
       - name: build glibc
         run: |
           cd $HOME/build/glibc
-          $HOME/src/glibc/configure --prefix=/usr
           sed -i 's/^# PARALLELMFLAGS/PARALLELMFLAGS/' $HOME/src/glibc/Makefile.in
+          $HOME/src/glibc/configure --prefix=/usr
           make
           make install
           
