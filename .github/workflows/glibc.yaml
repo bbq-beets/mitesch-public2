@@ -33,6 +33,7 @@ jobs:
           cd $HOME/build/glibc
           $HOME/src/glibc/configure --prefix=/usr
           make
+          make install
           
       - uses: actions/upload-artifact@v4
         with:
