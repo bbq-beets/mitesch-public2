@@ -36,7 +36,7 @@ jobs:
           sed -i 's/^# PARALLELMFLAGS/PARALLELMFLAGS/' $HOME/src/glibc/Makefile.in
           $HOME/src/glibc/configure --prefix=/usr
           make
-          make install
+          sudo make install
           
       - uses: actions/upload-artifact@v4
         with:
