@@ -9,7 +9,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        version: [1]
+        version: [glibc-2.35, glibc-2.36, glibc-2.37, glibc-2.38, glibc-2.39, c804cd1c00adde061ca51711f63068c103e94eef]
         os: [ ubuntu-22.04-arm ]
     runs-on: ${{ matrix.os }}
     steps:
@@ -24,6 +24,7 @@ jobs:
           mkdir $HOME/src
           cd $HOME/src
           git clone git://sourceware.org/git/glibc.git
+          git checkout ${{ matrix.version }}
           mkdir -p $HOME/build/glibc
         
       - name: build glibc
