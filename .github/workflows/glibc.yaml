@@ -24,6 +24,7 @@ jobs:
           mkdir $HOME/src
           cd $HOME/src
           git clone git://sourceware.org/git/glibc.git
+          cd glibc
           git checkout ${{ matrix.version }}
           mkdir -p $HOME/build/glibc
         
