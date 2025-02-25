@@ -1,0 +1,14 @@
+vars:
+  rustc: "/home/runner/.rustup/toolchains/stable-aarch64-unknown-linux-gnu/bin/rustc"
+  libcpath: '/home/runner/build/glibc'
+  srcpath: '/home/runner/mitesch-public2'
+tasks:
+  - cpuset: ["0-1", "2-3"]
+    cmd: "${libcpath}/elf/ld-linux-aarch64.so.1"
+    args: 
+       - --library-path
+       - ${libcpath}:${libcpath}/math:${libcpath}/elf:${libcpath}/nss:${libcpath}/dlfcn:${libcpath}/resolv:${libcpath}/mathvec:${libcpath}/nptl:${libcpath}/posix:${libcpath}/iconv:${libcpath}/inet:/lib/aarch64-linux-gnu
+       - ${rustc}
+       - ${srcpath}/test.rs
+    repeat: -1 
+
