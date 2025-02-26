@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        version: [  import/2.39-7 ]
+        version: [  debian/2.39-7 ]
         testNum: [1] #[1,2,3,4,5,6,7,8,9,10]
         os: [ ubuntu-22.04-arm ]
     runs-on: ${{ matrix.os }}
@@ -24,11 +24,12 @@ jobs:
           echo '::warning:: ' $(curl -s -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/instance?api-version=2021-02-01" | jq | grep "vmSize")
           sudo sysctl -w kernel.print-fatal-signals=1
 
+      # git clone https://git.launchpad.net/~ubuntu-core-dev/ubuntu/+source/glibc glibc
       - name: clone glibc
         run: |
           mkdir $HOME/src
           cd $HOME/src
-          git clone https://git.launchpad.net/~ubuntu-core-dev/ubuntu/+source/glibc glibc
+          git clone https://github.com/mitesch/glibc-mirror glibc
           cd glibc
           git checkout ${{ matrix.version }}
           mkdir -p $HOME/build/glibc
@@ -44,6 +45,7 @@ jobs:
       - name: test rustc
         run: |
           cd $GITHUB_WORKSPACE
+          pwd
           pipx install pyyaml
           chown +x runtasks.py
           ./runtasks.py -q  tasks-ubuntuglibc-239.yml 
