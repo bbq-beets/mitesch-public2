@@ -63,7 +63,7 @@ def run_app(cpuset: str, cmd_payload: str, args_list: list, repeat: int,
                 f"Iteration {iteration+1} | pid: {pid} | Error: Process exited with code {exit_code}"
             )
             # Stop further iterations on error.
-            exit(-1)
+            exit(1)
         else:
             global_logger.info(
                 f"Iteration {iteration+1} | pid: {pid} | Process exited successfully with code {exit_code}"
