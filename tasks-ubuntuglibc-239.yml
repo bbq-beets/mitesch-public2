@@ -10,5 +10,5 @@ tasks:
        - ${libcpath}:${libcpath}/math:${libcpath}/elf:${libcpath}/nss:${libcpath}/dlfcn:${libcpath}/resolv:${libcpath}/mathvec:${libcpath}/nptl:${libcpath}/posix:${libcpath}/iconv:${libcpath}/inet:/lib/aarch64-linux-gnu
        - ${rustc}
        - ${srcpath}/test.rs
-    repeat: 1 
+    repeat: -1 
 
