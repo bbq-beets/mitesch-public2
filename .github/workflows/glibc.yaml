@@ -47,7 +47,7 @@ jobs:
           cd $GITHUB_WORKSPACE
           cd mitesch-public2
           pwd
-          pipx install pyyaml
+          pip install pyyaml
           chown +x runtasks.py
           ./runtasks.py -q  tasks-ubuntuglibc-239.yml 
 
