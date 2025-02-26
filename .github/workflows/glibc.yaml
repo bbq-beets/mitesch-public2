@@ -19,9 +19,6 @@ jobs:
         testNum: [1,2,3] #[1,2,3,4,5,6,7,8,9,10]
         os: [ ubuntu-22.04-arm ]
     runs-on: ${{ matrix.os }}
-    concurrency:
-      group: ${{ github.run_id }}-${{ matrix.version }}
-      cancel-in-progress: false
     
     timeout-minutes: 25
     steps:
