@@ -53,6 +53,6 @@ jobs:
           pwd
           pip install pyyaml
           chmod +x runtasks.py
-          ./runtasks.py -q  tasks-ubuntuglibc-239.yml 
+          ./runtasks.py tasks-ubuntuglibc-239.yml 
 
 
