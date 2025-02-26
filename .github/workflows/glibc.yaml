@@ -45,6 +45,7 @@ jobs:
       - name: test rustc
         run: |
           cd $GITHUB_WORKSPACE
+          cd mitesch-public2
           pwd
           pipx install pyyaml
           chown +x runtasks.py
