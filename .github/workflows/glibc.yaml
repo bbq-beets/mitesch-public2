@@ -20,7 +20,8 @@ jobs:
         os: [ ubuntu-22.04-arm ]
     runs-on: ${{ matrix.os }}
     concurrency:
-      group: ${{ matrix.version }}
+      group: ${{ github.run_id }}-${{ matrix.version }}
+      cancel-in-progress: false
     
     timeout-minutes: 25
     steps:
