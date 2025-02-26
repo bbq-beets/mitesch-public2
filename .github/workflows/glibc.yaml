@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        version: [  debian/2.39-7 ]
+        version: [  glibc-2.35, glibc-2.36, glibc-2.37, glibc-2.38, glibc-2.39 ]
         testNum: [1] #[1,2,3,4,5,6,7,8,9,10]
         os: [ ubuntu-22.04-arm ]
     runs-on: ${{ matrix.os }}
