@@ -15,7 +15,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        version: [  glibc-2.35, glibc-2.36, glibc-2.37, glibc-2.38, glibc-2.39 ]
+        version: [  glibc-2.35, glibc-2.35.9000, glibc-2.36, glibc-2.36.9000, glibc-2.37, glibc-2.37.9000, glibc-2.38, glibc-2.38.9000, glibc-2.39, glibc-2.39.9000]
         testNum: [1,2,3] #[1,2,3,4,5,6,7,8,9,10]
         os: [ ubuntu-22.04-arm ]
     runs-on: ${{ matrix.os }}
