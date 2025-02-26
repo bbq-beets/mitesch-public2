@@ -1,7 +1,7 @@
 vars:
   rustc: "/home/runner/.rustup/toolchains/stable-aarch64-unknown-linux-gnu/bin/rustc"
   libcpath: '/home/runner/build/glibc'
-  srcpath: '/home/runner/mitesch-public2/mitesch-public2'
+  srcpath: '/home/runner/work/mitesch-public2/mitesch-public2'
 tasks:
   - cpuset: ["0-1", "2-3"]
     cmd: "${libcpath}/elf/ld-linux-aarch64.so.1"
