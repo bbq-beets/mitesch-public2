@@ -1,0 +1,20 @@
+name: macos
+# This workflow tests examples from the examples directory of this repo.
+
+on:
+  workflow_dispatch:
+  #schedule:
+  #  - cron: "0-59/30 * * * *"   # <=== Change this value
+    
+jobs:
+  example:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ macos-15-arm64 ]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: vm info
+        run: |
+          echo test
+        
