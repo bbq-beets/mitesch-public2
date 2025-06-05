@@ -45,16 +45,4 @@ jobs:
       - name: top
         run: top -b -n 1
 
-      - name: Log CPU and Disk Usage Every Second for 1 Minute
-        run: |
-          echo "timestamp,cpu_usage_percent,disk_read_kb,disk_write_kb" > usage_log.csv
-          for i in {1..60}; do
-            timestamp=$(date +"%Y-%m-%d %H:%M:%S")
-            cpu=$(top -bn2 | grep "Cpu(s)" | tail -n 1 | awk '{print 100 - $8}')
-            iostat_out=$(iostat -d 1 2 | tail -n 2 | head -n 1)
-            disk_read=$(echo $iostat_out | awk '{print $3}')
-            disk_write=$(echo $iostat_out | awk '{print $4}')
-            echo "$timestamp,$cpu,$disk_read,$disk_write"
-            sleep 1
-          done
-
+      
