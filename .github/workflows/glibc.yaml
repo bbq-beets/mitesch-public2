@@ -2,9 +2,6 @@ name: glibc
 # This workflow tests examples from the examples directory of this repo.
 
 on:
-  push:
-    branches: 
-      - main
   workflow_dispatch:
     inputs:
       version:
