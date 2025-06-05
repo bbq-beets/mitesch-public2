@@ -38,6 +38,9 @@ jobs:
           sleep 3
           pgrep -fa dd
 
+      - name: top
+        run: top -b -n 1
+
       - name: Log CPU and Disk Usage Every Second for 1 Minute
         run: |
           echo "timestamp,cpu_usage_percent,disk_read_kb,disk_write_kb" > usage_log.csv
