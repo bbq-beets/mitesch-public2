@@ -1,0 +1,39 @@
+name: ARM64 Matrix Benchmark
+
+on:
+  workflow_dispatch:
+
+jobs:
+  stress-test:
+    runs-on: ubuntu-24.04-arm
+    strategy:
+      matrix:
+        instance: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    steps:
+      - name: Start CPU-Heavy Benchmark Infinite Loop
+        run: |
+          nohup bash -c 'while :; do openssl speed -multi $(nproc); done' > cpu_benchmark.log 2>&1 &
+          sleep 3
+          pgrep -fa openssl
+
+      - name: Infinite Random Write (4GB loop)
+        run: |
+          export FILE=randomdata.bin
+          # Create a 4GB file if not exists
+          if [[ ! -f "$FILE" ]]; then
+            dd if=/dev/urandom of=$FILE bs=1M count=4096 status=progress
+          fi
+          nohup bash -c 'while :; do
+            dd if=/dev/urandom of=randomdata.bin bs=64K count=$((4096*16)) conv=notrunc oflag=seek_bytes seek=$((RANDOM%4096*1024*1024));
+          done' > disk_write.log 2>&1 &
+          sleep 3
+          pgrep -fa dd
+
+      - name: Infinite Sequential Disk Read (low memory)
+        run: |
+          export FILE=randomdata.bin
+          nohup bash -c 'while :; do
+            dd if=$FILE of=/dev/null bs=64K iflag=direct
+          done' > disk_read.log 2>&1 &
+          sleep 3
+          pgrep -fa dd
