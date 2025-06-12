@@ -2,8 +2,8 @@ name: ARM64 Matrix Benchmark
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "17,49 13-21 * * *"   # <=== Change this value
+  #schedule:
+  #  - cron: "17,49 13-21 * * *"   # <=== Change this value
 
 jobs:
   stress-test:
